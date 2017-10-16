@@ -1,14 +1,117 @@
 package Model;
 
+import Model.Constants.Status;
+import Model.Constants;
 public class Movie {
+	
+
+	private int movieID;
 	private String movieTitle;
-	private String showingStatus;
+	private Status showingStatus;
 	private String synopsis;
 	private String director;
 	private String[] cast;
-	private double overallRating;
+	private ReviewList reviewList;
+	private String movieType;
 	
-	public Movie(){
-		
+	public Movie(int movieID){
+		this.movieID = movieID;
 	}
+	public int getMovieID(){
+		return movieID;
+	}
+	
+	public String getMovieTitle() {
+		return movieTitle;
+	}
+	public void setMovieTitle(String movieTitle) {
+		this.movieTitle = movieTitle;
+	}
+	public String getSynopsis() {
+		return synopsis;
+	}
+	public void setSynopsis(String synopsis) {
+		this.synopsis = synopsis;
+	}
+	public String getDirector() {
+		return director;
+	}
+	public void setDirector(String director) {
+		this.director = director;
+	}
+	public String[] getCast() {
+		return cast;
+	}
+	public void setCast(String[] cast) {
+		this.cast = cast;
+	}
+
+	public String getShowingStatus() {
+		switch(this.showingStatus){
+		case ComingSoon: return Constants.COMING_SOON;
+		case Preview: return Constants.PREVIEW;
+		case NowShowing: return Constants.NOW_SHOWING;
+		case EndShowing: return Constants.END_SHOWING;
+		default: return Constants.COMING_SOON;
+		}
+	}
+
+	public void setShowingStatus(Status showingStatus) {
+		this.showingStatus = showingStatus;
+	}
+	public String getMovieType() {
+		return movieType;
+	}
+	public void setMovieType(String movieType) {
+		this.movieType = movieType;
+	}
+	
+	public double getOverallRating(){
+		if (isListEmpty()) return 0;
+		int totalRating = 0;
+		int totalReviews = getReviewsLength();
+		Review[] reviews = new Review[totalReviews];
+		reviews = getReviews();
+		for (Review review: reviews){
+			totalRating += review.getRating();
+		}
+		double overallRating = totalRating/totalReviews;
+		overallRating = (double) Math.round(overallRating * 10)/10;
+		return (overallRating);
+	}
+	public void addToReviewList(Review review){
+		ReviewList newList = new ReviewList(review);
+		if(isListEmpty()){
+			this.reviewList = newList;
+		}
+		else{
+			this.reviewList.insertToLast(newList);
+		}
+	}
+	public Review[] getReviews(){
+		int reviewsLength = getReviewsLength();
+		Review[] reviewArray = new Review[reviewsLength];
+		if (isListEmpty()) return null;
+		else{
+			ReviewList newList;
+			newList = this.reviewList;
+			int index = 0;
+			do{
+				reviewArray[index] = newList.getReview();
+				index++;
+			} while (newList != null);
+		}
+		return reviewArray;
+	}
+	public boolean isListEmpty(){
+		if (this.reviewList == null) return true;
+		return false;
+	}
+	public int getReviewsLength(){
+		if (!isListEmpty()){
+			return reviewList.getLength();
+		}
+		return 0;
+	}
+
 }
