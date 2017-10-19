@@ -11,8 +11,10 @@ public class Movie {
 	private String synopsis;
 	private String director;
 	private String[] cast;
-	private ReviewList reviewList;
+	//private ReviewList reviewList;
 	private String movieType;
+	private int totalRating;
+	private int reviewCount;
 	
 	public Movie(int movieID){
 		this.movieID = movieID;
@@ -67,6 +69,22 @@ public class Movie {
 	}
 	
 	public double getOverallRating(){
+		if (reviewCount != 0){
+			return (totalRating / reviewCount);
+		}
+		return 0;
+	}
+	
+	public void addRating(int number){
+		this.totalRating += number;
+	}
+	
+	public void addReviewCount(){
+		this.reviewCount++;
+	}
+	
+	/*
+	public double getOverallRating(){
 		if (isListEmpty()) return 0;
 		int totalRating = 0;
 		int totalReviews = getReviewsLength();
@@ -79,6 +97,7 @@ public class Movie {
 		overallRating = (double) Math.round(overallRating * 10)/10;
 		return (overallRating);
 	}
+	
 	public void addToReviewList(Review review){
 		ReviewList newList = new ReviewList(review);
 		if(isListEmpty()){
@@ -113,5 +132,5 @@ public class Movie {
 		}
 		return 0;
 	}
-
+	*/
 }
