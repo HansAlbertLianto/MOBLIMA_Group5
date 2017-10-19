@@ -1,6 +1,9 @@
-package Model;
+package Model.CinemaMovie;
 
 import java.time.LocalTime;
+
+import Model.Cinema.Cinema;
+import Model.Movie.Movie;
 
 public class CinemaMovie {
 	private Cinema cinema;

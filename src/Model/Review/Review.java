@@ -1,4 +1,4 @@
-package Model;
+package Model.Review;
 
 public class Review {
 	private String reviewText;

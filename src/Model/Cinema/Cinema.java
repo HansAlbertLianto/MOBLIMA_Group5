@@ -1,4 +1,6 @@
-package Model;
+package Model.Cinema;
+
+import Model.Seat.Seat;
 
 public class Cinema {
 	private String name;

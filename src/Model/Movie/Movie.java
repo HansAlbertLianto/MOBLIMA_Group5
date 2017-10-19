@@ -1,6 +1,7 @@
-package Model;
+package Model.Movie;
 
 import Model.Constants.Status;
+import Model.Person.NonUser;
 import Model.Constants;
 public class Movie {
 	
@@ -9,8 +10,8 @@ public class Movie {
 	private String movieTitle;
 	private Status showingStatus;
 	private String synopsis;
-	private String director;
-	private String[] cast;
+	private NonUser[] director;
+	private NonUser[] cast;
 	//private ReviewList reviewList;
 	private String movieType;
 	private int totalRating;
@@ -35,16 +36,16 @@ public class Movie {
 	public void setSynopsis(String synopsis) {
 		this.synopsis = synopsis;
 	}
-	public String getDirector() {
+	public NonUser[] getDirector() {
 		return director;
 	}
-	public void setDirector(String director) {
+	public void setDirector(NonUser[] director) {
 		this.director = director;
 	}
-	public String[] getCast() {
+	public NonUser[] getCast() {
 		return cast;
 	}
-	public void setCast(String[] cast) {
+	public void setCast(NonUser[] cast) {
 		this.cast = cast;
 	}
 
