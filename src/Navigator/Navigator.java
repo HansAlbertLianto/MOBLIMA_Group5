@@ -124,4 +124,11 @@ public class Navigator implements NavigatorInterface {
     public void printDetails(String msg) {
         navigatorStack.peek().printDetails(msg);
     }
+
+    private void popUntil(View view){
+        while(!navigatorStack.isEmpty()
+                && navigatorStack.peek().getClass() == view.getClass()){
+            navigatorStack.pop();
+        }
+    }
 }
