@@ -23,6 +23,7 @@ public abstract class View implements ViewInterface{
 	protected void viewDidLoad() {
 		Message.printMessage(MENU_MSG);
 		response = Message.input(from, to);
+		manageResponse();
 	}
 	public void printError() {
 		Message.printMessage(ERROR_MSG);
@@ -35,4 +36,6 @@ public abstract class View implements ViewInterface{
 	public void printDetails(String msg) {
 		Message.printMessage(msg);
 	}
+	
+	protected abstract void manageResponse();
 }

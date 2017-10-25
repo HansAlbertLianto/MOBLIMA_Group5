@@ -5,12 +5,7 @@ public class LoginView extends View {
 		super("",1,5);
 	}
 	
-	@Override
-	protected void viewDidLoad() {
-		super.viewDidLoad();
-		//do according the response
-		switch(response) {
+	protected void manageResponse(){
 		
-		}
 	}
 }
