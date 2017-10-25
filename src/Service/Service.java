@@ -120,17 +120,17 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goCinemaMovie() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_CINEMA_MOVIE);
     }
 
     @Override
     public void goSettings() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_SETTING);
     }
 
     @Override
     public void goTop5Edit() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_TOP_5_EDITOR);
     }
 
     @Override
@@ -140,27 +140,27 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goSearchFilterView() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_SEARCH_FILTER_VIEW);
     }
 
     @Override
     public void goMovieDetails() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_MOVIE_DETAILS);
     }
 
     @Override
     public void goBooking() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_BOOKING);
     }
 
     @Override
     public void goBookingHistory() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_BOOKING_HISTORY);
     }
 
     @Override
     public void goTop5View() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_TOP_5);
     }
 
     @Override
