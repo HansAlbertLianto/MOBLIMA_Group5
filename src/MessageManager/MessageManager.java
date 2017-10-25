@@ -1,8 +1,10 @@
 package MessageManager;
+import java.util.Scanner;
 
 public class MessageManager {
 	
 	private static MessageManager singleton = null;
+	private static Scanner sc = new Scanner(System.in);
 	
 	private MessageManager() {}
 	
@@ -16,7 +18,16 @@ public class MessageManager {
 	}
 
 	public int input(int from, int to) {
-		
-		return -1;
+		int input = -1;
+		boolean isValid = false;
+		while (!isValid){
+			System.out.printf("Your choice = ");
+			input = sc.nextInt();
+			isValid = input>=from && input<=to;
+			if (!isValid){
+				System.out.printf("Invalid choice! Choice must be between %d and %d\n",from,to);
+			}
+		}
+		return input;
 	}
 }
