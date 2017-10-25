@@ -1,13 +1,16 @@
 package View;
 
 import MessageManager.MessageManager;
+import Service.Service;
 
 public abstract class View implements ViewInterface{
 	protected String MENU_MSG;
 	protected int from;
 	protected int to;
 	protected int response;
-	
+
+	protected static Service service = Service.getInstance();
+
 	private static final String ERROR_MSG = "";
 	private static final String SUCCESS_MSG = "";
 	
