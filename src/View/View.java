@@ -14,8 +14,9 @@ public abstract class View implements ViewInterface {
     private static final String ERROR_MSG = "";
     private static final String SUCCESS_MSG = "";
 
-    private MessageManager Message = MessageManager.getInstance();
+    protected MessageManager Message = MessageManager.getInstance();
 
+    public View(){ }
     public View(String msg, int from, int to) {
         this.MENU_MSG = msg;
         this.from = from;

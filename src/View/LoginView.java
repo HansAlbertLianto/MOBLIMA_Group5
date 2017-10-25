@@ -1,5 +1,22 @@
 package View;
 
-public class LoginView extends View{
-	
+public class LoginView extends View {
+    private String username;
+    private String password;
+
+    public LoginView() {
+        super();
+    }
+
+    @Override
+    public void appear() {
+        username = Message.inputString(8, 16, "username :");
+        password = Message.inputString(8, 16, "password :");
+        this.manageResponse();
+    }
+
+    @Override
+    protected void manageResponse() {
+        service.doLogin(username, password);
+    }
 }

@@ -5,16 +5,22 @@ import Navigator.*;
 public class Service implements ActionService, NavigationService {
     private static Service singleton = null;
 
-    private Service() { }
+    private Service() {
+    }
 
-    public static Service getInstance(){
-        if(singleton == null) singleton = new Service();
+    public static Service getInstance() {
+        if (singleton == null) singleton = new Service();
         return singleton;
     }
 
     @Override
-    public void doLogin() {
-
+    public void doLogin(String username, String password) {
+        if (username == "admin" && password == "admin") {
+            goAdminHome();
+        }
+        if (username == "user" && password == "user") {
+            goAdminHome();
+        }
     }
 
     @Override

@@ -2,7 +2,7 @@ package Service;
 
 public interface ActionService {
 
-    public void doLogin();
+    public void doLogin(String username, String password);
 
     public void doRegister();
 
