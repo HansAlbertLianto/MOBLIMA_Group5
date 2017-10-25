@@ -1,5 +1,7 @@
 package Service;
 
+import Navigator.*;
+
 public class Service implements ActionService, NavigationService {
     private static Service singleton = null;
 
@@ -82,7 +84,7 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goLogin() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_LANDING);
     }
 
     @Override
@@ -157,6 +159,6 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goExit() {
-
+        Navigator.getInstance().doAction(ActionTypes.EXIT);
     }
 }
