@@ -24,7 +24,7 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doRegister() {
+    public void doRegister(int usertype, String username, String password) {
 
     }
 

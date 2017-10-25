@@ -1,6 +1,6 @@
 package Model.Movie;
 
-import Model.Constants.Status;
+import Model.MovieStatus;
 import Model.Person.NonUser;
 import Model.Constants;
 public class Movie {
@@ -8,7 +8,7 @@ public class Movie {
 
 	private int movieID;
 	private String movieTitle;
-	private Status showingStatus;
+	private MovieStatus showingStatus;
 	private String synopsis;
 	private NonUser[] director;
 	private NonUser[] cast;
@@ -59,7 +59,7 @@ public class Movie {
 		}
 	}
 
-	public void setShowingStatus(Status showingStatus) {
+	public void setShowingStatus(MovieStatus showingStatus) {
 		this.showingStatus = showingStatus;
 	}
 	public String getMovieType() {

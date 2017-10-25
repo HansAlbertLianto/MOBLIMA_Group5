@@ -4,7 +4,7 @@ public interface ActionService {
 
     public void doLogin(String username, String password);
 
-    public void doRegister();
+    public void doRegister(int usertype, String username, String password);
 
     public void doForgot();
 
