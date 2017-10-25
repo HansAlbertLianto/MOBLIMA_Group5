@@ -28,6 +28,9 @@ public class Navigator implements NavigatorInterface {
                 landingView.appear();
                 break;
             case OPEN_LOGIN:
+                LoginView loginView = new LoginView();
+                navigatorStack.add(loginView);
+                loginView.appear();
                 break;
             case OPEN_REGISTER:
                 break;

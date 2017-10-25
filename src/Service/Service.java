@@ -19,7 +19,7 @@ public class Service implements ActionService, NavigationService {
             goAdminHome();
         }
         if (username == "user" && password == "user") {
-            goAdminHome();
+            goUserHome();
         }
     }
 
@@ -90,32 +90,32 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goLogin() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_LANDING);
+        Navigator.getInstance().doAction(ActionTypes.OPEN_LOGIN);
     }
 
     @Override
     public void goRegister() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_REGISTER);
     }
 
     @Override
     public void goForgot() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_FORGOT);
     }
 
     @Override
     public void goAdminHome() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_ADMIN_HOME);
     }
 
     @Override
     public void goMovie() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_MOVIE);
     }
 
     @Override
     public void goCinema() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_CINEMA);
     }
 
     @Override
@@ -135,7 +135,7 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goUserHome() {
-
+        Navigator.getInstance().doAction(ActionTypes.OPEN_USER_HOME);
     }
 
     @Override

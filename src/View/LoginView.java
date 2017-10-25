@@ -10,8 +10,8 @@ public class LoginView extends View {
 
     @Override
     public void appear() {
-        username = Message.inputString(8, 16, "username :");
-        password = Message.inputString(8, 16, "password :");
+        username = Message.inputString(4, 16, "username");
+        password = Message.inputString(4, 16, "password");
         this.manageResponse();
     }
 
