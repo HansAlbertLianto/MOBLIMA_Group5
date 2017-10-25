@@ -8,7 +8,7 @@ public interface ActionService {
 
     public void doForgot();
 
-    public void doSearchMovie();
+    public void doSearchMovie();     
 
     public void doPrintListMovie();
 
