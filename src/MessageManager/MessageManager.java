@@ -1,5 +1,6 @@
 package MessageManager;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MessageManager {
@@ -46,5 +47,28 @@ public class MessageManager {
 			}
 		}
 		return input;
+	}
+
+	public String inputStringWithOption(ArrayList options, String caption){
+		String input = "";
+		boolean isValid = false;
+		while (!isValid){
+			System.out.printf(caption + " = ");
+			input = sc.next();
+			isValid = options.contains(input);
+			if (!isValid){
+				System.out.printf("Invalid input! Input must be in options\n");
+			}
+		}
+		return input;
+	}
+
+	public ArrayList yesOrNoOption(){
+		ArrayList options = new ArrayList();
+		options.add("Y");
+		options.add("y");
+		options.add("N");
+		options.add("n");
+		return options;
 	}
 }

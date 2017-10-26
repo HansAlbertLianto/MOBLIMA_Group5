@@ -5,7 +5,7 @@ import View.*;
 import java.lang.*;
 import java.util.Stack;
 
-public class Navigator implements NavigatorInterface {
+public class Navigator implements NavigatorInterface{
 
     private static Navigator singleton = null;
 
@@ -76,6 +76,11 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(searchFilterView);
                 searchFilterView.appear();
                 break;
+            case OPEN_USER_MOVIES_VIEW:
+                UserMoviesView userMoviesView = new UserMoviesView();
+                navigatorStack.add(userMoviesView);
+                userMoviesView.appear();
+                break;
             case OPEN_MOVIE_DETAILS:
                 MovieDetailsView movieDetailsView = new MovieDetailsView();
                 navigatorStack.add(movieDetailsView);
@@ -96,13 +101,8 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(top5View);
                 top5View.appear();
                 break;
-            case OPEN_USER_MOVIES_VIEW:
-            	UserMoviesView userMoviesView = new UserMoviesView();
-            	navigatorStack.add(userMoviesView);
-            	userMoviesView.appear();
-            	break;
             case EXIT:
-                navigatorStack.pop();
+                pop(getCurrentView());
                 if (navigatorStack.isEmpty()) System.exit(0);
                 navigatorStack.peek().appear();
                 break;
@@ -110,14 +110,11 @@ public class Navigator implements NavigatorInterface {
     }
 
     @Override
-    public void printError() {
-        navigatorStack.peek().printError();
-        navigatorStack.peek().appear();
-    }
+    public void handleError() { navigatorStack.peek().handleError(); }
 
     @Override
-    public void printSuccess() {
-        navigatorStack.peek().printSuccess();
+    public void handleSuccess() {
+        navigatorStack.peek().handleSuccess();
     }
 
     @Override
@@ -125,10 +122,25 @@ public class Navigator implements NavigatorInterface {
         navigatorStack.peek().printDetails(msg);
     }
 
-    private void popUntil(View view){
+    private View getCurrentView(){
+        return navigatorStack.peek();
+    }
+    private void pop(View view){
+        if(view.getClass().equals(AdminHomeView.class)){
+            popUntil(LandingView.class);
+        } else {
+            navigatorStack.pop();
+        }
+
+    }
+
+    private void popUntil(Class viewClass){
+//        System.out.println(viewClass);
         while(!navigatorStack.isEmpty()
-                && navigatorStack.peek().getClass() == view.getClass()){
+                && !getCurrentView().getClass().equals(viewClass)){
+//            System.out.println(getCurrentView().getClass());
             navigatorStack.pop();
         }
     }
+
 }

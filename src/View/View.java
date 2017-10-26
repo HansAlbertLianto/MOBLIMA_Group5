@@ -11,8 +11,8 @@ public abstract class View implements ViewInterface {
 
     protected static Service service = Service.getInstance();
 
-    private static final String ERROR_MSG = "Error happened\n";
-    private static final String SUCCESS_MSG = "Success\n";
+    private static final String ERROR_MSG = "Error !!!\n";
+    private static final String SUCCESS_MSG = "Success !!!\n";
 
     protected MessageManager Message = MessageManager.getInstance();
 
@@ -38,12 +38,12 @@ public abstract class View implements ViewInterface {
     }
 
     @Override
-    public void printError() {
+    public void handleError() {
         Message.printMessage(ERROR_MSG);
     }
 
     @Override
-    public void printSuccess() {
+    public void handleSuccess() {
         Message.printMessage(SUCCESS_MSG);
     }
 

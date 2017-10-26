@@ -18,9 +18,9 @@ public class Service implements ActionService, NavigationService {
     @Override
     public void doLogin(String username, String password) {
         if (username.equals("admin") && password.equals("admin")) {
-            goAdminHome();
+            navigator.handleSuccess();
         } else {
-            navigator.printError();
+            navigator.handleError();
         }
     }
 

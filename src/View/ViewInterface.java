@@ -2,9 +2,9 @@ package View;
 
 public interface ViewInterface {
 	
-	public void printError();
+	public void handleError();
 	
-	public void printSuccess();
+	public void handleSuccess();
 	
 	public void printDetails(String msg);
 
