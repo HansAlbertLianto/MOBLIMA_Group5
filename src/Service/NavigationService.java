@@ -8,6 +8,8 @@ public interface NavigationService {
 
     public void goMovie();
 
+    public void goCineplex();
+
     public void goCinema();
 
     public void goCinemaMovie();

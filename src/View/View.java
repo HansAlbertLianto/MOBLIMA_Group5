@@ -5,18 +5,24 @@ import Service.Service;
 
 public abstract class View implements ViewInterface {
     protected String MENU_MSG;
-    protected int from;
-    protected int to;
+    protected int from = 0;
+    protected int to = 0;
     protected int response;
 
     protected static Service service = Service.getInstance();
 
-    private static final String ERROR_MSG = "";
-    private static final String SUCCESS_MSG = "";
+    private static final String ERROR_MSG = "Error happened\n";
+    private static final String SUCCESS_MSG = "Success\n";
 
     protected MessageManager Message = MessageManager.getInstance();
 
-    public View(){ }
+    public View() {
+    }
+
+    public View(String msg) {
+        this.MENU_MSG = msg;
+    }
+
     public View(String msg, int from, int to) {
         this.MENU_MSG = msg;
         this.from = from;
@@ -26,6 +32,7 @@ public abstract class View implements ViewInterface {
     @Override
     public void appear() {
         Message.printMessage(MENU_MSG);
+        if (from == 0 || to == 0) return;
         response = Message.input(from, to);
         manageResponse();
     }

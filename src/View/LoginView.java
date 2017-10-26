@@ -4,8 +4,10 @@ public class LoginView extends View {
     private String username;
     private String password;
 
+    private static final String msg = "Please login using your admin credentials\n";
+
     public LoginView() {
-        super();
+        super(msg);
     }
 
     @Override

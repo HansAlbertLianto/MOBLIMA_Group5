@@ -37,6 +37,10 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(adminHomeView);
                 adminHomeView.appear();
                 break;
+            case OPEN_CINEPLEX:
+                CineplexView cineplexView = new CineplexView();
+                navigatorStack.add(cineplexView);
+                cineplexView.appear();
             case OPEN_MOVIE:
                 MovieView movieView = new MovieView();
                 navigatorStack.add(movieView);
@@ -103,6 +107,7 @@ public class Navigator implements NavigatorInterface {
     @Override
     public void printError() {
         navigatorStack.peek().printError();
+        navigatorStack.peek().appear();
     }
 
     @Override

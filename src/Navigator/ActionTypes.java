@@ -6,6 +6,7 @@ public enum ActionTypes {
     OPEN_LOGIN,
     OPEN_ADMIN_HOME,
     OPEN_MOVIE,
+    OPEN_CINEPLEX,
     OPEN_CINEMA,
     OPEN_CINEMA_MOVIE,
     OPEN_SETTING,

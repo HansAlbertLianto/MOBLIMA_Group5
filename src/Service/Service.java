@@ -5,6 +5,8 @@ import Navigator.*;
 public class Service implements ActionService, NavigationService {
     private static Service singleton = null;
 
+    private static Navigator navigator = Navigator.getInstance();
+
     private Service() {
     }
 
@@ -15,11 +17,10 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void doLogin(String username, String password) {
-        if (username == "admin" && password == "admin") {
+        if (username.equals("admin") && password.equals("admin")) {
             goAdminHome();
-        }
-        if (username == "user" && password == "user") {
-            goUserHome();
+        } else {
+            navigator.printError();
         }
     }
 
@@ -80,71 +81,76 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goLogin() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_LOGIN);
+        navigator.doAction(ActionTypes.OPEN_LOGIN);
     }
 
     @Override
     public void goAdminHome() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_ADMIN_HOME);
+        navigator.doAction(ActionTypes.OPEN_ADMIN_HOME);
     }
 
     @Override
     public void goMovie() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_MOVIE);
+        navigator.doAction(ActionTypes.OPEN_MOVIE);
+    }
+
+    @Override
+    public void goCineplex() {
+        navigator.doAction(ActionTypes.OPEN_CINEPLEX);
     }
 
     @Override
     public void goCinema() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_CINEMA);
+        navigator.doAction(ActionTypes.OPEN_CINEMA);
     }
 
     @Override
     public void goCinemaMovie() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_CINEMA_MOVIE);
+        navigator.doAction(ActionTypes.OPEN_CINEMA_MOVIE);
     }
 
     @Override
     public void goSettings() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_SETTING);
+        navigator.doAction(ActionTypes.OPEN_SETTING);
     }
 
     @Override
     public void goTop5Edit() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_TOP_5_EDITOR);
+        navigator.doAction(ActionTypes.OPEN_TOP_5_EDITOR);
     }
 
     @Override
     public void goUserHome() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_USER_HOME);
+        navigator.doAction(ActionTypes.OPEN_USER_HOME);
     }
 
     @Override
     public void goSearchFilterView() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_SEARCH_FILTER_VIEW);
+        navigator.doAction(ActionTypes.OPEN_SEARCH_FILTER_VIEW);
     }
 
     @Override
     public void goMovieDetails() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_MOVIE_DETAILS);
+        navigator.doAction(ActionTypes.OPEN_MOVIE_DETAILS);
     }
 
     @Override
     public void goBooking() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_BOOKING);
+        navigator.doAction(ActionTypes.OPEN_BOOKING);
     }
 
     @Override
     public void goBookingHistory() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_BOOKING_HISTORY);
+        navigator.doAction(ActionTypes.OPEN_BOOKING_HISTORY);
     }
 
     @Override
     public void goTop5View() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_TOP_5);
+        navigator.doAction(ActionTypes.OPEN_TOP_5);
     }
 
     @Override
     public void goExit() {
-        Navigator.getInstance().doAction(ActionTypes.EXIT);
+        navigator.doAction(ActionTypes.EXIT);
     }
 }
