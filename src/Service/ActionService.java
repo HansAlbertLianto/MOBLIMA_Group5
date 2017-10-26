@@ -4,7 +4,7 @@ public interface ActionService {
 
     public void doLogin(String username, String password);
 
-    public void doSearchMovie();     
+    public void doSearchMovie();
 
     public void doPrintListMovie();
 

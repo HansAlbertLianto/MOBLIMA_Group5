@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce81e87a-60a5-4a68-ba44-f13106db2508" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/ForgotView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/RegisterView.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Model/Constants.class" afterPath="$PROJECT_DIR$/bin/Model/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Model/Movie/Movie$1.class" afterPath="$PROJECT_DIR$/bin/Model/Movie/Movie$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Model/Movie/Movie.class" afterPath="$PROJECT_DIR$/bin/Model/Movie/Movie.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Navigator/Navigator.class" afterPath="$PROJECT_DIR$/bin/Navigator/Navigator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Navigator/NavigatorInterface.class" afterPath="$PROJECT_DIR$/bin/Navigator/NavigatorInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Service/ActionService.class" afterPath="$PROJECT_DIR$/bin/Service/ActionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Service/Service.class" afterPath="$PROJECT_DIR$/bin/Service/Service.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Movie/Movie.java" afterPath="$PROJECT_DIR$/src/Model/Movie/Movie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/MovieStatus.java" afterPath="$PROJECT_DIR$/src/Model/MovieStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Navigator/ActionTypes.java" afterPath="$PROJECT_DIR$/src/Navigator/ActionTypes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Navigator/Navigator.java" afterPath="$PROJECT_DIR$/src/Navigator/Navigator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Service/ActionService.java" afterPath="$PROJECT_DIR$/src/Service/ActionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Service/NavigationService.java" afterPath="$PROJECT_DIR$/src/Service/NavigationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Service/Service.java" afterPath="$PROJECT_DIR$/src/Service/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/LandingView.java" afterPath="$PROJECT_DIR$/src/View/LandingView.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ActionService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Service/ActionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            <state relative-caret-position="90">
+              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -84,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Service/Service.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1215">
@@ -170,10 +154,10 @@
         <option value="$PROJECT_DIR$/src/Model/MovieStatus.java" />
         <option value="$PROJECT_DIR$/src/Navigator/Navigator.java" />
         <option value="$PROJECT_DIR$/src/Navigator/ActionTypes.java" />
-        <option value="$PROJECT_DIR$/src/Service/ActionService.java" />
         <option value="$PROJECT_DIR$/src/Service/NavigationService.java" />
         <option value="$PROJECT_DIR$/src/View/LandingView.java" />
         <option value="$PROJECT_DIR$/src/Service/Service.java" />
+        <option value="$PROJECT_DIR$/src/Service/ActionService.java" />
       </list>
     </option>
   </component>
@@ -447,12 +431,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508932054328</updated>
       <workItem from="1508932064253" duration="5998000" />
-      <workItem from="1509006291414" duration="1742000" />
+      <workItem from="1509006291414" duration="1813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10822000" />
+    <option name="totallyTimeSpent" value="10893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="23" width="1628" height="1027" extended-state="6" />
@@ -913,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/ActionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/LoginView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -956,6 +932,14 @@
             <element signature="e#1986#1987#0" expanded="true" />
             <element signature="e#2065#2066#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/ActionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
