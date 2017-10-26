@@ -54,7 +54,7 @@ public class Movie {
 		case ComingSoon: return Constants.COMING_SOON;
 		case Preview: return Constants.PREVIEW;
 		case NowShowing: return Constants.NOW_SHOWING;
-		case EndShowing: return Constants.END_SHOWING;
+		case EndOfShowing: return Constants.END_SHOWING;
 		default: return Constants.COMING_SOON;
 		}
 	}

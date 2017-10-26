@@ -32,16 +32,6 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(loginView);
                 loginView.appear();
                 break;
-            case OPEN_REGISTER:
-                RegisterView registerView = new RegisterView();
-                navigatorStack.add(registerView);
-                registerView.appear();
-                break;
-            case OPEN_FORGOT:
-                ForgotView forgotView = new ForgotView();
-                navigatorStack.add(forgotView);
-                forgotView.appear();
-                break;
             case OPEN_ADMIN_HOME:
                 AdminHomeView adminHomeView = new AdminHomeView();
                 navigatorStack.add(adminHomeView);

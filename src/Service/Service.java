@@ -24,16 +24,6 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doRegister(int usertype, String username, String password) {
-
-    }
-
-    @Override
-    public void doForgot() {
-
-    }
-
-    @Override
     public void doSearchMovie() {
 
     }
@@ -91,16 +81,6 @@ public class Service implements ActionService, NavigationService {
     @Override
     public void goLogin() {
         Navigator.getInstance().doAction(ActionTypes.OPEN_LOGIN);
-    }
-
-    @Override
-    public void goRegister() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_REGISTER);
-    }
-
-    @Override
-    public void goForgot() {
-        Navigator.getInstance().doAction(ActionTypes.OPEN_FORGOT);
     }
 
     @Override

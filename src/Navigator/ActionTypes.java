@@ -4,8 +4,6 @@ public enum ActionTypes {
 
     OPEN_LANDING,
     OPEN_LOGIN,
-    OPEN_REGISTER,
-    OPEN_FORGOT,
     OPEN_ADMIN_HOME,
     OPEN_MOVIE,
     OPEN_CINEMA,

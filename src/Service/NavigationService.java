@@ -4,10 +4,6 @@ public interface NavigationService {
 
     public void goLogin();
 
-    public void goRegister();
-
-    public void goForgot();
-
     public void goAdminHome();
 
     public void goMovie();
