@@ -1,13 +1,21 @@
 package View;
 
 public class UserHomeView extends View {
+	
+	private static final String message = "Welcome to MOBLIMA, user! What would you like to do? \n" +
+            "1. Search for Movies \n" +
+            "2. List all Movies Showing";
+	
 	public UserHomeView(){
-		super();
+		super(message, 1 , 2);
 	}
 	@Override
 	protected void manageResponse() {
-		// TODO Auto-generated method stub
-
+		switch (this.response) {
+		case 1: service.goUserMoviesView(); break;
+		case 2: service.goUserMoviesView(); break;
+		default: break;
+		}
 	}
 
 }

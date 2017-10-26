@@ -96,6 +96,11 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(top5View);
                 top5View.appear();
                 break;
+            case OPEN_USER_MOVIES_VIEW:
+            	UserMoviesView userMoviesView = new UserMoviesView();
+            	navigatorStack.add(userMoviesView);
+            	userMoviesView.appear();
+            	break;
             case EXIT:
                 navigatorStack.pop();
                 if (navigatorStack.isEmpty()) System.exit(0);

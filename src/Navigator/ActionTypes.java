@@ -17,6 +17,7 @@ public enum ActionTypes {
     OPEN_BOOKING,
     OPEN_BOOKING_HISTORY,
     OPEN_TOP_5,
+    OPEN_USER_MOVIES_VIEW,
     EXIT,
     
 }

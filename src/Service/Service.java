@@ -153,4 +153,8 @@ public class Service implements ActionService, NavigationService {
     public void goExit() {
         navigator.doAction(ActionTypes.EXIT);
     }
+
+	public void goUserMoviesView() {
+		navigator.doAction(ActionTypes.OPEN_USER_MOVIES_VIEW);
+	}
 }
