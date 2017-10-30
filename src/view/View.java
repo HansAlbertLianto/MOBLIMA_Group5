@@ -1,7 +1,6 @@
 package view;
 
 import message_manager.MessageManager;
-import service.Service;
 
 public abstract class View implements ViewInterface {
     protected String MENU_MSG;
