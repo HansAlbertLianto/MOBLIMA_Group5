@@ -10,11 +10,7 @@ public class Cinema implements Serializable{
 	public Cinema(int id, String cinema_name, Seat seat) {
 		this.id = id;
 		this.name = cinema_name;
-<<<<<<< HEAD
 		this.seat = seat;
-=======
-		//this.seat = new Seat();
->>>>>>> 85d2b5e972e56e3cd303eedc2b80620680df186f
 	}
 	
 	public Cinema(String cinema_name, Seat seat) {

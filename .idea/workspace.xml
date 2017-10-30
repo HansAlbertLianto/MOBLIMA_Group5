@@ -2,47 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce81e87a-60a5-4a68-ba44-f13106db2508" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/file_manager/File.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/file_manager/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/Cinema.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/CinemaMovie$CinemaMovieDate.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/CinemaMovie.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/Cineplex.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/Movie.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/MovieDetails$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/MovieDetails.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/MovieStatus.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/Person.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/Review.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/ReviewList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/Seat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/model/SeatLayout.class" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/service_/ActionService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/service_/NavigationService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/service_/Service.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Service/ActionService.class" afterPath="$PROJECT_DIR$/bin/Service/ActionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Service/Service.class" afterPath="$PROJECT_DIR$/bin/Service/Service.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/file_manager/FileService.class" afterPath="$PROJECT_DIR$/bin/file_manager/FileService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/file_manager/QueryType.class" afterPath="$PROJECT_DIR$/bin/file_manager/QueryType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/AdminHomeView.class" afterPath="$PROJECT_DIR$/bin/view/AdminHomeView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/BookingHistoryView.class" afterPath="$PROJECT_DIR$/bin/view/BookingHistoryView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/BookingView.class" afterPath="$PROJECT_DIR$/bin/view/BookingView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/CinemaMovieView.class" afterPath="$PROJECT_DIR$/bin/view/CinemaMovieView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/CinemaView.class" afterPath="$PROJECT_DIR$/bin/view/CinemaView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/CineplexView.class" afterPath="$PROJECT_DIR$/bin/view/CineplexView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/LoginView.class" afterPath="$PROJECT_DIR$/bin/view/LoginView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/MovieDetailsView.class" afterPath="$PROJECT_DIR$/bin/view/MovieDetailsView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/MovieView.class" afterPath="$PROJECT_DIR$/bin/view/MovieView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/SearchFilterView.class" afterPath="$PROJECT_DIR$/bin/view/SearchFilterView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/SettingsView.class" afterPath="$PROJECT_DIR$/bin/view/SettingsView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/Top5EditView.class" afterPath="$PROJECT_DIR$/bin/view/Top5EditView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/Top5View.class" afterPath="$PROJECT_DIR$/bin/view/Top5View.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/UserHomeView.class" afterPath="$PROJECT_DIR$/bin/view/UserHomeView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/UserMoviesView.class" afterPath="$PROJECT_DIR$/bin/view/UserMoviesView.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Model/Constants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Navigator/ActionTypes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Navigator/Navigator$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Navigator/Navigator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Navigator/NavigatorInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Service/ActionService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Service/NavigationService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Service/Service.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/View/LandingView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/View/View.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/View/ViewInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/file_manager/File.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/file_manager/FileService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/file_manager/QueryType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/file_manager/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/file_manager/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/message_manager/MessageManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/message_manager/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Cinema.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/CinemaMovie$CinemaMovieDate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/CinemaMovie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Cineplex.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Movie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/MovieDetails$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/MovieDetails.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/MovieStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Review.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/ReviewList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Seat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/SeatLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model_manager/CinemaManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model_manager/CinemaMovieManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model_manager/CineplexManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model_manager/MovieManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model_manager/UserManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/navigator/package-info.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/service_/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/service_/ActionService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/service_/NavigationService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/service_/Service.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/AdminHomeView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/BookingHistoryView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/BookingView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/CinemaMovieView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/CinemaView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/CineplexView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/LoginView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/MovieDetailsView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/MovieView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/SearchFilterView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/SettingsView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/Top5EditView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/Top5View.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/UserHomeView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/UserMoviesView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/view/package-info.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/.gitignore" afterPath="$PROJECT_DIR$/bin/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/UserHomeView.java" afterPath="$PROJECT_DIR$/src/view/UserHomeView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/View.java" afterPath="$PROJECT_DIR$/src/view/View.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cinema.java" afterPath="$PROJECT_DIR$/src/model/Cinema.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,12 +76,13 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="View.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view/View.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
                   <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
                   <folding>
+                    <element signature="imports" expanded="true" />
                     <marker date="1509355554000" expanded="false" signature="556:567" ph=" { " />
                     <marker date="1509355554000" expanded="false" signature="587:593" ph=" }" />
                     <marker date="1509355554000" expanded="false" signature="970:981" ph=" { " />
@@ -98,11 +119,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Cinema.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Cinema.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -211,8 +232,8 @@
           <file leaf-file-name="UserHomeView.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/view/UserHomeView.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
                   <folding>
                     <element signature="e#288#289#0" expanded="true" />
                     <element signature="e#316#317#0" expanded="true" />
@@ -294,10 +315,10 @@
         <option value="$PROJECT_DIR$/src/model_manager/CinemaManager.java" />
         <option value="$PROJECT_DIR$/src/model/CinemaMovie.java" />
         <option value="$PROJECT_DIR$/src/service/ActionService.java" />
-        <option value="$PROJECT_DIR$/src/model/Cinema.java" />
         <option value="$PROJECT_DIR$/src/service/Service.java" />
         <option value="$PROJECT_DIR$/src/view/UserHomeView.java" />
         <option value="$PROJECT_DIR$/src/view/View.java" />
+        <option value="$PROJECT_DIR$/src/model/Cinema.java" />
       </list>
     </option>
   </component>
@@ -335,11 +356,6 @@
             <path>
               <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
               <item name="MOBLIMA_Group5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MOBLIMA_Group5" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
@@ -517,7 +533,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21440000" />
+    <option name="totallyTimeSpent" value="21484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -525,7 +541,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -533,7 +549,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.315" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.315" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14404762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -920,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/file_manager/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -996,17 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/UserHomeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding>
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/file_manager/QueryType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1015,11 +1012,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/UserHomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
+            <element signature="imports" expanded="true" />
             <marker date="1509355554000" expanded="false" signature="556:567" ph=" { " />
             <marker date="1509355554000" expanded="false" signature="587:593" ph=" }" />
             <marker date="1509355554000" expanded="false" signature="970:981" ph=" { " />
@@ -1029,6 +1038,14 @@
             <marker date="1509355554000" expanded="false" signature="1173:1184" ph=" { " />
             <marker date="1509355554000" expanded="false" signature="1210:1216" ph=" }" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
