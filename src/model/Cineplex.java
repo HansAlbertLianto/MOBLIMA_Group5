@@ -2,15 +2,44 @@ package model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import model.Cinema;
 
 public class Cineplex implements Serializable {
 
-	protected int id;
-	private ArrayList<Cinema> cinemaList;
+    private int id;
+    private String name;
+    private ArrayList<Cinema> cinemas;
 
-	public Cineplex(int id, ArrayList<Cinema> cinemaList) {
-		this.id = id;
-		this.cinemaList = cinemaList;
-	}
+    public Cineplex(int id, String name) {
+        this.id = id;
+        this.name = name;
+        this.cinemas = new ArrayList<Cinema>();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void addCinema(Cinema cinema) {
+        this.cinemas.add(cinema);
+    }
+
+    public ArrayList<Cinema> getCinemas() {
+        return cinemas;
+    }
+
+    public void setCinemas(ArrayList<Cinema> cinemas) {
+        this.cinemas = cinemas;
+    }
 }

@@ -1,10 +1,6 @@
 package file_manager;
 
 import model.*;
-import sun.misc.BASE64Encoder;
-
-import java.lang.reflect.Type;
-import java.util.Optional;
 
 public class PathManager {
 
