@@ -7,10 +7,10 @@ public class Cinema implements Serializable{
 	private String name;
 	private Seat seat;
 	
-	public Cinema(int id, String cinema_name) {
+	public Cinema(int id, String cinema_name, Seat seat) {
 		this.id = id;
 		this.name = cinema_name;
-		this.seat = new Seat();
+		this.seat = seat;
 	}
 	
 	public Cinema(String cinema_name, Seat seat) {
