@@ -1,5 +1,7 @@
 package view;
 
+import service.Service;
+
 public class UserHomeView extends View {
 	
 	private static final String message = "Welcome to MOBLIMA, user! What would you like to do? \n" +
