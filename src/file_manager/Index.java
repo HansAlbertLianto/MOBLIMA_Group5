@@ -29,6 +29,19 @@ public class Index implements Serializable{
 	public void setIndexCinemaMovie(int indexCinemaMovie) {
 		this.indexCinemaMovie = indexCinemaMovie;
 	}
-	
+
+	public void updateIndex(int type){
+		//System.out.println(index.getIndexMovie());
+		if (type==0){
+			this.indexMovie++;
+		}
+		else if (type == 1){
+			this.indexCineplex++;
+		}
+		else if (type == 2){
+			this.indexCinemaMovie++;
+		}
+		FileManager.writeSerializedObject(PathManager.getBaseIndexFilePath(), this);
+	}
 	
 }

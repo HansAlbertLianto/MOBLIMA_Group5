@@ -1,7 +1,6 @@
 package file_manager;
 
 import model.*;
-import file_manager.LoadType;
 
 public class PathManager {
 

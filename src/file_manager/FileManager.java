@@ -1,24 +1,19 @@
 package file_manager;
 
-import model.CinemaMovie;
 import model.Movie;
-import navigator.Navigator;
-import view.View;
 
 import java.io.*;
-import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Stack;
 
-public class File implements FileService {
+public class FileManager implements FileService {
 
-    private static File singleton = null;
+    private static FileManager singleton = null;
 
-    private File() {
+    private FileManager() {
     }
 
-    public static File getInstance() {
-        if (singleton == null) singleton = new File();
+    public static FileManager getInstance() {
+        if (singleton == null) singleton = new FileManager();
         return singleton;
     }
 
@@ -42,7 +37,7 @@ public class File implements FileService {
         		indexNum = index.getIndexCinemaMovie();
         		break;
         }
-        for (int i=0; i<indexNum; i++){
+        for (int i=0; i<=indexNum; i++){
     		Object obj = readSerializedObject(path + Integer.toString(i));
             list.add(obj);
 		}
@@ -65,39 +60,29 @@ public class File implements FileService {
 		Index index = (Index) readSerializedObject(PathManager.getBaseIndexFilePath());
 		String path = "";
         switch (type) {
-        	case ADD_MOVIE : 
-        		path = PathManager.getPath(type, Integer.toString(index.getIndexMovie()));
-        		updateIndex(index, 0);
-        		break;        	
+            case ADD_MOVIE :
+        	    if (index.getIndexMovie() < ( (Movie) obj).getId()) {
+                    path = PathManager.getPath(type, Integer.toString(( (Movie) obj).getId()));
+                    index.updateIndex(0);
+                }
+        		break;
         	case ADD_CINEPLEX:
         		path = PathManager.getPath(type, Integer.toString(index.getIndexCineplex()));
-        		updateIndex(index, 1);
+        		index.updateIndex(1);
         		break;
         	case ADD_MOVIE_TO_CINEMA_MOVIE:
         		path = PathManager.getPath(type, Integer.toString(index.getIndexCinemaMovie()));
-        		updateIndex(index, 2);
+        		index.updateIndex(2);
         		break;
         }
 		writeSerializedObject(path, obj);
     }
-    
-    public void updateIndex(Index index, int type){
-    	//System.out.println(index.getIndexMovie());
-    	if (type==0){
-    		index.setIndexMovie(index.getIndexMovie()+1);
-    	}
-    	else if (type == 1){
-    		index.setIndexCineplex(index.getIndexCineplex()+1);
-    	}
-    	else if (type == 2){
-    		index.setIndexCinemaMovie(index.getIndexCinemaMovie() + 1);
-    	}
-    	writeSerializedObject(PathManager.getBaseIndexFilePath(), index);
-    }
-    
-    
+
+
+
+
     public void initializeIndex(){
-    	Index index = new Index(0,0,0);
+    	Index index = new Index(-1,-1,-1);
     	writeSerializedObject(PathManager.getBaseIndexFilePath(), index);
     }
 
@@ -105,7 +90,6 @@ public class File implements FileService {
         Object data = null;
         FileInputStream fis = null;
         ObjectInputStream in = null;
-        System.out.println(filename);
         try {
             fis = new FileInputStream(filename);
             in = new ObjectInputStream(fis);
@@ -119,7 +103,7 @@ public class File implements FileService {
         return data;
     }
 
-    private void writeSerializedObject(String filename, Object obj) {
+    public static void writeSerializedObject(String filename, Object obj) {
         try {
             FileOutputStream fiout = new FileOutputStream(filename);
             ObjectOutputStream myStream = new ObjectOutputStream(fiout);

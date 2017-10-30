@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class Test {
 
     public static void main(String[] args) {
+        FileManager.getInstance().initializeIndex();
         Movie movie00 = new Movie(0, "Avatar");
         Movie movie01 = new Movie(1, "Titanic");
         Movie movie02 = new Movie(2, "Frozen");
@@ -27,6 +28,17 @@ public class Test {
         Movie movie17 = new Movie(17, "Sing");
         Movie movie18 = new Movie(18, "Nerve");
         Movie movie19 = new Movie(19, "Inferno");
+        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie00);
+        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie01);
+        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie02);
+        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie03);
+        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie04);
+        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie05);
+        ArrayList<Movie> movie = (ArrayList<Movie>) FileManager.getInstance().getData(LoadType.LOAD_ALL_MOVIES);
+        for (Movie a: movie){
+            System.out.println(a.getMovieTitle());
+            System.out.println(a.getId());
+        }
         
     	Cineplex cineplex1 = new Cineplex(1,"GV Jurong Point");
         Cinema cinema1 = new Cinema(1,"Cinema 01");
