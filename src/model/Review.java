@@ -15,6 +15,30 @@ public class Review {
         this.cust_id = cust_id;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getMovie_id() {
+        return movie_id;
+    }
+
+    public void setMovie_id(int movie_id) {
+        this.movie_id = movie_id;
+    }
+
+    public int getCust_id() {
+        return cust_id;
+    }
+
+    public void setCust_id(int cust_id) {
+        this.cust_id = cust_id;
+    }
+
     public String getReviewText() {
         return reviewText;
     }

@@ -19,5 +19,27 @@ public class Seat {
 
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getNumEmptySeats() {
+        return numEmptySeats;
+    }
+
+    public void setNumEmptySeats(int numEmptySeats) {
+        this.numEmptySeats = numEmptySeats;
+    }
+
+    public int getNumAvailSeats() {
+        return numAvailSeats;
+    }
+
+    public void setNumAvailSeats(int numAvailSeats) {
+        this.numAvailSeats = numAvailSeats;
+    }
 }

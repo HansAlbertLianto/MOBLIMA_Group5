@@ -2,16 +2,23 @@ package model;
 
 import java.io.Serializable;
 
-public class Movie implements Serializable{
+public class Movie implements Serializable {
 
-
-    protected int id;
+    private int id;
     private String movieTitle;
     private MovieDetails details;
 
     public Movie(int id, String movieTitle) {
         this.id = id;
         this.movieTitle = movieTitle;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public MovieDetails getDetails() {

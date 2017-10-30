@@ -1,16 +1,51 @@
 package model;
 
+import java.util.ArrayList;
+
 public class MovieDetails {
+    private int id;
     private MovieStatus showingStatus;
     private String synopsis;
     private Person[] director;
     private Person[] cast;
 
-    private ReviewList reviewList;
+    private ArrayList<Review> reviewList;
 
     private String movieType;
     private int totalRating;
     private int reviewCount;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public ArrayList<Review> getReviewList() {
+        return reviewList;
+    }
+
+    public void setReviewList(ArrayList<Review> reviewList) {
+        this.reviewList = reviewList;
+    }
+
+    public int getTotalRating() {
+        return totalRating;
+    }
+
+    public void setTotalRating(int totalRating) {
+        this.totalRating = totalRating;
+    }
+
+    public int getReviewCount() {
+        return reviewCount;
+    }
+
+    public void setReviewCount(int reviewCount) {
+        this.reviewCount = reviewCount;
+    }
 
     public String getSynopsis() {
         return synopsis;
@@ -77,55 +112,4 @@ public class MovieDetails {
     public void addReviewCount() {
         this.reviewCount++;
     }
-
-	/*
-    public double getOverallRating(){
-		if (isListEmpty()) return 0;
-		int totalRating = 0;
-		int totalReviews = getReviewsLength();
-		Review[] reviews = new Review[totalReviews];
-		reviews = getReviews();
-		for (Review review: reviews){
-			totalRating += review.getRating();
-		}
-		double overallRating = totalRating/totalReviews;
-		overallRating = (double) Math.round(overallRating * 10)/10;
-		return (overallRating);
-	}
-
-	public void addToReviewList(Review review){
-		ReviewList newList = new ReviewList(review);
-		if(isListEmpty()){
-			this.reviewList = newList;
-		}
-		else{
-			this.reviewList.insertToLast(newList);
-		}
-	}
-	public Review[] getReviews(){
-		int reviewsLength = getReviewsLength();
-		Review[] reviewArray = new Review[reviewsLength];
-		if (isListEmpty()) return null;
-		else{
-			ReviewList newList;
-			newList = this.reviewList;
-			int index = 0;
-			do{
-				reviewArray[index] = newList.getReview();
-				index++;
-			} while (newList != null);
-		}
-		return reviewArray;
-	}
-	public boolean isListEmpty(){
-		if (this.reviewList == null) return true;
-		return false;
-	}
-	public int getReviewsLength(){
-		if (!isListEmpty()){
-			return reviewList.getLength();
-		}
-		return 0;
-	}
-	*/
 }

@@ -1,7 +1,7 @@
-/message_manager/
+/file_manager/
+/Main.class
 /model/
+/model_manager/
 /navigator/
 /service/
 /view/
-/file_manager/
-/.DS_Store
