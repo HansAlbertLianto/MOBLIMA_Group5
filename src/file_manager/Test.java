@@ -1,6 +1,6 @@
 package file_manager;
 
-import model.Movie;
+import model.*;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -17,12 +17,20 @@ public class Test {
         input.add(movie1);
         input.add(movie2);
 
+        System.out.println(PathManager.getIndexFilePath(Movie.class));
         System.out.println(PathManager.getPath(LoadType.LOAD_ALL_MOVIES));
         System.out.println(PathManager.getPath(LoadType.LOAD_MOVIE_DETAILS));
+
+        System.out.println(PathManager.getIndexFilePath(Cineplex.class));
         System.out.println(PathManager.getPath(LoadType.LOAD_ALL_CINEPLEX));
+
+        System.out.println(PathManager.getIndexFilePath(Cinema.class, 0));
         System.out.println(PathManager.getPath(LoadType.LOAD_ALL_CINEMA, "0"));
-        System.out.println(PathManager.getPath(LoadType.LOAD_ALL_CINEMA_MOVIE, "0", "1"));
-        System.out.println(PathManager.getPath(LoadType.LOAD_ALL_SEAT_LAYOUT, "0", "1", "2'"));
-        System.out.println(PathManager.getPath(LoadType.LOAD_BOOKING_HISTORY));
+
+        System.out.println(PathManager.getIndexFilePath(CinemaMovie.class, 0));
+        System.out.println(PathManager.getPath(LoadType.LOAD_ALL_CINEMA_MOVIE, "0"));
+
+        System.out.println(PathManager.getIndexFilePath(SeatLayout.class, 0));
+        System.out.println(PathManager.getPath(LoadType.LOAD_ALL_SEAT_LAYOUT, "0"));
     }
 }

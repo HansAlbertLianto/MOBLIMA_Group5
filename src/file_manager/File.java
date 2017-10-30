@@ -5,6 +5,7 @@ import navigator.Navigator;
 import view.View;
 
 import java.io.*;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -23,13 +24,12 @@ public class File implements FileService {
     @Override
     public Object getData(LoadType qt) {
         Object result = new Object();
-        return null;
-//        return readSerializedObject(PathManager.getPath(qt));
+        return readSerializedObject(PathManager.getPath(qt));
     }
 
     @Override
     public Object getData(LoadType qt, int id) {
-        return null;
+        return readSerializedObject(PathManager.getPath(qt, Integer.toString(id)));
     }
 
     @Override
@@ -39,7 +39,9 @@ public class File implements FileService {
 
     @Override
     public void saveData(SaveType type, Object obj) {
+        switch (type) {
 
+        }
     }
 
     private Object readSerializedObject(String filename) {
