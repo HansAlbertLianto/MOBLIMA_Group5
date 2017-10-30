@@ -52,7 +52,7 @@ public interface ActionService {
     //  ----------------------------------
     public ArrayList<CinemaMovie> doGetAllCinemaMovie(Cinema cinema);
 
-    public SeatLayout doGetSeatLayout(CinemaMovie cinemaMovie);
+    public void doGetSeatLayout(CinemaMovie cinemaMovie);
 
     public void doBook(CinemaMovie cinemaMovie, Seat seat);
 

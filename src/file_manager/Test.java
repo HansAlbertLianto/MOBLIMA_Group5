@@ -28,6 +28,21 @@ public class Test {
         Movie movie17 = new Movie(17, "Sing");
         Movie movie18 = new Movie(18, "Nerve");
         Movie movie19 = new Movie(19, "Inferno");
+        
+    	Cineplex cineplex1 = new Cineplex(1,"GV Jurong Point");
+        Cinema cinema1 = new Cinema(1,"Cinema 01");
+        Cinema cinema2 = new Cinema(2,"Cinema 02");
+        Cinema cinema3 = new Cinema(3,"Cinema 03");
+        
+        Cineplex cineplex2 = new Cineplex(2,"Cathay JEM");
+        Cinema cinema4 = new Cinema(4,"Cinema 04");
+        Cinema cinema5 = new Cinema(5,"Cinema 05");
+        Cinema cinema6 = new Cinema(6,"Cinema 06");
+                
+        Cineplex cineplex3 = new Cineplex(3,"GV Vivo City");
+        Cinema cinema7 = new Cinema(7,"Cinema 07");
+        Cinema cinema8 = new Cinema(8,"Cinema 08");
+        Cinema cinema9 = new Cinema(9,"Cinema 09");
 
         System.out.println(PathManager.getIndexFilePath(Movie.class));
         System.out.println(PathManager.getPath(LoadType.LOAD_ALL_MOVIES));
