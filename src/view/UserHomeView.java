@@ -1,6 +1,6 @@
 package view;
 
-import service_.Service;
+import service.Service;
 
 public class UserHomeView extends View {
 	
@@ -14,7 +14,7 @@ public class UserHomeView extends View {
 	@Override
 	protected void manageResponse() {
 		switch (this.response) {
-		case 1: Service.goUserMoviesView(); break;
+		case 1: service.goUserMoviesView(); break;
 		case 2: service.goUserMoviesView(); break;
 		default: break;
 		}
