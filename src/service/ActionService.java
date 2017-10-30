@@ -1,8 +1,6 @@
 package service;
 
-import model.Cinema;
-import model.CinemaMovie;
-import model.Cineplex;
+import model.*;
 
 import java.util.ArrayList;
 
@@ -14,11 +12,29 @@ public interface ActionService {
     // Movie Action
     // ----------------------------------
 
-    public void doSearchMovie();
+    public void doSearchMovie(String search);
 
-    public void doPrintListMovie();
+    public void doGetAllMovies();
 
-    public void doPrintMovieDetails();
+    public void doGetAllDetails(Movie movie);
+
+    public void doAddMovie(Movie movie);
+
+    public void doEditMovie(Movie movie, Movie editedMovie);
+
+    public void doRemoveMovie(Movie movie);
+
+    //  ----------------------------------
+    //  Review & Ratings
+    //  ----------------------------------
+
+    public void doGetAllReview(Movie movie);
+
+    public void doGetMovieRatings(Movie movie);
+
+    public void doAddReview(Movie movie, Person person, Review review);
+
+    public void doAddRating(Movie movie, Person person, int rating);
 
     //  ----------------------------------
     //  Cineplex Action
@@ -35,24 +51,31 @@ public interface ActionService {
     //  ----------------------------------
     public ArrayList<CinemaMovie> doGetAllCinemaMovie(Cinema cinema);
 
-    public void doCheckSeat(CinemaMovie cinemaMovie);
+    public void doGetSeatLayout(CinemaMovie cinemaMovie);
 
-    public void doBook(CinemaMovie cinemaMovie);
+    public void doBook(CinemaMovie cinemaMovie, Seat seat);
 
     public void doPurchase(CinemaMovie cinemaMovie);
+
+    public void doChangeMovieDetails(Movie movie, MovieDetails details);
+
+    public void doAddMovieToCinema(CinemaMovie cinemaMovie, Movie movie);
+
+    public void doChangeCinemaMovieTimes(CinemaMovie cinemaMovie, CinemaMovie.CinemaMovieDate cinemaMovieDate);
 
     //  ----------------------------------
     //  Movie-goers Action
     //  ----------------------------------
+
     public void doFindHistory();
+
+    public void doGetAllBookingHistory();
 
     //  ----------------------------------
     //  Admin Action
     //  ----------------------------------
-    public void doChangeMovieDetails();
 
-    public void doAddMovieToCinema();
-
+    //  General settings
     public void doChangeTicketPrices();
 
     public void doChangePublicHoliday();

@@ -1,6 +1,9 @@
 package service;
 
+import model.*;
 import navigator.*;
+
+import java.util.ArrayList;
 
 public class Service implements ActionService, NavigationService {
     private static Service singleton = null;
@@ -25,32 +28,97 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doSearchMovie() {
+    public void doSearchMovie(String search) {
 
     }
 
     @Override
-    public void doPrintListMovie() {
+    public void doGetAllMovies() {
 
     }
 
     @Override
-    public void doPrintMovieDetails() {
+    public void doGetAllDetails(Movie movie) {
 
     }
 
     @Override
-    public void doCheckSeat() {
+    public void doAddMovie(Movie movie) {
 
     }
 
     @Override
-    public void doBook() {
+    public void doEditMovie(Movie movie, Movie editedMovie) {
 
     }
 
     @Override
-    public void doPurchase() {
+    public void doRemoveMovie(Movie movie) {
+
+    }
+
+    @Override
+    public void doGetAllReview(Movie movie) {
+
+    }
+
+    @Override
+    public void doGetMovieRatings(Movie movie) {
+
+    }
+
+    @Override
+    public void doAddReview(Movie movie, Person person, Review review) {
+
+    }
+
+    @Override
+    public void doAddRating(Movie movie, Person person, int rating) {
+
+    }
+
+    @Override
+    public ArrayList<Cineplex> doGetAllCineplex() {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Cinema> doGetAllCinema(Cineplex cineplex) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<CinemaMovie> doGetAllCinemaMovie(Cinema cinema) {
+        return null;
+    }
+
+    @Override
+    public void doGetSeatLayout(CinemaMovie cinemaMovie) {
+
+    }
+
+    @Override
+    public void doBook(CinemaMovie cinemaMovie, Seat seat) {
+
+    }
+
+    @Override
+    public void doPurchase(CinemaMovie cinemaMovie) {
+
+    }
+
+    @Override
+    public void doChangeMovieDetails(Movie movie, MovieDetails details) {
+
+    }
+
+    @Override
+    public void doAddMovieToCinema(CinemaMovie cinemaMovie, Movie movie) {
+
+    }
+
+    @Override
+    public void doChangeCinemaMovieTimes(CinemaMovie cinemaMovie, CinemaMovie.CinemaMovieDate cinemaMovieDate) {
 
     }
 
@@ -60,12 +128,7 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doChangeMovieDetails() {
-
-    }
-
-    @Override
-    public void doAddMovieToCinema() {
+    public void doGetAllBookingHistory() {
 
     }
 

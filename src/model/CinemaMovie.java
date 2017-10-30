@@ -8,7 +8,7 @@ public class CinemaMovie implements Serializable{
 	private Cinema cinema;
 	private Movie movie;
 
-	class CinemaMovieDate{
+	public class CinemaMovieDate{
 		public int date;
 		public int month;
 		public int year;
