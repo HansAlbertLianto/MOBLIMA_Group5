@@ -1,5 +1,7 @@
 package view;
 
+import service_.Service;
+
 public class UserHomeView extends View {
 	
 	private static final String message = "Welcome to MOBLIMA, user! What would you like to do? \n" +
@@ -12,7 +14,7 @@ public class UserHomeView extends View {
 	@Override
 	protected void manageResponse() {
 		switch (this.response) {
-		case 1: service.goUserMoviesView(); break;
+		case 1: Service.goUserMoviesView(); break;
 		case 2: service.goUserMoviesView(); break;
 		default: break;
 		}

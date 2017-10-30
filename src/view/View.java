@@ -1,11 +1,6 @@
 package view;
 
 import message_manager.MessageManager;
-<<<<<<< HEAD
-import service_.Service;
-=======
-import service.Service;
->>>>>>> fc86b613b6fba419c8216e3b94ae1d5aff2b258c
 
 public abstract class View implements ViewInterface {
     protected String MENU_MSG;
