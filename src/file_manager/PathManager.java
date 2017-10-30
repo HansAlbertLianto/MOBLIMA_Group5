@@ -1,10 +1,6 @@
 package file_manager;
 
 import model.*;
-import sun.misc.BASE64Encoder;
-
-import java.lang.reflect.Type;
-import java.util.Optional;
 
 public class PathManager {
 
@@ -16,7 +12,7 @@ public class PathManager {
     private static final String CINEMA_MOVIE_URL = "cinema-movie//";
     private static final String SEAT_URL = "seat//";
 
-    private static final String INDEX_FILE = "index.txt";
+    private static final String INDEX_FILE = "index.dat";
 
     private static final String MOVIE_FILE = "movie_";
     private static final String MOVIE_DETAILS_FILE = "movie_details_";
@@ -82,6 +78,10 @@ public class PathManager {
             default:
                 return null;
         }
+    }
+    
+    protected static String getBaseIndexFilePath(){
+    	return BASE_URL + INDEX_FILE;
     }
 
     protected static String getIndexFilePath(Class type){

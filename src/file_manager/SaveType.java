@@ -16,5 +16,8 @@ public enum SaveType {
 
     CHANGE_TICKET_PRICES,
     CHANGE_GENERAL_SETTING,
+    
+    SAVE_INDEX,
+    ADD_CINEPLEX,
 
 }
