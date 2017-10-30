@@ -2,48 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce81e87a-60a5-4a68-ba44-f13106db2508" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Cinema.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/Person/NonUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/SeatLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/BookingHistoryView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/CinemaView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/CineplexView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/LandingView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/LoginView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/MovieDetailsView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/MovieView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/SearchFilterView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/SettingsView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/Top5EditView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/Top5View.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/UserHomeView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/View.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/ViewInterface.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Person/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/UserType.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/CinemaMovie/CinemaMovie.java" afterPath="$PROJECT_DIR$/src/model/CinemaMovie.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Cineplex/Cineplex.java" afterPath="$PROJECT_DIR$/src/model/Cineplex.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Constants.java" afterPath="$PROJECT_DIR$/src/model/Constants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Movie/Movie.java" afterPath="$PROJECT_DIR$/src/model/Movie.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/MovieStatus.java" afterPath="$PROJECT_DIR$/src/model/MovieStatus.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Person/Person.java" afterPath="$PROJECT_DIR$/src/model/Person.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Review/Review.java" afterPath="$PROJECT_DIR$/src/model/Review.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Review/ReviewList.java" afterPath="$PROJECT_DIR$/src/model/ReviewList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Seat/Seat.java" afterPath="$PROJECT_DIR$/src/model/Seat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Navigator/ActionTypes.java" afterPath="$PROJECT_DIR$/src/navigator/ActionTypes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Navigator/Navigator.java" afterPath="$PROJECT_DIR$/src/navigator/Navigator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Navigator/NavigatorInterface.java" afterPath="$PROJECT_DIR$/src/navigator/NavigatorInterface.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Navigator/package-info.java" afterPath="$PROJECT_DIR$/src/navigator/package-info.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Service/ActionService.java" afterPath="$PROJECT_DIR$/src/service/ActionService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Service/NavigationService.java" afterPath="$PROJECT_DIR$/src/service/NavigationService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Service/Service.java" afterPath="$PROJECT_DIR$/src/service/Service.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/View/AdminHomeView.java" afterPath="$PROJECT_DIR$/src/view/AdminHomeView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/View/BookingView.java" afterPath="$PROJECT_DIR$/src/view/BookingView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/View/CinemaMovieView.java" afterPath="$PROJECT_DIR$/src/view/CinemaMovieView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/View/UserMoviesView.java" afterPath="$PROJECT_DIR$/src/view/UserMoviesView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/View/package-info.java" afterPath="$PROJECT_DIR$/src/view/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/MovieDetails.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cinema.java" afterPath="$PROJECT_DIR$/src/model/Cinema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/CinemaMovie.java" afterPath="$PROJECT_DIR$/src/model/CinemaMovie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cineplex.java" afterPath="$PROJECT_DIR$/src/model/Cineplex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Movie.java" afterPath="$PROJECT_DIR$/src/model/Movie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Person.java" afterPath="$PROJECT_DIR$/src/model/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Review.java" afterPath="$PROJECT_DIR$/src/model/Review.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ReviewList.java" afterPath="$PROJECT_DIR$/src/model/ReviewList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Seat.java" afterPath="$PROJECT_DIR$/src/model/Seat.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/SeatLayout.java" afterPath="$PROJECT_DIR$/src/model/SeatLayout.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,133 +23,119 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Cineplex.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/Cineplex.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Movie.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/model/Movie.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Review.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/Review.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ReviewList.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/ReviewList.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Seat.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/Seat.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SeatLayout.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/SeatLayout.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/Person.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="NonUser.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/model/Person/NonUser.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="View.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/view/View.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LandingView.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view/LandingView.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#290#291#0" expanded="true" />
-                    <element signature="e#326#327#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ViewInterface.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view/ViewInterface.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Cineplex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Cineplex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Movie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/MovieDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#605#606#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieStatus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/MovieStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Review.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Review.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="85" lean-forward="false" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
+              <folding>
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReviewList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ReviewList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Seat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Seat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeatLayout.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/SeatLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -219,15 +174,17 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/Navigator/Navigator.java" />
         <option value="$PROJECT_DIR$/src/navigator/Navigator.java" />
+        <option value="$PROJECT_DIR$/src/model/User.java" />
+        <option value="$PROJECT_DIR$/src/model/Movie.java" />
+        <option value="$PROJECT_DIR$/src/model/ReviewList.java" />
         <option value="$PROJECT_DIR$/src/model/Cinema.java" />
         <option value="$PROJECT_DIR$/src/model/CinemaMovie.java" />
         <option value="$PROJECT_DIR$/src/model/Cineplex.java" />
-        <option value="$PROJECT_DIR$/src/model/Review.java" />
-        <option value="$PROJECT_DIR$/src/model/ReviewList.java" />
-        <option value="$PROJECT_DIR$/src/model/Seat.java" />
+        <option value="$PROJECT_DIR$/src/model/MovieDetails.java" />
         <option value="$PROJECT_DIR$/src/model/Person.java" />
-        <option value="$PROJECT_DIR$/src/model/User.java" />
-        <option value="$PROJECT_DIR$/src/model/Movie.java" />
+        <option value="$PROJECT_DIR$/src/model/Review.java" />
+        <option value="$PROJECT_DIR$/src/model/Seat.java" />
+        <option value="$PROJECT_DIR$/src/model/SeatLayout.java" />
       </list>
     </option>
   </component>
@@ -276,26 +233,19 @@
               <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
               <item name="MOBLIMA_Group5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="FileManager" type="462c0819:PsiDirectoryNode" />
+              <item name="file_manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
               <item name="MOBLIMA_Group5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MessageManager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MOBLIMA_Group5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="message_manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
               <item name="MOBLIMA_Group5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Person" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MOBLIMA_Group5" type="b2602c69:ProjectViewProjectNode" />
@@ -455,12 +405,12 @@
       <workItem from="1508932064253" duration="5998000" />
       <workItem from="1509006291414" duration="2841000" />
       <workItem from="1509031424822" duration="1407000" />
-      <workItem from="1509347138805" duration="423000" />
+      <workItem from="1509347138805" duration="2127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14515000" />
+    <option name="totallyTimeSpent" value="16219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -480,7 +430,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14404762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -515,11 +465,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24201474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.315" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14404762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -535,13 +485,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -680,17 +623,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MessageManager/package-info.java">
+    <entry file="file://$PROJECT_DIR$/src/message_manager/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#62#0" expanded="true" />
+            <element signature="e#0#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MessageManager/MessageManager.java">
+    <entry file="file://$PROJECT_DIR$/src/message_manager/MessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
@@ -713,20 +656,6 @@
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/MovieStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -773,7 +702,7 @@
         <state relative-caret-position="660">
           <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <marker date="1509347547000" expanded="true" signature="1344:1354" ph="{...}" />
+            <marker date="1509347678000" expanded="true" signature="1344:1354" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -828,11 +757,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509347547000" expanded="true" signature="64658:65094" ph="..." />
-            <marker date="1509347547000" expanded="true" signature="63061:63078" ph="..." />
-            <marker date="1509347547000" expanded="true" signature="63061:63096" ph="..." />
-            <marker date="1509347547000" expanded="true" signature="63061:63109" ph="..." />
-            <marker date="1509347547000" expanded="true" signature="63061:63124" ph="..." />
+            <marker date="1509349280000" expanded="true" signature="64658:65094" ph="..." />
+            <marker date="1509349280000" expanded="true" signature="60513:60530" ph="..." />
+            <marker date="1509349280000" expanded="true" signature="60513:60548" ph="..." />
+            <marker date="1509349280000" expanded="true" signature="60513:60561" ph="..." />
+            <marker date="1509349280000" expanded="true" signature="60513:60576" ph="..." />
           </folding>
         </state>
       </provider>
@@ -902,74 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/CinemaMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Cineplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ReviewList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Seat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/SeatLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Person/NonUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1000,13 +865,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Movie.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/CinemaMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cineplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MovieDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MovieStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="85" lean-forward="false" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
+          <folding>
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ReviewList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Seat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/SeatLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>

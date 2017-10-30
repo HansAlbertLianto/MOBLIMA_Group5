@@ -1,10 +1,14 @@
 package model;
 
-public class Cinema {
+import java.io.Serializable;
+
+public class Cinema implements Serializable{
+	protected int id;
 	private String name;
 	private Seat seat;
 	
-	public Cinema(String cinema_name) {
+	public Cinema(int id, String cinema_name) {
+		this.id = id;
 		this.name = cinema_name;
 		this.seat = new Seat();
 	}
