@@ -1,0 +1,15 @@
+package file_manager;
+
+public enum LoadType {
+
+    LOAD_ALL_MOVIES,
+    LOAD_MOVIE_DETAILS,
+
+    LOAD_ALL_CINEPLEX,
+    LOAD_ALL_CINEMA,
+    LOAD_ALL_CINEMA_MOVIE,
+    LOAD_ALL_SEAT_LAYOUT,
+
+    LOAD_BOOKING_HISTORY,
+
+}

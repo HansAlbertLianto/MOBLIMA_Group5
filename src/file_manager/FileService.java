@@ -1,9 +1,11 @@
 package file_manager;
 
 public interface FileService {
-	public void getData(QueryType qt);
-	public void getData(QueryType qt, int id);
-	public void getData(QueryType qt, String str);
-	public void saveData(Object obj);
-	public void removeData(Object obj, int id);
+    public Object getData(LoadType qt);
+
+    public Object getData(LoadType qt, int id);
+
+    public Object getData(SearchType qt, String str);
+
+    public void saveData(SaveType type, Object obj);
 }

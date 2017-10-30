@@ -5,9 +5,11 @@ import navigator.Navigator;
 import view.View;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Stack;
-public class File implements FileService{
-	
+
+public class File implements FileService {
+
     private static File singleton = null;
 
     private File() {
@@ -18,46 +20,55 @@ public class File implements FileService{
         return singleton;
     }
 
-	@Override
-	public void getData(QueryType qt) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public Object getData(LoadType qt) {
+        Object result = new Object();
+        return null;
+//        return readSerializedObject(PathManager.getPath(qt));
+    }
 
-	@Override
-	public void getData(QueryType qt, int id) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public Object getData(LoadType qt, int id) {
+        return null;
+    }
 
-	@Override
-	public void getData(QueryType qt, String str) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	@Override
-	public void saveData(Object obj){
-		String filename = new String();
-		if (obj instanceof Movie) filename = "movie.dat";
-		
-		try{
-			FileOutputStream fiout = new FileOutputStream(filename);
-			ObjectOutputStream myStream = new ObjectOutputStream(fiout);
-			myStream.writeObject(obj);
-			myStream.close();
-		}
-		catch (FileNotFoundException e){
-			
-		}
-		catch (IOException e){
-			
-		}
-	}
+    @Override
+    public Object getData(SearchType qt, String str) {
+        return null;
+    }
 
-	@Override
-	public void removeData(Object obj, int id) {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void saveData(SaveType type, Object obj) {
+
+    }
+
+    private Object readSerializedObject(String filename) {
+        Object data = null;
+        FileInputStream fis = null;
+        ObjectInputStream in = null;
+        try {
+            fis = new FileInputStream(filename);
+            in = new ObjectInputStream(fis);
+            data = (Object) in.readObject();
+            in.close();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        return data;
+    }
+
+    private void writeSerializedObject(String filename, Object obj) {
+        try {
+            FileOutputStream fiout = new FileOutputStream(filename);
+            ObjectOutputStream myStream = new ObjectOutputStream(fiout);
+            myStream.writeObject(obj);
+            myStream.close();
+        } catch (FileNotFoundException e) {
+
+        } catch (IOException e) {
+
+        }
+    }
 }

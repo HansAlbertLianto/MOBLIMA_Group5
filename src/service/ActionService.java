@@ -67,8 +67,6 @@ public interface ActionService {
     //  Movie-goers Action
     //  ----------------------------------
 
-    public void doFindHistory();
-
     public void doGetAllBookingHistory();
 
     //  ----------------------------------
