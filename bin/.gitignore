@@ -1,22 +1,2 @@
-/View/
-/MessageManager/
-/Service/
-/Navigator/
-/FileManager/
 /Model/
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-/asd/
-/Person/
-/Cinema/
-=======
-/model/
-/navigator/
-/view/
-/file_manager/
-/message_manager/
-/.DS_Store
-/service_/
->>>>>>> Stashed changes
-=======
->>>>>>> fc86b613b6fba419c8216e3b94ae1d5aff2b258c
+/service/
