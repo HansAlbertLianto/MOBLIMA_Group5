@@ -1,6 +1,10 @@
-/FileManager/
+/View/
 /MessageManager/
+/Service/
+/Navigator/
+/FileManager/
 /Model/
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 /asd/
 /Person/
@@ -14,3 +18,5 @@
 /.DS_Store
 /service_/
 >>>>>>> Stashed changes
+=======
+>>>>>>> fc86b613b6fba419c8216e3b94ae1d5aff2b258c
