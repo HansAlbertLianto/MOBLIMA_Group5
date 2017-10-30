@@ -1,6 +1,16 @@
 /FileManager/
 /MessageManager/
 /Model/
+<<<<<<< Updated upstream
 /asd/
 /Person/
 /Cinema/
+=======
+/model/
+/navigator/
+/view/
+/file_manager/
+/message_manager/
+/.DS_Store
+/service_/
+>>>>>>> Stashed changes

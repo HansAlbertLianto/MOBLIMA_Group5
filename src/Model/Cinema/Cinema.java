@@ -8,7 +8,7 @@ public class Cinema {
 	
 	public Cinema(String cinema_name) {
 		this.name = cinema_name;
-		this.seat = new Seat();
+		//this.seat = new Seat();
 	}
 	
 	public Cinema(String cinema_name, Seat seat) {
