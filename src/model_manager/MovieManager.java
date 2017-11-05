@@ -60,18 +60,23 @@ public class MovieManager {
     }
 
     public void changeDetailsMovie(Movie movie, MovieDetails movieDetails){
-
+        movie.setDetails(movieDetails);
+        fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
     }
 
     public void removeMovie(Movie movie){
-
+        fileManager.saveData(SaveType.SAVE_MOVIE, null, movie.getId());
     }
 
     public void addReview(Movie movie, Review review){
-
+        ArrayList<Review> reviews = movie.getDetails().getReviewList();
+        reviews.add(review);
+        movie.getDetails().setReviewList(reviews);
+        fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
     }
 
     public void addRating(Movie movie, int rating){
-
+        movie.getDetails().addTotalRating(rating);
+        fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
     }
 }
