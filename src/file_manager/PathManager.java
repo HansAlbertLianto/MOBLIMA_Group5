@@ -59,12 +59,15 @@ public class PathManager {
         }
     }
 
-    protected static String getPath(SaveType type, String index) {
+    public static String getPath(SaveType type, String index) {
         switch (type) {
             case ADD_MOVIE:
             case REMOVE_MOVIE:
             case EDIT_MOVIE:
                 return BASE_URL + MOVIE_URL + MOVIE_FILE + index + PATH;
+
+            case ADD_CINEPLEX:
+                return BASE_URL + CINEPLEX_URL + CINEPLEX_FILE + index + PATH;
 
             case ADD_REVIEW:
             case ADD_RATING:
@@ -74,6 +77,16 @@ public class PathManager {
             case CHANGE_CINEMA_MOVIE:
             case CHANGE_TICKET_PRICES:
             case CHANGE_GENERAL_SETTING:
+
+            default:
+                return null;
+        }
+    }
+
+    public static String getPath(SaveType type, String index1, String index2){
+        switch (type){
+            case ADD_CINEMA:
+                return BASE_URL + CINEMA_URL + CINEPLEX_FILE + index1 + PATH + CINEMA_FILE + index2 + PATH;
 
             default:
                 return null;
@@ -106,6 +119,9 @@ public class PathManager {
         if(type.equals(SeatLayout.class)){
             return BASE_URL + SEAT_URL + CINEMA_MOVIE_URL +
                     Integer.toString(index) + PATH + INDEX_FILE;
+        }
+        if(type.equals(Cineplex.class)){
+            return BASE_URL + CINEPLEX_URL + INDEX_FILE;
         }
         return null;
     }

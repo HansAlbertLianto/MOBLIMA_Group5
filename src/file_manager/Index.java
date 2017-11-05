@@ -6,10 +6,20 @@ public class Index implements Serializable{
 	private int indexMovie;
 	private int indexCineplex;
 	private int indexCinemaMovie;
-	public Index(int indexMovie, int indexCineplex, int indexCinemaMovie){
+	private int indexCinema;
+	private int indexReview;
+	private int indexSeat;
+	private int indexSeatLayout;
+	private int indexPerson;
+	public Index(int indexMovie, int indexCineplex, int indexCinemaMovie, int indexCinema, int indexReview, int indexSeat, int indexSeatLayout, int indexPerson){
 		this.indexMovie = indexMovie;
 		this.indexCineplex = indexCineplex;
 		this.indexCinemaMovie = indexCinemaMovie;
+		this.indexCinema = indexCinema;
+		this.indexReview = indexReview;
+		this.indexSeat = indexSeat;
+		this.indexSeatLayout = indexSeatLayout;
+		this.indexPerson = indexPerson;
 	}
 	public int getIndexMovie() {
 		return indexMovie;
@@ -23,6 +33,27 @@ public class Index implements Serializable{
 	public void setIndexCineplex(int indexCineplex) {
 		this.indexCineplex = indexCineplex;
 	}
+
+	public int getIndexCinema() {
+		return indexCinema;
+	}
+
+	public int getIndexReview() {
+		return indexReview;
+	}
+
+	public int getIndexSeat() {
+		return indexSeat;
+	}
+
+	public int getIndexSeatLayout() {
+		return indexSeatLayout;
+	}
+
+	public int getIndexPerson() {
+		return indexPerson;
+	}
+
 	public int getIndexCinemaMovie() {
 		return indexCinemaMovie;
 	}
@@ -30,16 +61,17 @@ public class Index implements Serializable{
 		this.indexCinemaMovie = indexCinemaMovie;
 	}
 
-	public void updateIndex(int type){
+	public void updateIndex(UpdateIndexType x){
 		//System.out.println(index.getIndexMovie());
-		if (type==0){
-			this.indexMovie++;
-		}
-		else if (type == 1){
-			this.indexCineplex++;
-		}
-		else if (type == 2){
-			this.indexCinemaMovie++;
+		switch (x){
+			case UPDATE_MOVIE : this.indexMovie++; break;
+			case UPDATE_CINEPLEX : this.indexCineplex++; break;
+			case UPDATE_CINEMA_MOVIE : this.indexCinemaMovie++; break;
+			case UPDATE_CINEMA : this.indexCinema++; break;
+			case UPDATE_REVIEW : this.indexReview++; break;
+			case UPDATE_SEAT : this.indexSeat++; break;
+			case UPDATE_SEAT_LAYOUT : this.indexSeatLayout++; break;
+			case UPDATE_PERSON : this.indexPerson++; break;
 		}
 		FileManager.writeSerializedObject(PathManager.getBaseIndexFilePath(), this);
 	}

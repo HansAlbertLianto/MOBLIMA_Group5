@@ -19,5 +19,6 @@ public enum SaveType {
     
     SAVE_INDEX,
     ADD_CINEPLEX,
+    ADD_CINEMA,
 
 }

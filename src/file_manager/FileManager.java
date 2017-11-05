@@ -1,6 +1,8 @@
 package file_manager;
 
 import model.Movie;
+import model.Cineplex;
+import model.Cinema;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -60,29 +62,41 @@ public class FileManager implements FileService {
 		Index index = (Index) readSerializedObject(PathManager.getBaseIndexFilePath());
 		String path = "";
         switch (type) {
-            case ADD_MOVIE :
-        	    if (index.getIndexMovie() < ( (Movie) obj).getId()) {
-                    path = PathManager.getPath(type, Integer.toString(( (Movie) obj).getId()));
-                    index.updateIndex(0);
+            case ADD_MOVIE:
+                if (index.getIndexMovie() < ((Movie) obj).getId()) {
+                    path = PathManager.getPath(type, Integer.toString(((Movie) obj).getId()));
+                    index.updateIndex(UpdateIndexType.UPDATE_MOVIE);
                 }
-        		break;
-        	case ADD_CINEPLEX:
-        		path = PathManager.getPath(type, Integer.toString(index.getIndexCineplex()));
-        		index.updateIndex(1);
-        		break;
-        	case ADD_MOVIE_TO_CINEMA_MOVIE:
-        		path = PathManager.getPath(type, Integer.toString(index.getIndexCinemaMovie()));
-        		index.updateIndex(2);
-        		break;
+                break;
+            case ADD_CINEPLEX:
+                path = PathManager.getPath(type, Integer.toString(((Cineplex) obj).getId()));
+                index.updateIndex(UpdateIndexType.UPDATE_CINEPLEX);
+                break;
+            case ADD_MOVIE_TO_CINEMA_MOVIE:
+                path = PathManager.getPath(type, Integer.toString(index.getIndexCinemaMovie()));
+                index.updateIndex(UpdateIndexType.UPDATE_CINEMA_MOVIE);
+                break;
         }
+        System.out.println(path);
 		writeSerializedObject(path, obj);
+    }
+
+    public void saveData(SaveType type, Object obj, int id ){
+        Index index = (Index) readSerializedObject(PathManager.getBaseIndexFilePath());
+        String path = "";
+        switch (type){
+            case ADD_CINEMA:
+                path = PathManager.getPath(type, Integer.toString(id), Integer.toString(((Cinema) obj).getId()));
+                index.updateIndex(UpdateIndexType.UPDATE_CINEMA);
+        }
+        writeSerializedObject(path, obj);
+
     }
 
 
 
-
     public void initializeIndex(){
-    	Index index = new Index(-1,-1,-1);
+    	Index index = new Index(-1,-1,-1,-1,-1,-1,-1,-1);
     	writeSerializedObject(PathManager.getBaseIndexFilePath(), index);
     }
 

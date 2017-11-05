@@ -10,4 +10,6 @@ public interface FileService {
     public Object getData(SearchType qt, String str);
 
     public void saveData(SaveType type, Object obj);
+
+    public void saveData(SaveType type, Object obj, int id);
 }
