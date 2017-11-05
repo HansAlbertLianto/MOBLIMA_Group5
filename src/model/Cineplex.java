@@ -15,14 +15,6 @@ public class Cineplex implements Serializable {
         this.cinemas = new ArrayList<Cinema>();
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -39,7 +31,4 @@ public class Cineplex implements Serializable {
         return cinemas;
     }
 
-    public void setCinemas(ArrayList<Cinema> cinemas) {
-        this.cinemas = cinemas;
-    }
 }

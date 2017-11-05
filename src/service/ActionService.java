@@ -13,15 +13,17 @@ public interface ActionService {
     // Movie Action
     // ----------------------------------
 
-    public void doSearchMovie(String search);
+    public ArrayList<Movie> doSearchMovie(String search);
 
-    public void doGetAllMovies();
+    public ArrayList<Movie> doGetAllMovies();
 
-    public void doGetAllDetails(Movie movie);
+    public MovieDetails doGetAllDetails(Movie movie);
 
     public void doAddMovie(Movie movie);
 
     public void doEditMovie(Movie movie, Movie editedMovie);
+
+    public void doChangeMovieDetails(Movie movie, MovieDetails details);
 
     public void doRemoveMovie(Movie movie);
 
@@ -57,8 +59,6 @@ public interface ActionService {
     public void doBook(CinemaMovie cinemaMovie, Seat seat);
 
     public void doPurchase(CinemaMovie cinemaMovie);
-
-    public void doChangeMovieDetails(Movie movie, MovieDetails details);
 
     public void doAddMovieToCinema(CinemaMovie cinemaMovie, Movie movie);
 

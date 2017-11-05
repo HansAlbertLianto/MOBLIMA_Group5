@@ -13,14 +13,6 @@ public class Movie implements Serializable {
         this.movieTitle = movieTitle;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public MovieDetails getDetails() {
         return details;
     }

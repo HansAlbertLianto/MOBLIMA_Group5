@@ -4,32 +4,16 @@ import java.io.Serializable;
 import java.time.LocalTime;
 
 public class CinemaMovie implements Serializable {
-    private int id;
     private Cinema cinema;
     private Movie movie;
     private CinemaMovieDate date;
+    private SeatLayout seatLayout;
 
-    public CinemaMovie(int id, Cinema cinema, Movie movie, int start, int end) {
-        this.id = id;
+    public CinemaMovie(Cinema cinema, Movie movie, int start, int end) {
         this.cinema = cinema;
         this.movie = movie;
         this.date = new CinemaMovieDate(start, end);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Cinema getCinema() {
-        return cinema;
-    }
-
-    public void setCinema(Cinema cinema) {
-        this.cinema = cinema;
+        this.seatLayout = new SeatLayout();
     }
 
     public Movie getMovie() {

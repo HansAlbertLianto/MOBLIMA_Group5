@@ -7,7 +7,6 @@ import java.util.ArrayList;
 public class Test {
 
     public static void main(String[] args) {
-        FileManager.getInstance().initializeIndex();
         Movie movie00 = new Movie(0, "Avatar");
         Movie movie01 = new Movie(1, "Titanic");
         Movie movie02 = new Movie(2, "Frozen");
@@ -28,44 +27,28 @@ public class Test {
         Movie movie17 = new Movie(17, "Sing");
         Movie movie18 = new Movie(18, "Nerve");
         Movie movie19 = new Movie(19, "Inferno");
-        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie00);
 
-        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie01);
-        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie02);
-        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie03);
-        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie04);
-        FileManager.getInstance().saveData(SaveType.ADD_MOVIE, movie05);
-        ArrayList<Movie> movie = (ArrayList<Movie>) FileManager.getInstance().getData(LoadType.LOAD_ALL_MOVIES);
-        for (Movie a: movie){
-            System.out.println(a.getMovieTitle());
-            System.out.println(a.getId());
-        }
-        
-    	Cineplex cineplex1 = new Cineplex(1,"GV Jurong Point");
-        Cinema cinema1 = new Cinema(1,"Cinema 01");
-        Cinema cinema2 = new Cinema(2,"Cinema 02");
-        Cinema cinema3 = new Cinema(3,"Cinema 03");
-        FileManager.getInstance().saveData(SaveType.ADD_CINEPLEX, cineplex1);
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema1, cineplex1.getId());
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema2, cineplex1.getId());
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema3, cineplex1.getId());
+        Cineplex cineplex1 = new Cineplex(1,"GV Jurong Point");
+        Cinema cinema1 = new Cinema("Cinema 01");
+        Cinema cinema2 = new Cinema("Cinema 02");
+        Cinema cinema3 = new Cinema("Cinema 03");
 
         Cineplex cineplex2 = new Cineplex(2,"Cathay JEM");
-        Cinema cinema4 = new Cinema(4,"Cinema 04");
-        Cinema cinema5 = new Cinema(5,"Cinema 05");
-        Cinema cinema6 = new Cinema(6,"Cinema 06");
-        FileManager.getInstance().saveData(SaveType.ADD_CINEPLEX, cineplex2);
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema4, cineplex2.getId());
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema5, cineplex2.getId());
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema6, cineplex2.getId());
-                
+        Cinema cinema4 = new Cinema("Cinema 04");
+        Cinema cinema5 = new Cinema("Cinema 05");
+        Cinema cinema6 = new Cinema("Cinema 06");
+
         Cineplex cineplex3 = new Cineplex(3,"GV Vivo City");
-        Cinema cinema7 = new Cinema(7,"Cinema 07");
-        Cinema cinema8 = new Cinema(8,"Cinema 08");
-        Cinema cinema9 = new Cinema(9,"Cinema 09");
-        FileManager.getInstance().saveData(SaveType.ADD_CINEPLEX, cineplex3);
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema7.getId());
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema8.getId());
-        FileManager.getInstance().saveData(SaveType.ADD_CINEMA, cinema9.getId());
+        Cinema cinema7 = new Cinema("Cinema 07");
+        Cinema cinema8 = new Cinema("Cinema 08");
+        Cinema cinema9 = new Cinema("Cinema 09");
+
+        System.out.println(PathManager.getPath(LoadType.LOAD_CINEPLEX, 0));
+        System.out.println(PathManager.getPath(LoadType.LOAD_MOVIES, 0));
+        System.out.println(PathManager.getPath(LoadType.LOAD_USER, 0));
+
+        System.out.println(PathManager.getPath(SaveType.SAVE_USER, 0));
+        System.out.println(PathManager.getPath(SaveType.SAVE_CINEPLEX, 0));
+        System.out.println(PathManager.getPath(SaveType.SAVE_MOVIE, 0));
     }
 }

@@ -1,45 +1,18 @@
 package model;
 
 public class Seat {
-    protected int id;
-    private int numEmptySeats;
-    private int numAvailSeats;
+    private boolean isEmpty;
 
-    public Seat(int id, int numEmptySeats, int numAvailSeats) {
-        this.id = id;
-        this.numEmptySeats = numEmptySeats;
-        this.numAvailSeats = numAvailSeats;
-    }
-
-    public void showSeatLayout() {
+    public Seat() {
 
     }
 
     public void assignSeat() {
-
+        isEmpty = true;
     }
 
-    public int getId() {
-        return id;
+    public boolean isEmpty(){
+        return isEmpty;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getNumEmptySeats() {
-        return numEmptySeats;
-    }
-
-    public void setNumEmptySeats(int numEmptySeats) {
-        this.numEmptySeats = numEmptySeats;
-    }
-
-    public int getNumAvailSeats() {
-        return numAvailSeats;
-    }
-
-    public void setNumAvailSeats(int numAvailSeats) {
-        this.numAvailSeats = numAvailSeats;
-    }
 }

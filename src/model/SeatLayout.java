@@ -3,20 +3,10 @@ package model;
 import java.util.ArrayList;
 
 public class SeatLayout {
-    protected int id;
-    private ArrayList<Seat> seats;
+    private ArrayList<Seat> seats = new ArrayList<Seat>();
 
-    public SeatLayout(int id, ArrayList<Seat> seats) {
-        this.id = id;
-        this.seats = seats;
-    }
+    public SeatLayout(){
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public ArrayList<Seat> getSeats() {
@@ -26,4 +16,13 @@ public class SeatLayout {
     public void setSeats(ArrayList<Seat> seats) {
         this.seats = seats;
     }
+
+    public int getNumAvailSeats() {
+        int sum = 0;
+        for(Seat i : seats){
+            if(i.isEmpty()) sum++;
+        }
+        return sum;
+    }
+
 }

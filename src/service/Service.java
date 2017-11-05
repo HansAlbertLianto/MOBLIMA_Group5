@@ -28,18 +28,18 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doSearchMovie(String search) {
-
+    public ArrayList<Movie> doSearchMovie(String search) {
+        return null;
     }
 
     @Override
-    public void doGetAllMovies() {
-
+    public ArrayList<Movie> doGetAllMovies() {
+        return null;
     }
 
     @Override
-    public void doGetAllDetails(Movie movie) {
-
+    public MovieDetails doGetAllDetails(Movie movie) {
+        return null;
     }
 
     @Override
@@ -49,6 +49,11 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void doEditMovie(Movie movie, Movie editedMovie) {
+
+    }
+
+    @Override
+    public void doChangeMovieDetails(Movie movie, MovieDetails details) {
 
     }
 
@@ -104,11 +109,6 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void doPurchase(CinemaMovie cinemaMovie) {
-
-    }
-
-    @Override
-    public void doChangeMovieDetails(Movie movie, MovieDetails details) {
 
     }
 

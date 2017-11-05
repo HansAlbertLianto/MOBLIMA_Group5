@@ -3,24 +3,19 @@ package model;
 import java.util.ArrayList;
 
 public class MovieDetails {
-    private int id;
+
     private MovieStatus showingStatus;
     private String synopsis;
-    private Person[] director;
-    private Person[] cast;
+    private ArrayList<Person> director = new ArrayList<Person>();
+    private ArrayList<Person> cast = new ArrayList<Person>();
 
-    private ArrayList<Review> reviewList;
+    private ArrayList<Review> reviewList = new ArrayList<Review>();
 
-    private String movieType;
-    private int totalRating;
-    private int reviewCount;
+    private ArrayList<String> movieType = new ArrayList<String>();
+    private ArrayList<Integer> totalRating = new ArrayList<Integer>();
 
-    public int getId() {
-        return id;
-    }
+    public MovieDetails(){
 
-    public void setId(int id) {
-        this.id = id;
     }
 
     public ArrayList<Review> getReviewList() {
@@ -31,20 +26,21 @@ public class MovieDetails {
         this.reviewList = reviewList;
     }
 
-    public int getTotalRating() {
-        return totalRating;
+    public double getTotalRating() {
+        double sum = 0;
+        for(Integer i: totalRating){
+            sum += i;
+        }
+        sum = sum / totalRating.size();
+        return sum;
     }
 
-    public void setTotalRating(int totalRating) {
-        this.totalRating = totalRating;
+    public void addTotalRating(int rating) {
+        this.totalRating.add(rating);
     }
 
     public int getReviewCount() {
-        return reviewCount;
-    }
-
-    public void setReviewCount(int reviewCount) {
-        this.reviewCount = reviewCount;
+        return reviewList.size();
     }
 
     public String getSynopsis() {
@@ -55,20 +51,28 @@ public class MovieDetails {
         this.synopsis = synopsis;
     }
 
-    public Person[] getDirector() {
+    public ArrayList<Person> getDirector() {
         return director;
     }
 
-    public void setDirector(Person[] director) {
+    public void setDirector(ArrayList<Person> director) {
         this.director = director;
     }
 
-    public Person[] getCast() {
+    public void addDirector(Person director){
+        this.director.add(director);
+    }
+
+    public ArrayList<Person> getCast() {
         return cast;
     }
 
-    public void setCast(Person[] cast) {
+    public void setCast(ArrayList<Person> cast) {
         this.cast = cast;
+    }
+
+    public void addCast(Person cast){
+        this.cast.add(cast);
     }
 
     public String getShowingStatus() {
@@ -90,26 +94,16 @@ public class MovieDetails {
         this.showingStatus = showingStatus;
     }
 
-    public String getMovieType() {
+    public ArrayList<String> getMovieType() {
         return movieType;
     }
 
-    public void setMovieType(String movieType) {
+    public void setMovieType(ArrayList<String> movieType) {
         this.movieType = movieType;
     }
 
-    public double getOverallRating() {
-        if (reviewCount != 0) {
-            return (totalRating / reviewCount);
-        }
-        return 0;
+    public void addMovieType(String movieType){
+        this.movieType.add(movieType);
     }
 
-    public void addRating(int number) {
-        this.totalRating += number;
-    }
-
-    public void addReviewCount() {
-        this.reviewCount++;
-    }
 }

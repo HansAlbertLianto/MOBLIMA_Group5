@@ -2,23 +2,9 @@ package file_manager;
 
 public enum SaveType {
 
-    ADD_MOVIE,
-    EDIT_MOVIE,
-    REMOVE_MOVIE,
+    SAVE_MOVIE,
 
-    ADD_REVIEW,
-    ADD_RATING,
+    SAVE_CINEPLEX,
 
-    PURCHASE,
-
-    ADD_MOVIE_TO_CINEMA_MOVIE,
-    CHANGE_CINEMA_MOVIE,
-
-    CHANGE_TICKET_PRICES,
-    CHANGE_GENERAL_SETTING,
-    
-    SAVE_INDEX,
-    ADD_CINEPLEX,
-    ADD_CINEMA,
-
+    SAVE_USER,
 }
