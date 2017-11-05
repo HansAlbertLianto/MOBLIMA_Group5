@@ -1,6 +1,8 @@
 package view;
 
-public class CineplexView extends View{
+import view.View;
+
+public class CineplexView extends View {
     private static final String message = "Here are the available cineplexes: ";
     
     public CineplexView() {

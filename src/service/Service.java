@@ -38,7 +38,17 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public MovieDetails doGetAllDetails(Movie movie) {
+    public void setCurrentMovie(Movie currentMovie) {
+
+    }
+
+    @Override
+    public Movie doGetCurrentMovie() {
+        return null;
+    }
+
+    @Override
+    public MovieDetails doGetAllDetails() {
         return null;
     }
 
@@ -48,27 +58,12 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doEditMovie(Movie movie, Movie editedMovie) {
-
-    }
-
-    @Override
-    public void doChangeMovieDetails(Movie movie, MovieDetails details) {
+    public void doEditMovie(Movie editedMovie) {
 
     }
 
     @Override
     public void doRemoveMovie(Movie movie) {
-
-    }
-
-    @Override
-    public void doGetAllReview(Movie movie) {
-
-    }
-
-    @Override
-    public void doGetMovieRatings(Movie movie) {
 
     }
 
@@ -88,12 +83,42 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public ArrayList<Cinema> doGetAllCinema(Cineplex cineplex) {
+    public void setCurrentCineplex(Cineplex currentCineplex) {
+
+    }
+
+    @Override
+    public Cineplex doGetCurrentCineplex() {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Cinema> doGetAllCinema() {
+        return null;
+    }
+
+    @Override
+    public void setCurrentCinema(Cinema currentCinema) {
+
+    }
+
+    @Override
+    public Cinema doGetCurrentCinema() {
         return null;
     }
 
     @Override
     public ArrayList<CinemaMovie> doGetAllCinemaMovie(Cinema cinema) {
+        return null;
+    }
+
+    @Override
+    public void setCurrentCinemaMovie(CinemaMovie currentCinemaMovie) {
+
+    }
+
+    @Override
+    public Cinema doGetCurrentCinemaMovie() {
         return null;
     }
 
@@ -138,81 +163,92 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void goLogin() {
-        navigator.doAction(ActionTypes.OPEN_LOGIN);
-    }
+    public void goLanding() {
 
-    @Override
-    public void goAdminHome() {
-        navigator.doAction(ActionTypes.OPEN_ADMIN_HOME);
-    }
-
-    @Override
-    public void goMovie() {
-        navigator.doAction(ActionTypes.OPEN_MOVIE);
     }
 
     @Override
     public void goCineplex() {
-        navigator.doAction(ActionTypes.OPEN_CINEPLEX);
+
     }
 
     @Override
     public void goCinema() {
-        navigator.doAction(ActionTypes.OPEN_CINEMA);
+
     }
 
     @Override
-    public void goCinemaMovie() {
-        navigator.doAction(ActionTypes.OPEN_CINEMA_MOVIE);
+    public void goMovieTop5() {
+
     }
 
     @Override
-    public void goSettings() {
-        navigator.doAction(ActionTypes.OPEN_SETTING);
-    }
+    public void goSearchListMovie() {
 
-    @Override
-    public void goTop5Edit() {
-        navigator.doAction(ActionTypes.OPEN_TOP_5_EDITOR);
-    }
-
-    @Override
-    public void goUserHome() {
-        navigator.doAction(ActionTypes.OPEN_USER_HOME);
-    }
-
-    @Override
-    public void goSearchFilterView() {
-        navigator.doAction(ActionTypes.OPEN_SEARCH_FILTER_VIEW);
-    }
-
-    @Override
-    public void goMovieDetails() {
-        navigator.doAction(ActionTypes.OPEN_MOVIE_DETAILS);
-    }
-
-    @Override
-    public void goBooking() {
-        navigator.doAction(ActionTypes.OPEN_BOOKING);
-    }
-
-    @Override
-    public void goBookingHistory() {
-        navigator.doAction(ActionTypes.OPEN_BOOKING_HISTORY);
-    }
-
-    @Override
-    public void goTop5View() {
-        navigator.doAction(ActionTypes.OPEN_TOP_5);
     }
 
     @Override
     public void goExit() {
-        navigator.doAction(ActionTypes.EXIT);
+
     }
 
-	public void goUserMoviesView() {
-		navigator.doAction(ActionTypes.OPEN_USER_MOVIES_VIEW);
-	}
+    @Override
+    public void goAdminLogin() {
+
+    }
+
+    @Override
+    public void goAdminHome() {
+
+    }
+
+    @Override
+    public void goAdminAddMovie() {
+
+    }
+
+    @Override
+    public void goAdminEditRemoveMovie() {
+
+    }
+
+    @Override
+    public void goAdminCinemaMovie() {
+
+    }
+
+    @Override
+    public void goAdminMovieDetails() {
+
+    }
+
+    @Override
+    public void goAdminSetting() {
+
+    }
+
+    @Override
+    public void goUserHome() {
+
+    }
+
+    @Override
+    public void goUserBookingHistory() {
+
+    }
+
+    @Override
+    public void goUserCinemaMovie() {
+
+    }
+
+    @Override
+    public void goUserBooking() {
+
+    }
+
+    @Override
+    public void goUserMovieDetails() {
+
+    }
 }

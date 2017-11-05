@@ -1,7 +1,7 @@
 package view;
 
-public class Top5EditView extends View {
-	public Top5EditView(){
+public class MovieTop5View extends View {
+	public MovieTop5View(){
 		super();
 	}
 	@Override

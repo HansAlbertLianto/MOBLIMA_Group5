@@ -1,24 +1,30 @@
 package model_manager;
 
 import file_manager.FileManager;
-import file_manager.LoadType;
-import file_manager.SaveType;
 import model.Cinema;
 import model.CinemaMovie;
 import model.Seat;
 import model.SeatLayout;
+import model.index.Index;
 
 import java.util.ArrayList;
 
 public class CinemaMovieManager {
 
+    private static CinemaMovieManager singleton = null;
+
+    private Index index = Index.getInstance();
     private FileManager fileManager = FileManager.getInstance();
 
+    public CinemaMovieManager() { }
+
+    public static CinemaMovieManager getInstance() {
+        if(singleton == null)
+            singleton = new CinemaMovieManager();
+        return singleton;
+    }
+
     public ArrayList<CinemaMovie> getAllCinemaMovie(Cinema cinema){
-//        Object result = fileManager.getData(LoadType.LOAD_ALL_CINEMA_MOVIE_BY_CINEMA, cinema.getId());
-//        if(result == null) return null;
-//        ArrayList<CinemaMovie> cinemaMovies = (ArrayList<CinemaMovie>) result;
-//        return cinemaMovies;
         return null;
     }
 

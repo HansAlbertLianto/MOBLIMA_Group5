@@ -1,13 +1,15 @@
-package view;
+package view.admin;
 
-public class LoginView extends View {
+import view.View;
+
+public class AdminLoginView extends View {
     private static final String message = "Please login using your admin credentials\n";
     private static final String LOGIN_SUCCESS = "Login is successful !\n";
     private static final String LOGIN_FAILED = "Your username and password do not valid\n";
     private String username;
     private String password;
 
-    public LoginView() {
+    public AdminLoginView() {
         super(message);
     }
 

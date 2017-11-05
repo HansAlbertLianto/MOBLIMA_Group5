@@ -1,4 +1,6 @@
-package view;
+package view.admin;
+
+import view.View;
 
 public class AdminHomeView extends View {
 

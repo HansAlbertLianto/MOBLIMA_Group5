@@ -17,23 +17,21 @@ public interface ActionService {
 
     public ArrayList<Movie> doGetAllMovies();
 
-    public MovieDetails doGetAllDetails(Movie movie);
+    public void setCurrentMovie(Movie currentMovie);
+
+    public Movie doGetCurrentMovie();
+
+    public MovieDetails doGetAllDetails();
 
     public void doAddMovie(Movie movie);
 
-    public void doEditMovie(Movie movie, Movie editedMovie);
-
-    public void doChangeMovieDetails(Movie movie, MovieDetails details);
+    public void doEditMovie(Movie editedMovie);
 
     public void doRemoveMovie(Movie movie);
 
     //  ----------------------------------
     //  Review & Ratings
     //  ----------------------------------
-
-    public void doGetAllReview(Movie movie);
-
-    public void doGetMovieRatings(Movie movie);
 
     public void doAddReview(Movie movie, Person person, Review review);
 
@@ -42,17 +40,30 @@ public interface ActionService {
     //  ----------------------------------
     //  Cineplex Action
     //  ----------------------------------
+
     public ArrayList<Cineplex> doGetAllCineplex();
+
+    public void setCurrentCineplex(Cineplex currentCineplex);
+
+    public Cineplex doGetCurrentCineplex();
 
     // ----------------------------------
     // Cinema Action
     // ----------------------------------
-    public ArrayList<Cinema> doGetAllCinema(Cineplex cineplex);
+    public ArrayList<Cinema> doGetAllCinema();
+
+    public void setCurrentCinema(Cinema currentCinema);
+
+    public Cinema doGetCurrentCinema();
 
     //  ----------------------------------
     //  Cinema Movie Action
     //  ----------------------------------
     public ArrayList<CinemaMovie> doGetAllCinemaMovie(Cinema cinema);
+
+    public void setCurrentCinemaMovie(CinemaMovie currentCinemaMovie);
+
+    public Cinema doGetCurrentCinemaMovie();
 
     public void doGetSeatLayout(CinemaMovie cinemaMovie);
 

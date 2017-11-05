@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MovieDetails {
+public class MovieDetails implements Serializable{
 
     private MovieStatus showingStatus;
     private String synopsis;

@@ -2,53 +2,96 @@ package file_manager;
 
 import model.*;
 
+import model_manager.CineplexManager;
+import model_manager.MovieManager;
+
 import java.util.ArrayList;
 
 public class Test {
 
-    public static void main(String[] args) {
-        Movie movie00 = new Movie(0, "Avatar");
-        Movie movie01 = new Movie(1, "Titanic");
-        Movie movie02 = new Movie(2, "Frozen");
-        Movie movie03 = new Movie(3, "Minions");
-        Movie movie04 = new Movie(4, "Skyfall");
-        Movie movie05 = new Movie(5, "Zootopia");
-        Movie movie06 = new Movie(6, "Cinderella");
-        Movie movie07 = new Movie(7, "Spectre");
-        Movie movie08 = new Movie(8, "It");
-        Movie movie09 = new Movie(9, "Logan");
-        Movie movie10 = new Movie(10, "Deadpool");
-        Movie movie11 = new Movie(11, "Jaws");
-        Movie movie12 = new Movie(12, "Rings");
-        Movie movie13 = new Movie(13, "Gifted");
-        Movie movie14 = new Movie(14, "Baywatch");
-        Movie movie15 = new Movie(15, "Focus");
-        Movie movie16 = new Movie(16, "Moana");
-        Movie movie17 = new Movie(17, "Sing");
-        Movie movie18 = new Movie(18, "Nerve");
-        Movie movie19 = new Movie(19, "Inferno");
+    private static MovieManager movieManager = MovieManager.getInstance();
+    private static CineplexManager cineplexManager = CineplexManager.getInstance();
 
-        Cineplex cineplex1 = new Cineplex(1,"GV Jurong Point");
+    public static void main(String[] args) {
+//        populateMovie();
+//        populateCineplexCinema();
+        printAllMovie();
+        printAllCineplex();
+        printAllCinema(cineplexManager.getAllCineplex().get(0));
+    }
+
+    public static void populateMovie() {
+        ArrayList<String> dumpTitleMovies = new ArrayList<String>();
+        dumpTitleMovies.add("Avatar");
+        dumpTitleMovies.add("Titanic");
+        dumpTitleMovies.add("Frozen");
+        dumpTitleMovies.add("Minions");
+        dumpTitleMovies.add("SkyFall");
+        dumpTitleMovies.add("Zootopia");
+        dumpTitleMovies.add("Cinderella");
+        dumpTitleMovies.add("Spectre");
+        dumpTitleMovies.add("It");
+        dumpTitleMovies.add("Logan");
+        dumpTitleMovies.add("Deadpool");
+        dumpTitleMovies.add("Jaws");
+        dumpTitleMovies.add("Rings");
+        dumpTitleMovies.add("Gifted");
+        dumpTitleMovies.add("Baywatch");
+        dumpTitleMovies.add("Focus");
+        dumpTitleMovies.add("Moana");
+        dumpTitleMovies.add("Sing");
+        dumpTitleMovies.add("Nerve");
+        dumpTitleMovies.add("Inferno");
+        for(String title : dumpTitleMovies){
+            movieManager.addMovie(title);
+        }
+    }
+        public static void populateCineplexCinema() {
+        Cineplex cineplex1 = new Cineplex(0, "GV Jurong Point");
         Cinema cinema1 = new Cinema("Cinema 01");
         Cinema cinema2 = new Cinema("Cinema 02");
         Cinema cinema3 = new Cinema("Cinema 03");
+        cineplex1.addCinema(cinema1);
+        cineplex1.addCinema(cinema2);
+        cineplex1.addCinema(cinema3);
+        cineplexManager.addCineplex(cineplex1);
 
-        Cineplex cineplex2 = new Cineplex(2,"Cathay JEM");
+        Cineplex cineplex2 = new Cineplex(1, "Cathay JEM");
         Cinema cinema4 = new Cinema("Cinema 04");
         Cinema cinema5 = new Cinema("Cinema 05");
         Cinema cinema6 = new Cinema("Cinema 06");
+        cineplex2.addCinema(cinema4);
+        cineplex2.addCinema(cinema5);
+        cineplex2.addCinema(cinema6);
+        cineplexManager.addCineplex(cineplex2);
 
-        Cineplex cineplex3 = new Cineplex(3,"GV Vivo City");
+        Cineplex cineplex3 = new Cineplex(2, "GV Vivo City");
         Cinema cinema7 = new Cinema("Cinema 07");
         Cinema cinema8 = new Cinema("Cinema 08");
         Cinema cinema9 = new Cinema("Cinema 09");
-
-        System.out.println(PathManager.getPath(LoadType.LOAD_CINEPLEX, 0));
-        System.out.println(PathManager.getPath(LoadType.LOAD_MOVIES, 0));
-        System.out.println(PathManager.getPath(LoadType.LOAD_USER, 0));
-
-        System.out.println(PathManager.getPath(SaveType.SAVE_USER, 0));
-        System.out.println(PathManager.getPath(SaveType.SAVE_CINEPLEX, 0));
-        System.out.println(PathManager.getPath(SaveType.SAVE_MOVIE, 0));
+        cineplex3.addCinema(cinema7);
+        cineplex3.addCinema(cinema8);
+        cineplex3.addCinema(cinema9);
+        cineplexManager.addCineplex(cineplex3);
     }
+
+    public static void printAllMovie() {
+        ArrayList<Movie> movies = movieManager.getAllMovie();
+        for (Movie movie : movies) {
+            System.out.println(movie.getMovieTitle());
+        }
+    }
+
+    public static void printAllCineplex() {
+        ArrayList<Cineplex> cineplexes = cineplexManager.getAllCineplex();
+        for (Cineplex cineplex : cineplexes) {
+            System.out.println(cineplex.getName());
+        }
+    }
+
+    public static void printAllCinema(Cineplex cineplex) {
+        for (Cinema cinema : cineplex.getCinemas())
+            System.out.println(cinema.getName());
+    }
+
 }

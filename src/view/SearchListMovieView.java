@@ -1,7 +1,9 @@
 package view;
 
-public class SearchFilterView extends View {
-	public SearchFilterView(){
+import view.View;
+
+public class SearchListMovieView extends View {
+	public SearchListMovieView(){
 		super();
 	}
 	@Override

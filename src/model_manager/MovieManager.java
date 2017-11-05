@@ -1,25 +1,59 @@
 package model_manager;
 
+import file_manager.FileManager;
+import file_manager.LoadType;
+import file_manager.SaveType;
 import model.Movie;
+import model.MovieDetails;
 import model.Review;
+import model.index.Index;
+import model.index.UpdateIndexType;
 
 import java.util.ArrayList;
 
 public class MovieManager {
 
+    private static MovieManager singleton = null;
+
+    private Index index = Index.getInstance();
+    private FileManager fileManager = FileManager.getInstance();
+
+    public MovieManager() { }
+
+    public static MovieManager getInstance() {
+        if(singleton == null)
+            singleton = new MovieManager();
+        return singleton;
+    }
+
     public ArrayList<Movie> getAllMovie(){
-        return null;
+        ArrayList<Movie> movies = new ArrayList<Movie>();
+        for(int i=0; i < index.getIndexMovie(); i++) {
+            Movie movie = (Movie) fileManager.getData(LoadType.LOAD_MOVIES, i);
+
+            if(movie != null) movies.add(movie);
+        }
+        return movies;
     }
 
     public ArrayList<Movie> getMovieBySearch(String query){
-        return null;
+        ArrayList<Movie> movies = new ArrayList<Movie>();
+        for(int i=0; i < index.getIndexMovie(); i++) {
+            Movie movie = (Movie) fileManager.getData(LoadType.LOAD_MOVIES, i);
+            if(movie != null)
+                if(movie.getMovieTitle().contains(query))
+                    movies.add(movie);
+        }
+        return movies;
     }
 
-    public void addMovie(Movie movie){
-
+    public void addMovie(String title){
+        Movie movie = new Movie(index.getIndexMovie(), title);
+        index.updateIndex(UpdateIndexType.UPDATE_MOVIE);
+        fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
     }
 
-    public void changeDetailsMovie(Movie movie){
+    public void changeDetailsMovie(Movie movie, MovieDetails movieDetails){
 
     }
 
@@ -27,11 +61,11 @@ public class MovieManager {
 
     }
 
-    public void addReview(Review review, Movie movie){
+    public void addReview(Movie movie, Review review){
 
     }
 
-    public void addRating(int rating, Movie movie){
+    public void addRating(Movie movie, int rating){
 
     }
 }

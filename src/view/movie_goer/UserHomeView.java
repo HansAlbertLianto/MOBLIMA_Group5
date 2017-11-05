@@ -1,6 +1,7 @@
-package view;
+package view.movie_goer;
 
 import service.Service;
+import view.View;
 
 public class UserHomeView extends View {
 	

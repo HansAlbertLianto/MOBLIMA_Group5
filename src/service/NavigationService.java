@@ -2,33 +2,53 @@ package service;
 
 public interface NavigationService {
 
-    public void goLogin();
+    //----------------------------------------
+    //Common Navigation Service
+    //----------------------------------------
 
-    public void goAdminHome();
-
-    public void goMovie();
+    public void goLanding();
 
     public void goCineplex();
 
     public void goCinema();
 
-    public void goCinemaMovie();
+    public void goMovieTop5();
 
-    public void goSettings();
+    public void goSearchListMovie();
 
-    public void goTop5Edit();
+    public void goExit();
+
+    //----------------------------------------
+    //Admin Navigation Service
+    //----------------------------------------
+
+    public void goAdminLogin();
+
+    public void goAdminHome();
+
+    public void goAdminAddMovie();
+
+    public void goAdminEditRemoveMovie();
+
+    public void goAdminCinemaMovie();
+
+    public void goAdminMovieDetails();
+
+    public void goAdminSetting();
+
+
+    //----------------------------------------
+    //Movie goer Navigation Service
+    //----------------------------------------
 
     public void goUserHome();
 
-    public void goSearchFilterView();
+    public void goUserBookingHistory();
 
-    public void goMovieDetails();
+    public void goUserCinemaMovie();
 
-    public void goBooking();
+    public void goUserBooking();
 
-    public void goBookingHistory();
+    public void goUserMovieDetails();
 
-    public void goTop5View();
-
-    public void goExit();
 }

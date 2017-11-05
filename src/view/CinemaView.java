@@ -1,5 +1,7 @@
 package view;
 
+import view.View;
+
 public class CinemaView extends View {
 	public CinemaView(){
 		super();

@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class SeatLayout {
+public class SeatLayout implements Serializable {
     private ArrayList<Seat> seats = new ArrayList<Seat>();
 
     public SeatLayout(){

@@ -5,18 +5,26 @@ import file_manager.LoadType;
 import model.Cinema;
 import model.Cineplex;
 import model.Movie;
+import model.index.Index;
 
 import java.util.ArrayList;
 
-public class CinemaManager {
+public class CinemaManager{
 
+    private static CinemaManager singleton = null;
+
+    private Index index = Index.getInstance();
     private FileManager fileManager = FileManager.getInstance();
 
+    public CinemaManager() { }
+
+    public static CinemaManager getInstance() {
+        if(singleton == null)
+            singleton = new CinemaManager();
+        return singleton;
+    }
+
     public ArrayList<Cinema> getAllCinemas(Cineplex cineplex){
-//        Object result = fileManager.getData(LoadType.LOAD_ALL_CINEMA, cineplex.getId());
-//        if(result == null) return null;
-//        ArrayList<Cinema> cinemas = (ArrayList<Cinema>) result;
-//        return cinemas;
         return null;
     }
 
