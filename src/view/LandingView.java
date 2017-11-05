@@ -14,7 +14,7 @@ public class LandingView extends View {
     protected void manageResponse() {
         switch (this.response) {
             case 1:
-                service.goLogin();
+                service.goAdminLogin();
                 break;
             case 2:
                 service.goUserHome();

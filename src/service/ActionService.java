@@ -23,7 +23,8 @@ public interface ActionService {
 
     public MovieDetails doGetAllDetails();
 
-    public void doAddMovie(Movie movie);
+    public void doAddMovie(String title, int status, String synopsis,
+                           String genre, String director, String cast);
 
     public void doEditMovie(Movie editedMovie);
 

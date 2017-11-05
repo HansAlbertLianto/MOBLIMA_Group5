@@ -1,6 +1,10 @@
 package service;
 
 import model.*;
+import model_manager.CinemaMovieManager;
+import model_manager.CineplexManager;
+import model_manager.MovieManager;
+import model_manager.UserManager;
 import navigator.*;
 
 import java.util.ArrayList;
@@ -8,7 +12,23 @@ import java.util.ArrayList;
 public class Service implements ActionService, NavigationService {
     private static Service singleton = null;
 
+    // ----------------------------------
+    // Manager
+    // ----------------------------------
     private static Navigator navigator = Navigator.getInstance();
+
+    private MovieManager movieManager = MovieManager.getInstance();
+    private CineplexManager cineplexManager = CineplexManager.getInstance();
+    private UserManager userManager = UserManager.getInstance();
+
+    // ----------------------------------
+    // State
+    // ----------------------------------
+    private Person currentUser;
+    private Movie currentMovie;
+    private Cineplex currentCineplex;
+    private Cinema currentCinema;
+    private CinemaMovie currentCinemaMovie;
 
     private Service() {
     }
@@ -53,8 +73,16 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doAddMovie(Movie movie) {
-
+    public void doAddMovie(String title, int status, String synopsis,
+                           String genre, String director, String cast) {
+        MovieDetails movieDetails = new MovieDetails();
+        movieDetails.setShowingStatus(status);
+        movieDetails.setSynopsis(synopsis);
+        movieDetails.setMovieType(genre);
+        movieDetails.setDirector(director);
+        movieDetails.setCast(cast);
+        movieManager.addMovie(title, movieDetails);
+        navigator.handleSuccess();
     }
 
     @Override

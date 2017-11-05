@@ -53,6 +53,13 @@ public class MovieManager {
         fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
     }
 
+    public void addMovie(String title, MovieDetails details){
+        Movie movie = new Movie(index.getIndexMovie(), title);
+        movie.setDetails(details);
+        index.updateIndex(UpdateIndexType.UPDATE_MOVIE);
+        fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
+    }
+
     public void changeDetailsMovie(Movie movie, MovieDetails movieDetails){
 
     }

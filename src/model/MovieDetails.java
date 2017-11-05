@@ -3,20 +3,26 @@ package model;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MovieDetails implements Serializable{
+public class MovieDetails implements Serializable {
 
     private MovieStatus showingStatus;
     private String synopsis;
-    private ArrayList<Person> director = new ArrayList<Person>();
-    private ArrayList<Person> cast = new ArrayList<Person>();
+    private String director;
+    private String cast;
+    private String movieType;
 
     private ArrayList<Review> reviewList = new ArrayList<Review>();
-
-    private ArrayList<String> movieType = new ArrayList<String>();
     private ArrayList<Integer> totalRating = new ArrayList<Integer>();
 
-    public MovieDetails(){
+    public MovieDetails() {
 
+    }
+
+    public static String MovieStatus() {
+        return "1. Coming Soon\n" +
+                "2. Preview\n" +
+                "3. Now Showing\n" +
+                "4. End Of Showing\n";
     }
 
     public ArrayList<Review> getReviewList() {
@@ -29,7 +35,7 @@ public class MovieDetails implements Serializable{
 
     public double getTotalRating() {
         double sum = 0;
-        for(Integer i: totalRating){
+        for (Integer i : totalRating) {
             sum += i;
         }
         sum = sum / totalRating.size();
@@ -52,28 +58,20 @@ public class MovieDetails implements Serializable{
         this.synopsis = synopsis;
     }
 
-    public ArrayList<Person> getDirector() {
+    public String getDirector() {
         return director;
     }
 
-    public void setDirector(ArrayList<Person> director) {
+    public void setDirector(String director) {
         this.director = director;
     }
 
-    public void addDirector(Person director){
-        this.director.add(director);
-    }
-
-    public ArrayList<Person> getCast() {
+    public String getCast() {
         return cast;
     }
 
-    public void setCast(ArrayList<Person> cast) {
+    public void setCast(String cast) {
         this.cast = cast;
-    }
-
-    public void addCast(Person cast){
-        this.cast.add(cast);
     }
 
     public String getShowingStatus() {
@@ -91,20 +89,31 @@ public class MovieDetails implements Serializable{
         }
     }
 
-    public void setShowingStatus(MovieStatus showingStatus) {
-        this.showingStatus = showingStatus;
+    public void setShowingStatus(int status) {
+        switch (status) {
+            case 1:
+                this.showingStatus = MovieStatus.ComingSoon;
+                break;
+            case 2:
+                this.showingStatus = MovieStatus.Preview;
+                break;
+            case 3:
+                this.showingStatus = MovieStatus.NowShowing;
+                break;
+            case 4:
+                this.showingStatus = MovieStatus.EndOfShowing;
+                break;
+            default:
+                break;
+        }
     }
 
-    public ArrayList<String> getMovieType() {
+    public String getMovieType() {
         return movieType;
     }
 
-    public void setMovieType(ArrayList<String> movieType) {
+    public void setMovieType(String movieType) {
         this.movieType = movieType;
-    }
-
-    public void addMovieType(String movieType){
-        this.movieType.add(movieType);
     }
 
 }
