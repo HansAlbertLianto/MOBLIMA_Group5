@@ -36,6 +36,26 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(adminCineplexView);
                 adminCineplexView.appear();
                 break;
+            case OPEN_CINEMA:
+                CinemaView cinemaView = new CinemaView();
+                navigatorStack.add(cinemaView);
+                cinemaView.appear();
+                break;
+            case OPEN_MOVIE_TOP_5:
+                MovieTop5View movieTop5View = new MovieTop5View();
+                navigatorStack.add(movieTop5View);
+                movieTop5View.appear();
+                break;
+            case OPEN_SEARCH_LIST_MOVIE:
+                SearchListMovieView searchListMovieView = new SearchListMovieView();
+                navigatorStack.add(searchListMovieView);
+                searchListMovieView.appear();
+                break;
+            case EXIT:
+                pop(getCurrentView());
+                if (navigatorStack.isEmpty()) System.exit(0);
+                navigatorStack.peek().appear();
+                break;
             //----------------------------------------
             //Admin Navigation Service
             //----------------------------------------
@@ -49,13 +69,58 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(adminHomeView);
                 adminHomeView.appear();
                 break;
+            case OPEN_ADMIN_ADD_MOVIE:
+                AdminAddMovie adminAddMovie = new AdminAddMovie();
+                navigatorStack.add(adminAddMovie);
+                adminAddMovie.appear();
+                break;
+            case OPEN_ADMIN_EDIT_REMOVE_VIEW:
+                AdminEditMovie adminEditMovie = new AdminEditMovie();
+                navigatorStack.add(adminEditMovie);
+                adminEditMovie.appear();
+                break;
+            case OPEN_ADMIN_CINEMA_MOVIE_VIEW:
+                AdminCinemaMovieView adminCinemaMovieView = new AdminCinemaMovieView();
+                navigatorStack.add(adminCinemaMovieView);
+                adminCinemaMovieView.appear();
+                break;
+            case OPEN_ADMIN_MOVIE_DETAILS:
+                AdminMovieDetailsView adminMovieDetailsView = new AdminMovieDetailsView();
+                navigatorStack.add(adminMovieDetailsView);
+                adminMovieDetailsView.appear();
+                break;
+            case OPEN_ADMIN_SETTING:
+                AdminSettingView adminSettingView = new AdminSettingView();
+                navigatorStack.add(adminSettingView);
+                adminSettingView.appear();
+                break;
             //----------------------------------------
             //Movie goer Navigation Service
             //----------------------------------------
-            case EXIT:
-                pop(getCurrentView());
-                if (navigatorStack.isEmpty()) System.exit(0);
-                navigatorStack.peek().appear();
+            case OPEN_USER_HOME:
+                UserHomeView userHomeView = new UserHomeView();
+                navigatorStack.add(userHomeView);
+                userHomeView.appear();
+                break;
+            case OPEN_USER_BOOKING_HISTORY:
+                UserBookingHistoryView userBookingHistoryView = new UserBookingHistoryView();
+                navigatorStack.add(userBookingHistoryView);
+                userBookingHistoryView.appear();
+                break;
+            case OPEN_USER_CINEMA_MOVIE_VIEW:
+                UserCinemaMovieView userCinemaMovieView = new UserCinemaMovieView();
+                navigatorStack.add(userCinemaMovieView);
+                userCinemaMovieView.appear();
+                break;
+            case OPEN_USER_BOOKING:
+                UserBookingView userBookingView = new UserBookingView();
+                navigatorStack.add(userBookingView);
+                userBookingView.appear();
+                break;
+            case OPEN_USER_MOVIE_DETAILS:
+                UserMovieDetailsView userMovieDetailsView  = new UserMovieDetailsView();
+                navigatorStack.add(userMovieDetailsView);
+                userMovieDetailsView.appear();
                 break;
         }
     }
