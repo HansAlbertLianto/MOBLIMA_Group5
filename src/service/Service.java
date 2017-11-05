@@ -49,22 +49,29 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public ArrayList<Movie> doSearchMovie(String search) {
-        return null;
+        ArrayList<Movie> allMovies = movieManager.getAllMovie();
+        ArrayList<Movie> result = new ArrayList<Movie>();
+        for(Movie movie : allMovies){
+            if(movie.getMovieTitle().contains(search)){
+                result.add(movie);
+            }
+        }
+        return result;
     }
 
     @Override
     public ArrayList<Movie> doGetAllMovies() {
-        return null;
+        return movieManager.getAllMovie();
     }
 
     @Override
     public void setCurrentMovie(Movie currentMovie) {
-
+        this.currentMovie = currentMovie;
     }
 
     @Override
     public Movie doGetCurrentMovie() {
-        return null;
+        return currentMovie;
     }
 
     @Override
@@ -192,91 +199,91 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goLanding() {
-
+        navigator.doAction(ActionTypes.OPEN_LANDING);
     }
 
     @Override
     public void goCineplex() {
-
+        navigator.doAction(ActionTypes.OPEN_CINEPLEX);
     }
 
     @Override
     public void goCinema() {
-
+        navigator.doAction(ActionTypes.OPEN_CINEMA);
     }
 
     @Override
     public void goMovieTop5() {
-
+        navigator.doAction(ActionTypes.OPEN_MOVIE_TOP_5);
     }
 
     @Override
     public void goSearchListMovie() {
-
+        navigator.doAction(ActionTypes.OPEN_SEARCH_LIST_MOVIE);
     }
 
     @Override
     public void goExit() {
-
+        navigator.doAction(ActionTypes.EXIT);
     }
 
     @Override
     public void goAdminLogin() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_LOGIN);
     }
 
     @Override
     public void goAdminHome() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_HOME);
     }
 
     @Override
     public void goAdminAddMovie() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_ADD_MOVIE);
     }
 
     @Override
     public void goAdminEditRemoveMovie() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_EDIT_REMOVE_VIEW);
     }
 
     @Override
     public void goAdminCinemaMovie() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_CINEMA_MOVIE_VIEW);
     }
 
     @Override
     public void goAdminMovieDetails() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_MOVIE_DETAILS);
     }
 
     @Override
     public void goAdminSetting() {
-
+        navigator.doAction(ActionTypes.OPEN_ADMIN_SETTING);
     }
 
     @Override
     public void goUserHome() {
-
+        navigator.doAction(ActionTypes.OPEN_USER_HOME);
     }
 
     @Override
     public void goUserBookingHistory() {
-
+        navigator.doAction(ActionTypes.OPEN_USER_BOOKING_HISTORY);
     }
 
     @Override
     public void goUserCinemaMovie() {
-
+        navigator.doAction(ActionTypes.OPEN_USER_CINEMA_MOVIE_VIEW);
     }
 
     @Override
     public void goUserBooking() {
-
+        navigator.doAction(ActionTypes.OPEN_USER_BOOKING);
     }
 
     @Override
     public void goUserMovieDetails() {
-
+        navigator.doAction(ActionTypes.OPEN_USER_MOVIE_DETAILS);
     }
 }

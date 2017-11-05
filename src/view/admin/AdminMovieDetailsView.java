@@ -1,4 +1,10 @@
 package view.admin;
 
-public class AdminMovieDetailsView {
+import view.View;
+
+public class AdminMovieDetailsView extends View {
+    @Override
+    protected void manageResponse() {
+
+    }
 }

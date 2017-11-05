@@ -30,7 +30,6 @@ public class MovieManager {
         ArrayList<Movie> movies = new ArrayList<Movie>();
         for(int i=0; i < index.getIndexMovie(); i++) {
             Movie movie = (Movie) fileManager.getData(LoadType.LOAD_MOVIES, i);
-
             if(movie != null) movies.add(movie);
         }
         return movies;

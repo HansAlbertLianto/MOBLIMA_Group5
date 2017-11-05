@@ -13,8 +13,8 @@ public class Test {
     private static CineplexManager cineplexManager = CineplexManager.getInstance();
 
     public static void main(String[] args) {
-//        populateMovie();
-//        populateCineplexCinema();
+        populateMovie();
+        populateCineplexCinema();
         printAllMovie();
         printAllCineplex();
         printAllCinema(cineplexManager.getAllCineplex().get(0));

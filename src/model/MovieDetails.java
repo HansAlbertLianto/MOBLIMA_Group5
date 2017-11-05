@@ -116,4 +116,12 @@ public class MovieDetails implements Serializable {
         this.movieType = movieType;
     }
 
+    @Override
+    public String toString() {
+        return "Showing Status: " + getShowingStatus() + "\n" +
+                "Synopsis: " + getSynopsis() + "\n" +
+                "Director: " + getDirector() + "\n" +
+                "Cast: " + getCast() + "\n" +
+                "Genre: " + getMovieType() + "\n";
+    }
 }

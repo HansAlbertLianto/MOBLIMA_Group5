@@ -1,4 +1,10 @@
 package view.movie_goer;
 
-public class UserCinemaMovieView {
+import view.View;
+
+public class UserCinemaMovieView extends View{
+    @Override
+    protected void manageResponse() {
+
+    }
 }
