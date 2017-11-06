@@ -32,23 +32,18 @@ public class CinemaMovie implements Serializable {
         this.date = date;
     }
 
-    public class CinemaMovieDate {
-        public int date;
-        public int month;
-        public int year;
-        public int start_time;
-        public int end_time;
-
-        public CinemaMovieDate(int start, int end) {
-            LocalTime time = LocalTime.now();
-        }
-
-        public CinemaMovieDate(int date, int month, int year, int start, int end) {
-            this.date = date;
-            this.month = month;
-            this.year = year;
-            this.start_time = start;
-            this.end_time = end;
-        }
+    public Cinema getCinema() {
+        return cinema;
     }
+
+    public SeatLayout getSeatLayout() {
+        return seatLayout;
+    }
+
+    @Override
+    public String toString() {
+        return "\nMovie: " + movie.getMovieTitle() +
+                date.toString() + "\n";
+    }
+
 }

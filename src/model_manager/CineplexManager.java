@@ -3,6 +3,7 @@ package model_manager;
 import file_manager.FileManager;
 import file_manager.LoadType;
 import file_manager.SaveType;
+import model.CinemaMovie;
 import model.Cineplex;
 import model.index.Index;
 import model.index.UpdateIndexType;
@@ -32,6 +33,11 @@ public class CineplexManager {
             if (cineplex != null) cineplexes.add(cineplex);
         }
         return cineplexes;
+    }
+
+    public void addCinemaMovie(Cineplex cineplex, CinemaMovie cinemaMovie){
+        cinemaMovie.getCinema().addCinemaMovies(cinemaMovie);
+        fileManager.saveData(SaveType.SAVE_CINEPLEX, cineplex, cineplex.getId());
     }
 
     public void addCineplex(Cineplex cineplex) {

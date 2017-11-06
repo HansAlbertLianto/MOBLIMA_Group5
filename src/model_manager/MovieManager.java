@@ -59,9 +59,8 @@ public class MovieManager {
         fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
     }
 
-    public void changeDetailsMovie(Movie movie, MovieDetails movieDetails){
-        movie.setDetails(movieDetails);
-        fileManager.saveData(SaveType.SAVE_MOVIE, movie, movie.getId());
+    public void changeDetailsMovie(Movie editedMovie){
+        fileManager.saveData(SaveType.SAVE_MOVIE, editedMovie, editedMovie.getId());
     }
 
     public void removeMovie(Movie movie){

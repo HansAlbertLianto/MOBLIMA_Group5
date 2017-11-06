@@ -3,7 +3,7 @@ package view;
 import message_manager.MessageManager;
 import service.Service;
 public abstract class View implements ViewInterface {
-    protected String MENU_MSG;
+    protected String MENU_MSG = "";
     protected int from = 0;
     protected int to = 0;
     protected int response;
@@ -31,7 +31,7 @@ public abstract class View implements ViewInterface {
     @Override
     public void appear() {
         Message.printMessage(MENU_MSG);
-        if (from == 0 || to == 0) return;
+        if (from == 0 && to == 0) return;
         response = Message.input(from, to);
         manageResponse();
     }

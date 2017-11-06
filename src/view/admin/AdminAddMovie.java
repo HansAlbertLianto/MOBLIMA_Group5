@@ -23,7 +23,7 @@ public class AdminAddMovie extends View{
 
         movieTitle = Message.inputString(1,20, "Movie title");
         Message.printMessage(MovieDetails.MovieStatus());
-        Message.printMessage("Status (1-4) : ");
+        Message.printMessage("Status (1-4)");
         status = Message.input(1,4);
         genre = Message.inputString(1, 500, "Genre (max 500 words)");
         synopsis = Message.inputString(1, 500, "Synopsis (max 500 words)");

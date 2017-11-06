@@ -1,7 +1,6 @@
 package service;
 
 import model.*;
-import model_manager.CinemaMovieManager;
 import model_manager.CineplexManager;
 import model_manager.MovieManager;
 import model_manager.UserManager;
@@ -24,7 +23,8 @@ public class Service implements ActionService, NavigationService {
     // ----------------------------------
     // State
     // ----------------------------------
-    private Person currentUser;
+    private boolean isAdmin = false;
+    private boolean isAddingCinemaMovie = false;
     private Movie currentMovie;
     private Cineplex currentCineplex;
     private Cinema currentCinema;
@@ -41,6 +41,7 @@ public class Service implements ActionService, NavigationService {
     @Override
     public void doLogin(String username, String password) {
         if (username.equals("admin") && password.equals("admin")) {
+            isAdmin = true;
             navigator.handleSuccess();
         } else {
             navigator.handleError();
@@ -48,11 +49,16 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
+    public boolean doGetCurrentUser() {
+        return !isAdmin;
+    }
+
+    @Override
     public ArrayList<Movie> doSearchMovie(String search) {
         ArrayList<Movie> allMovies = movieManager.getAllMovie();
         ArrayList<Movie> result = new ArrayList<Movie>();
-        for(Movie movie : allMovies){
-            if(movie.getMovieTitle().contains(search)){
+        for (Movie movie : allMovies) {
+            if (movie.getMovieTitle().contains(search)) {
                 result.add(movie);
             }
         }
@@ -94,17 +100,28 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void doEditMovie(Movie editedMovie) {
-
+        currentMovie = editedMovie;
+        movieManager.changeDetailsMovie(editedMovie);
     }
 
     @Override
     public void doRemoveMovie(Movie movie) {
-
+        movieManager.removeMovie(movie);
     }
 
     @Override
     public void doAddReview(Movie movie, Person person, Review review) {
 
+    }
+
+    @Override
+    public void tryAddingMovieToCinema() {
+        isAddingCinemaMovie = true;
+    }
+
+    @Override
+    public boolean isTryAddingMovie() {
+        return isAddingCinemaMovie;
     }
 
     @Override
@@ -114,52 +131,52 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public ArrayList<Cineplex> doGetAllCineplex() {
-        return null;
+        return cineplexManager.getAllCineplex();
     }
 
     @Override
     public void setCurrentCineplex(Cineplex currentCineplex) {
-
+        this.currentCineplex = currentCineplex;
     }
 
     @Override
     public Cineplex doGetCurrentCineplex() {
-        return null;
+        return currentCineplex;
     }
 
     @Override
     public ArrayList<Cinema> doGetAllCinema() {
-        return null;
+        return currentCineplex.getCinemas();
     }
 
     @Override
     public void setCurrentCinema(Cinema currentCinema) {
-
+        this.currentCinema = currentCinema;
     }
 
     @Override
     public Cinema doGetCurrentCinema() {
-        return null;
+        return currentCinema;
     }
 
     @Override
     public ArrayList<CinemaMovie> doGetAllCinemaMovie(Cinema cinema) {
-        return null;
+        return currentCinema.getCinemaMovies();
     }
 
     @Override
     public void setCurrentCinemaMovie(CinemaMovie currentCinemaMovie) {
-
+        this.currentCinemaMovie = currentCinemaMovie;
     }
 
     @Override
-    public Cinema doGetCurrentCinemaMovie() {
-        return null;
+    public CinemaMovie doGetCurrentCinemaMovie() {
+        return currentCinemaMovie;
     }
 
     @Override
     public void doGetSeatLayout(CinemaMovie cinemaMovie) {
-
+        return;
     }
 
     @Override
@@ -173,12 +190,12 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doAddMovieToCinema(CinemaMovie cinemaMovie, Movie movie) {
-
+    public void doAddMovieToCinema(CinemaMovie cinemaMovie) {
+        cineplexManager.addCinemaMovie(currentCineplex, cinemaMovie);
     }
 
     @Override
-    public void doChangeCinemaMovieTimes(CinemaMovie cinemaMovie, CinemaMovie.CinemaMovieDate cinemaMovieDate) {
+    public void doEditCinemaMovie(CinemaMovie cinemaMovie) {
 
     }
 
@@ -223,6 +240,11 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
+    public void goContinue() {
+        navigator.doAction(ActionTypes.CONTINUE);
+    }
+
+    @Override
     public void goExit() {
         navigator.doAction(ActionTypes.EXIT);
     }
@@ -264,6 +286,7 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void goUserHome() {
+        isAdmin = false;
         navigator.doAction(ActionTypes.OPEN_USER_HOME);
     }
 
@@ -286,4 +309,5 @@ public class Service implements ActionService, NavigationService {
     public void goUserMovieDetails() {
         navigator.doAction(ActionTypes.OPEN_USER_MOVIE_DETAILS);
     }
+
 }

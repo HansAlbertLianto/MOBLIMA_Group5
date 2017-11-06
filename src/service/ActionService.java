@@ -64,7 +64,7 @@ public interface ActionService {
 
     public void setCurrentCinemaMovie(CinemaMovie currentCinemaMovie);
 
-    public Cinema doGetCurrentCinemaMovie();
+    public CinemaMovie doGetCurrentCinemaMovie();
 
     public void doGetSeatLayout(CinemaMovie cinemaMovie);
 
@@ -72,13 +72,19 @@ public interface ActionService {
 
     public void doPurchase(CinemaMovie cinemaMovie);
 
-    public void doAddMovieToCinema(CinemaMovie cinemaMovie, Movie movie);
+    public void tryAddingMovieToCinema();
 
-    public void doChangeCinemaMovieTimes(CinemaMovie cinemaMovie, CinemaMovie.CinemaMovieDate cinemaMovieDate);
+    public boolean isTryAddingMovie();
+
+    public void doAddMovieToCinema(CinemaMovie cinemaMovie);
+
+    public void doEditCinemaMovie(CinemaMovie cinemaMovie);
 
     //  ----------------------------------
     //  Movie-goers Action
     //  ----------------------------------
+
+    public boolean doGetCurrentUser();
 
     public void doGetAllBookingHistory();
 

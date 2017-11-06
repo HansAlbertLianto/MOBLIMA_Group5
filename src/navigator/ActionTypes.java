@@ -16,6 +16,8 @@ public enum ActionTypes {
 
     OPEN_SEARCH_LIST_MOVIE,
 
+    CONTINUE,
+
     EXIT,
 
     //----------------------------------------

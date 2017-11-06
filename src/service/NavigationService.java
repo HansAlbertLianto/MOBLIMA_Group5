@@ -16,6 +16,8 @@ public interface NavigationService {
 
     public void goSearchListMovie();
 
+    public void goContinue();
+
     public void goExit();
 
     //----------------------------------------

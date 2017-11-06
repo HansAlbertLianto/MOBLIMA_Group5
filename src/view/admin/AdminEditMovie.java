@@ -4,24 +4,30 @@ import model.Movie;
 import view.View;
 
 public class AdminEditMovie extends View {
-    private static final String message =
-            "Here are the details of this movie ";
 
     private static final String selectionMessage =
             "1. Edit details \n" +
                     "2. Remove this movie\n";
-    private static Movie movie = service.doGetCurrentMovie();
 
     public AdminEditMovie() {
-        super(message + movie.getMovieTitle() + ":\n");
+        super();
+    }
+
+    private static String getHeaderMessage(String movieTitle) {
+        return "\n------------------------------------" +
+                "\n------------------------------------\n" +
+                "Here are the details of " + movieTitle +
+                "\n------------------------------------" +
+                "\n------------------------------------";
     }
 
     @Override
     public void appear() {
         super.appear();
-        Message.printMessage(movie.getDetails().toString());
+        Message.printMessage(getHeaderMessage(service.doGetCurrentMovie().getMovieTitle()));
+        Message.printMessage(service.doGetCurrentMovie().getDetails().toString());
         Message.printMessage(selectionMessage);
-        response = Message.input(1, 2);
+        response = Message.input(0, 2);
         this.manageResponse();
     }
 
@@ -35,15 +41,17 @@ public class AdminEditMovie extends View {
                 removeMovie();
                 break;
             default:
+                service.goExit();
                 break;
         }
     }
 
     private void editMovie() {
-
+        service.goAdminMovieDetails();
     }
 
     private void removeMovie() {
-
+        service.doRemoveMovie(service.doGetCurrentMovie());
+        service.goExit();
     }
 }

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class Cinema implements Serializable {
     private String name;
-    private Seat seat;
-    private ArrayList<CinemaMovie> cinemaMovies;
+    private Seat seat = new Seat();
+    private ArrayList<CinemaMovie> cinemaMovies = new ArrayList<CinemaMovie>();
 
     public Cinema(String cinema_name) {
         this.name = cinema_name;

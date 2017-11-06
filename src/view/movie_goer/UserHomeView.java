@@ -7,8 +7,9 @@ public class UserHomeView extends View {
 
     private static final String message =
             "Welcome to MOBLIMA, user! What would you like to do? \n" +
-                    "1. Search for Movies \n" +
-                    "2. Logout";
+                    "1. Search or List Movies \n" +
+                    "2. List all Cineplex\n"+
+                    "3. Logout";
 
     public UserHomeView() {
         super(message, 1, 2);
@@ -21,9 +22,10 @@ public class UserHomeView extends View {
                 service.goSearchListMovie();
                 break;
             case 2:
-                service.goExit();
+                service.goCineplex();
                 break;
             default:
+                service.goExit();
                 break;
         }
     }

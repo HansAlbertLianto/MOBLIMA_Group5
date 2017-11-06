@@ -13,11 +13,13 @@ public class Test {
     private static CineplexManager cineplexManager = CineplexManager.getInstance();
 
     public static void main(String[] args) {
-        populateMovie();
-        populateCineplexCinema();
-        printAllMovie();
-        printAllCineplex();
-        printAllCinema(cineplexManager.getAllCineplex().get(0));
+//        populateMovie();
+//        populateCineplexCinema();
+//        printAllMovie();
+//        printAllCineplex();
+//        printAllCinema(cineplexManager.getAllCineplex().get(0));
+        CinemaMovieDate date = new CinemaMovieDate(1200,1300);
+
     }
 
     public static void populateMovie() {

@@ -3,7 +3,7 @@ package view.admin;
 import view.View;
 
 public class AdminLoginView extends View {
-    private static final String message = "Please login using your admin credentials\n";
+    private static final String message = "Please login using your admin credentials";
     private static final String LOGIN_SUCCESS = "Login is successful !\n";
     private static final String LOGIN_FAILED = "Your username and password do not valid\n";
     private String username;
