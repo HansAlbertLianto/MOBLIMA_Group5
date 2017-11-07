@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48f6635-fa6a-4701-a35c-c042b1b717ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/file/index.dat" afterPath="$PROJECT_DIR$/etc/file/index.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/file_manager/Test.java" afterPath="$PROJECT_DIR$/src/file_manager/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -18,11 +17,11 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/file_manager/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="310" column="36" lean-forward="false" selection-start-line="310" selection-start-column="36" selection-end-line="310" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1510071895702" expanded="false" signature="727:735" ph="&lt;~&gt;" />
+                <marker date="1510072076345" expanded="false" signature="727:735" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -31,12 +30,10 @@
       <file leaf-file-name="MovieManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model_manager/MovieManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
+            <state relative-caret-position="323">
               <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#745#752#0" expanded="true" />
-                <element signature="e#1087#1094#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +42,7 @@
       <file leaf-file-name="Index.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/index/Index.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
+            <state relative-caret-position="51">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
@@ -55,7 +52,7 @@
       <file leaf-file-name="MovieDetails.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/MovieDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
+            <state relative-caret-position="153">
               <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -188,7 +185,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,9 +267,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -842,7 +839,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/MovieDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
+        <state relative-caret-position="153">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -852,7 +849,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/index/Index.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="51">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
@@ -860,23 +857,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model_manager/MovieManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
+        <state relative-caret-position="323">
           <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#745#752#0" expanded="true" />
-            <element signature="e#1087#1094#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/file_manager/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="310" column="36" lean-forward="false" selection-start-line="310" selection-start-column="36" selection-end-line="310" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1510071895702" expanded="false" signature="727:735" ph="&lt;~&gt;" />
+            <marker date="1510072076345" expanded="false" signature="727:735" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

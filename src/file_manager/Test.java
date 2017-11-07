@@ -47,7 +47,7 @@ public class Test {
 //        for(String title : dumpTitleMovies){
 //            movieManager.addMovie(title);
 //        }
-        Movie movie1 = new Movie(1,"Moana");
+        Movie movie1 = new Movie(0,"Moana");
         MovieDetails md1 = new MovieDetails();
         md1.setCast("Auli'i Cravalho, Dwayne Johnson, Rachel House");
         md1.setDirector("Ron Clements, John Musker");
@@ -56,7 +56,7 @@ public class Test {
         movie1.setDetails(md1);
         movieManager.addMovie(movie1.getMovieTitle(),md1);
 
-        Movie movie2 = new Movie(2,"The Conjuring");
+        Movie movie2 = new Movie(1,"The Conjuring");
         MovieDetails md2 = new MovieDetails();
         md2.setCast("Patrick Wilson, Vera Farmiga, Ron Livingston");
         md2.setDirector("James Wan");
@@ -65,7 +65,7 @@ public class Test {
         movie2.setDetails(md2);
         movieManager.addMovie(movie2.getMovieTitle(),md2);
 
-        Movie movie3 = new Movie(3,"It");
+        Movie movie3 = new Movie(2,"It");
         MovieDetails md3 = new MovieDetails();
         md3.setCast(" Bill Skarsgård, Jaeden Lieberher, Finn Wolfhard");
         md3.setDirector("Andy Muschietti");
@@ -74,7 +74,7 @@ public class Test {
         movie3.setDetails(md3);
         movieManager.addMovie(movie3.getMovieTitle(),md3);
 
-        Movie movie4 = new Movie(4,"Dunkirk");
+        Movie movie4 = new Movie(3,"Dunkirk");
         MovieDetails md4 = new MovieDetails();
         md4.setCast("Flonn Whitehead, Barry Keoghan, Mark Rylance");
         md4.setDirector("Christopher Nolan");
@@ -83,7 +83,7 @@ public class Test {
         movie4.setDetails(md4);
         movieManager.addMovie(movie4.getMovieTitle(),md4);
 
-        Movie movie5 = new Movie(5,"Cars 3");
+        Movie movie5 = new Movie(4,"Cars 3");
         MovieDetails md5 = new MovieDetails();
         md5.setCast("Owen Wilson, Cristela Alonzo, Chris Cooper");
         md5.setDirector("Brian Fee");
@@ -92,7 +92,7 @@ public class Test {
         movie5.setDetails(md5);
         movieManager.addMovie(movie5.getMovieTitle(),md5);
 
-        Movie movie6 = new Movie(6,"Suicide Squad");
+        Movie movie6 = new Movie(5,"Suicide Squad");
         MovieDetails md6 = new MovieDetails();
         md6.setCast("Will Smith, Jared Leto, Margot Robbie");
         md6.setDirector("David Ayer");
@@ -101,7 +101,7 @@ public class Test {
         movie6.setDetails(md6);
         movieManager.addMovie(movie6.getMovieTitle(),md6);
 
-        Movie movie7 = new Movie(7,"Saw");
+        Movie movie7 = new Movie(6,"Saw");
         MovieDetails md7 = new MovieDetails();
         md7.setCast("Cary Elwes, Leigh Whannel, Danny Glover");
         md7.setDirector("James Wan");
@@ -110,7 +110,7 @@ public class Test {
         movie7.setDetails(md7);
         movieManager.addMovie(movie7.getMovieTitle(),md7);
 
-        Movie movie8 = new Movie(8,"Lady Bird");
+        Movie movie8 = new Movie(7,"Lady Bird");
         MovieDetails md8 = new MovieDetails();
         md8.setCast("Saoirse Ronan, Odeya Rush, Kathryn Newton");
         md8.setDirector("Greta Gerwig");
@@ -119,7 +119,7 @@ public class Test {
         movie8.setDetails(md8);
         movieManager.addMovie(movie8.getMovieTitle(),md8);
 
-        Movie movie9 = new Movie(9,"The Foreigner");
+        Movie movie9 = new Movie(8,"The Foreigner");
         MovieDetails md9 = new MovieDetails();
         md9.setCast("Katie Leung, Jackie Chan, Rufus Jones");
         md9.setDirector("Martin Campbell");
@@ -128,7 +128,7 @@ public class Test {
         movie9.setDetails(md9);
         movieManager.addMovie(movie9.getMovieTitle(),md9);
 
-        Movie movie10 = new Movie(10, "Baywatch");
+        Movie movie10 = new Movie(9, "Baywatch");
         MovieDetails md10 = new MovieDetails();
         md10.setCast("Dwayne Johnson, Zac Efron, Alexandra Daddario");
         md10.setDirector("Seth Gordon");
@@ -137,7 +137,7 @@ public class Test {
         movie10.setDetails(md10);
         movieManager.addMovie(movie10.getMovieTitle(),md10);
 
-        Movie movie11 = new Movie(11,"Titanic");
+        Movie movie11 = new Movie(10,"Titanic");
         MovieDetails md11 = new MovieDetails();
         md11.setCast("Leonardo DiCaprio, Kate Winslet, Billy Zane");
         md11.setDirector("James Cameron");
@@ -146,7 +146,7 @@ public class Test {
         movie11.setDetails(md11);
         movieManager.addMovie(movie11.getMovieTitle(),md11);
 
-        Movie movie12 = new Movie(12, "Avatar");
+        Movie movie12 = new Movie(11, "Avatar");
         MovieDetails md12 = new MovieDetails();
         md12.setCast("Sam Worthington, Zoe Saldana, Sigourney Weaver");
         md12.setDirector("James Cameron");
@@ -155,7 +155,7 @@ public class Test {
         movie12.setDetails(md12);
         movieManager.addMovie(movie12.getMovieTitle(),md12);
 
-        Movie movie13 = new Movie(13, "Cinderella");
+        Movie movie13 = new Movie(12, "Cinderella");
         MovieDetails md13 = new MovieDetails();
         md13.setCast("Lily James, Cate Blanchett, Richard Madden");
         md13.setDirector("Kenneth Branagh");
@@ -164,7 +164,7 @@ public class Test {
         movie13.setDetails(md13);
         movieManager.addMovie(movie13.getMovieTitle(),md13);
 
-        Movie movie14 = new Movie(14, "La La Land");
+        Movie movie14 = new Movie(13, "La La Land");
         MovieDetails md14 = new MovieDetails();
         md14.setCast("Ryan Gosling, Emma Stone, Rosemarie DeWitt");
         md14.setDirector("Damien Chazelle");
@@ -173,7 +173,7 @@ public class Test {
         movie14.setDetails(md14);
         movieManager.addMovie(movie14.getMovieTitle(),md14);
 
-        Movie movie15 = new Movie(15, "Inception");
+        Movie movie15 = new Movie(14, "Inception");
         MovieDetails md15 = new MovieDetails();
         md15.setCast("Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page");
         md15.setDirector("Christopher Nolan");
@@ -182,7 +182,7 @@ public class Test {
         movie15.setDetails(md15);
         movieManager.addMovie(movie15.getMovieTitle(),md15);
 
-        Movie movie16 = new Movie(16, "Gladiator");
+        Movie movie16 = new Movie(15, "Gladiator");
         MovieDetails md16 = new MovieDetails();
         md16.setCast("Russell Crowe, Joaquin Phoenix, Connie Nielsen");
         md16.setDirector("Ridley Scott");
@@ -191,7 +191,7 @@ public class Test {
         movie16.setDetails(md16);
         movieManager.addMovie(movie16.getMovieTitle(),md16);
 
-        Movie movie17 = new Movie(17,"up");
+        Movie movie17 = new Movie(16,"up");
         MovieDetails md17 = new MovieDetails();
         md17.setCast("Edward Asner, Jordan Nagai, John Ratzenberger");
         md17.setDirector("Pete Docter, Bob Peterson");
@@ -200,7 +200,7 @@ public class Test {
         movie17.setDetails(md17);
         movieManager.addMovie(movie17.getMovieTitle(),md17);
 
-        Movie movie18 = new Movie(18, "Logan");
+        Movie movie18 = new Movie(17, "Logan");
         MovieDetails md18 = new MovieDetails();
         md18.setCast("Hugh Jackman, Patrick Stewart, Dafne Keen");
         md18.setDirector("James Mangold");
@@ -209,7 +209,7 @@ public class Test {
         movie18.setDetails(md18);
         movieManager.addMovie(movie18.getMovieTitle(),md18);
 
-        Movie movie19 = new Movie(19,"Interstellar");
+        Movie movie19 = new Movie(18,"Interstellar");
         MovieDetails md19 = new MovieDetails();
         md19.setCast("Matthew McConaughey, Anne Hathaway, Jessica Chastain");
         md19.setDirector("Christopher Nolan");
@@ -218,7 +218,7 @@ public class Test {
         movie19.setDetails(md19);
         movieManager.addMovie(movie19.getMovieTitle(),md19);
 
-        Movie movie20 = new Movie(20, "The Revenant");
+        Movie movie20 = new Movie(19, "The Revenant");
         MovieDetails md20 = new MovieDetails();
         md20.setCast("Leonardo DiCaprio, Tom Hardy,Will Poulter");
         md20.setDirector("Alejandro González Iñárritu");
@@ -227,7 +227,7 @@ public class Test {
         movie20.setDetails(md20);
         movieManager.addMovie(movie20.getMovieTitle(),md20);
 
-        Movie movie21 = new Movie(21,"Les Misérables");
+        Movie movie21 = new Movie(20,"Les Misérables");
         MovieDetails md21 = new MovieDetails();
         md21.setCast("Hugh Jackman, Russell Crowe, Anne Hathaway");
         md21.setDirector("Tom Hooper");
@@ -236,7 +236,7 @@ public class Test {
         movie21.setDetails(md21);
         movieManager.addMovie(movie21.getMovieTitle(),md21);
 
-        Movie movie22 = new Movie(22, "Passengers");
+        Movie movie22 = new Movie(21, "Passengers");
         MovieDetails md22 = new MovieDetails();
         md22.setCast("Anne Hathaway, Patrick Wilson, David Morse");
         md22.setDirector("Rodrigo Garcia");
@@ -245,7 +245,7 @@ public class Test {
         movie22.setDetails(md22);
         movieManager.addMovie(movie22.getMovieTitle(),md22);
 
-        Movie movie23 = new Movie(23, "Twilight");
+        Movie movie23 = new Movie(22, "Twilight");
         MovieDetails md23 = new MovieDetails();
         md23.setCast("Kristen Stewart, Robert Pattinson, Billy Burke");
         md23.setDirector("Catherine Hardwicke");
@@ -254,7 +254,7 @@ public class Test {
         movie23.setDetails(md23);
         movieManager.addMovie(movie23.getMovieTitle(),md23);
 
-        Movie movie24 = new Movie(24,"Real Steel");
+        Movie movie24 = new Movie(23,"Real Steel");
         MovieDetails md24 = new MovieDetails();
         md24.setCast("Hugh Jackman, Evangeline Lilly, Dakota Goyo");
         md24.setDirector("Shawn Levy");
@@ -263,7 +263,7 @@ public class Test {
         movie24.setDetails(md24);
         movieManager.addMovie(movie24.getMovieTitle(),md24);
 
-        Movie movie25 = new Movie(25, "X-Men");
+        Movie movie25 = new Movie(24, "X-Men");
         MovieDetails md25 = new MovieDetails();
         md25.setCast("Patrick Stewart, Hugh Jackman, Ian McKellen");
         md25.setDirector("Bryan Singer");
@@ -272,7 +272,7 @@ public class Test {
         movie25.setDetails(md25);
         movieManager.addMovie(movie25.getMovieTitle(),md25);
 
-        Movie movie26 = new Movie(26,"Into the Wild");
+        Movie movie26 = new Movie(25,"Into the Wild");
         MovieDetails md26 = new MovieDetails();
         md26.setCast("Emile Hirsch, Vince Vaughn, Catherine Keener");
         md26.setDirector("Sean Penn");
@@ -281,7 +281,7 @@ public class Test {
         movie26.setDetails(md26);
         movieManager.addMovie(movie26.getMovieTitle(),md26);
 
-        Movie movie27 = new Movie(27,"Zootopia");
+        Movie movie27 = new Movie(26,"Zootopia");
         MovieDetails md27 = new MovieDetails();
         md27.setCast("Ginnifer Goodwin, Jason Bateman, Idris Elba");
         md27.setDirector("Byron Howard, Rich Moore");
@@ -290,7 +290,7 @@ public class Test {
         movie27.setDetails(md27);
         movieManager.addMovie(movie27.getMovieTitle(),md27);
 
-        Movie movie28 = new Movie(28,"Jurassic Park");
+        Movie movie28 = new Movie(27,"Jurassic Park");
         MovieDetails md28 = new MovieDetails();
         md28.setCast("Sam Neill, Laura Dern, Jeff Goldblum");
         md28.setDirector("Steven Spielberg");
@@ -299,7 +299,7 @@ public class Test {
         movie28.setDetails(md28);
         movieManager.addMovie(movie28.getMovieTitle(),md28);
 
-        Movie movie29 = new Movie(29, "Jaws");
+        Movie movie29 = new Movie(28, "Jaws");
         MovieDetails md29 = new MovieDetails();
         md29.setCast("Roy Scheider, Robert Shaw, Richard Dreyfuss");
         md29.setDirector("Steven Spielberg");
@@ -308,7 +308,7 @@ public class Test {
         movie29.setDetails(md29);
         movieManager.addMovie(movie29.getMovieTitle(),md29);
 
-        Movie movie30 = new Movie(30, "Trolls");
+        Movie movie30 = new Movie(29, "Trolls");
         MovieDetails md30 = new MovieDetails();
         md30.setCast("Anna Kendrick, Justin Timberlake, Zooey Deschanel");
         md30.setDirector("Mike Mitchell, Walth Dohrn");
