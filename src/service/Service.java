@@ -55,10 +55,10 @@ public class Service implements ActionService, NavigationService {
 
     @Override
     public void doUserLogin(String phoneNumber){
-        ArrayList<Person> persons = userManager.getAllUser();
+        ArrayList<User> users = userManager.getAllUser();
         boolean found = false;
-        for (Person person: persons){
-            if (person.getPhoneNumber().equals(phoneNumber)){
+        for (User user : users){
+            if (user.getPhoneNumber().equals(phoneNumber)){
                 isAdmin = false;
                 found = true;
                 navigator.handleSuccess();
@@ -132,7 +132,7 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doAddReview(Movie movie, Person person, Review review) {
+    public void doAddReview(Movie movie, User user, Review review) {
 
     }
 
@@ -147,7 +147,7 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doAddRating(Movie movie, Person person, int rating) {
+    public void doAddRating(Movie movie, User user, int rating) {
 
     }
 

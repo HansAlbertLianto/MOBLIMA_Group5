@@ -2,7 +2,6 @@ package service;
 
 import model.*;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public interface ActionService {
@@ -38,9 +37,9 @@ public interface ActionService {
     //  Review & Ratings
     //  ----------------------------------
 
-    public void doAddReview(Movie movie, Person person, Review review);
+    public void doAddReview(Movie movie, User user, Review review);
 
-    public void doAddRating(Movie movie, Person person, int rating);
+    public void doAddRating(Movie movie, User user, int rating);
 
     //  ----------------------------------
     //  Cineplex Action

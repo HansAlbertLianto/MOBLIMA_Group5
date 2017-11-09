@@ -1,21 +1,19 @@
 package model.index;
 import file_manager.FileManager;
-import file_manager.PathManager;
 
-import java.io.File;
 import java.io.Serializable;
 
 public class Index implements Serializable{
 	private int indexMovie;
 	private int indexCineplex;
-	private int indexPerson;
+	private int indexUser;
 
     private static Index singleton = null;
 
     private Index() {
         this.indexMovie = 0;
         this.indexCineplex = 0;
-        this.indexPerson = 0;
+        this.indexUser = 0;
     }
 
     public static Index getInstance() {
@@ -23,10 +21,10 @@ public class Index implements Serializable{
         return singleton;
     }
 
-	public Index(int indexMovie, int indexCineplex, int indexCinemaMovie, int indexCinema, int indexReview, int indexSeat, int indexSeatLayout, int indexPerson){
+	public Index(int indexMovie, int indexCineplex, int indexCinemaMovie, int indexCinema, int indexReview, int indexSeat, int indexSeatLayout, int indexUser){
 		this.indexMovie = indexMovie;
 		this.indexCineplex = indexCineplex;
-		this.indexPerson = indexPerson;
+		this.indexUser = indexUser;
 	}
 	public int getIndexMovie() {
 		return indexMovie;
@@ -36,8 +34,8 @@ public class Index implements Serializable{
 		return indexCineplex;
 	}
 
-    public int getIndexPerson() {
-        return indexPerson;
+    public int getIndexUser() {
+        return indexUser;
     }
 
     public void updateIndex(UpdateIndexType x){
@@ -45,7 +43,7 @@ public class Index implements Serializable{
 		switch (x){
 			case UPDATE_MOVIE : this.indexMovie++; break;
 			case UPDATE_CINEPLEX : this.indexCineplex++;
-			case UPDATE_PERSON : this.indexPerson++; break;
+			case UPDATE_USER: this.indexUser++; break;
 		}
 		save();
 	}

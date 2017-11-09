@@ -2,7 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-public class Person implements Serializable{
+public class User implements Serializable{
     protected int id;
     private String fullName;
     private int age;
@@ -11,11 +11,11 @@ public class Person implements Serializable{
     //Kita PAKAI mobile number BUAT LOGIN PERTAMA
     //TRS CARI di User Manager buat dapeting OBJECT
 
-    public Person(String phoneNumber){
+    public User(String phoneNumber){
         this.phoneNumber = phoneNumber;
     }
 
-    public Person(int id, String fullName, int age, String phoneNumber) {
+    public User(int id, String fullName, int age, String phoneNumber) {
         this.id = id;
         this.fullName = fullName;
         this.age = age;
