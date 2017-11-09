@@ -12,11 +12,11 @@ public enum ActionTypes {
 
     OPEN_CINEMA,
 
+    OPEN_CINEMA_MOVIE,
+
     OPEN_MOVIE_TOP_5,
 
     OPEN_SEARCH_LIST_MOVIE,
-
-    CONTINUE,
 
     EXIT,
 

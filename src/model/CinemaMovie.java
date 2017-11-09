@@ -9,11 +9,11 @@ public class CinemaMovie implements Serializable {
     private CinemaMovieDate date;
     private SeatLayout seatLayout;
 
-    public CinemaMovie(Cinema cinema, Movie movie, int start, int end) {
+    public CinemaMovie(Cinema cinema, Movie movie) {
         this.cinema = cinema;
         this.movie = movie;
-        this.date = new CinemaMovieDate(start, end);
         this.seatLayout = new SeatLayout();
+        cinema.addCinemaMovies(this);
     }
 
     public Movie getMovie() {
@@ -42,7 +42,7 @@ public class CinemaMovie implements Serializable {
 
     @Override
     public String toString() {
-        return "\nMovie: " + movie.getMovieTitle() +
+        return "\nMovie: " + movie.getMovieTitle() + "\n" +
                 date.toString() + "\n";
     }
 

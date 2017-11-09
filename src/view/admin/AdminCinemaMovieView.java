@@ -2,6 +2,7 @@ package view.admin;
 
 import model.Cinema;
 import model.CinemaMovie;
+import model.CinemaMovieDate;
 import model.Movie;
 import view.View;
 
@@ -15,9 +16,13 @@ public class AdminCinemaMovieView extends View {
         return service.doGetCurrentCinema();
     }
 
+    private static Movie currentMovie() {
+        return service.doGetCurrentMovie();
+    }
+
     private static String getHeaderMessage() {
         return "Welcome to " + currentCinema().getName() + "\n" +
-                "1. List all today movies in this cinema\n" +
+                "1. List all today's movies in this cinema\n" +
                 "2. Add new showtime and movie\n" +
                 "3. Edit/Remove existing showtime and movie\n" +
                 "Enter 0 to go back\n";
@@ -25,7 +30,7 @@ public class AdminCinemaMovieView extends View {
 
     @Override
     public void appear() {
-        if(service.isTryAddingMovie())
+        if (service.isTryAddingMovie())
             takingCinemaMovieDetails();
         else
             super.appear();
@@ -35,21 +40,18 @@ public class AdminCinemaMovieView extends View {
     protected void manageResponse() {
         switch (response) {
             case 1:
-                if(listAllAvailableCinemaMovie() == 0) {
-                    Message.printMessage("No available showtime for now... Going back to prev screen");
-                    service.goExit();
-                }
+                service.goCinemaMovieList();
+                this.appear();
                 break;
             case 2:
                 service.tryAddingMovieToCinema();
                 service.goSearchListMovie();
+                this.appear();
                 break;
             case 3:
-                int input = Message.input(0, listAllAvailableCinemaMovie());
-                if(input == 0) {
-                    Message.printMessage("No available showtime for now... Going back to prev screen");
-                    service.goExit();
-                }
+                service.goCinemaMovieList();
+                this.editing();
+                this.appear();
                 break;
             default:
                 service.goExit();
@@ -57,31 +59,20 @@ public class AdminCinemaMovieView extends View {
         }
     }
 
-    private void takingCinemaMovieDetails(){
-        Message.printMessage("Coming back. . .");
-        //TO-DO
-        // input start time, end time
-        //create cinema movie
-        //service do add movie to cinema (cinema movie)
-//        CinemaMovie cinemaMovie = new CinemaMovie(currentCinema(), service.doGetCurrentMovie(), 1200, 1300);
-//        service.doAddMovieToCinema(cinemaMovie);
-        service.goExit();
+    private void takingCinemaMovieDetails() {
+        Message.printMessage("Coming back. . . Please input all the details (start time , end time) correctly");
+        int starthour = Message.input(0, 24);
+        int startmin = Message.input(0, 60);
+        int endhour = Message.input(0, 24);
+        int endmin = Message.input(0, 60);
+        CinemaMovie cinemaMovie = new CinemaMovie(currentCinema(), currentMovie());
+        CinemaMovieDate cinemaMovieDate = new CinemaMovieDate(starthour, startmin, endhour, endmin);
+        cinemaMovie.setDate(cinemaMovieDate);
+        service.doAddMovieToCinema();
     }
 
-    private int listAllAvailableCinemaMovie() {
-        int count = 0;
-        Message.printMessage("Checking list all");
-        if(service.doGetAllCinemaMovie(currentCinema()).equals(null))
-            return count;
-        Message.printMessage("Checking list not null");
-        for (CinemaMovie cinemaMovie : service.doGetAllCinemaMovie(currentCinema())) {
-            count++;
-            Message.printMessage(cinemaMovie.toString());
-        }
-        return count;
-    }
-
-    private void addNewCinemaMovie() {
-
+    private void editing(){
+        Message.printMessage("\nEditing this cinema movie with details");
+        Message.printMessage(service.doGetCurrentCinemaMovie().toString());
     }
 }

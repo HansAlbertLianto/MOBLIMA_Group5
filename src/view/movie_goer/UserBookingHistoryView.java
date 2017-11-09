@@ -8,8 +8,8 @@ public class UserBookingHistoryView extends View {
 	}
 	@Override
 	protected void manageResponse() {
-		// TODO Auto-generated method stub
-
+		//List all booking history
+		//Then exit (?)
 	}
 
 }

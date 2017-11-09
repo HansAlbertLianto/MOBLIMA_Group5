@@ -10,13 +10,12 @@ public class AdminHomeView extends View {
                     "1. Add movie Listing\n" +
                     "2. Edit or Remove Movie Listing\n" +
                     "3. List all Cineplex\n" +
-                    "4. List all valid Cinema movie and showtimes\n" +
-                    "5. Configure system settings (holiday, ticket price)\n" +
-                    "6. List Top 5 Movie\n" +
-                    "7. Logout\n";
+                    "4. Configure system settings (holiday, ticket price)\n" +
+                    "5. List Top 5 Movie\n" +
+                    "6. Logout\n";
 
     public AdminHomeView() {
-        super(message, 1, 7);
+        super(message, 1, 6);
     }
 
     @Override
@@ -32,15 +31,13 @@ public class AdminHomeView extends View {
                 service.goCineplex();
                 break;
             case 4:
-                service.goAdminCinemaMovie();
-                break;
-            case 5:
                 service.goAdminSetting();
                 break;
-            case 6:
+            case 5:
                 service.goMovieTop5();
                 break;
-            case 7:
+            case 6:
+                service.doLogout();
                 service.goExit();
                 break;
             default:

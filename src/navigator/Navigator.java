@@ -41,6 +41,10 @@ public class Navigator implements NavigatorInterface {
                 navigatorStack.add(cinemaView);
                 cinemaView.appear();
                 break;
+            case OPEN_CINEMA_MOVIE:
+                CinemaMovieView cinemaMovieView = new CinemaMovieView();
+                navigatorStack.add(cinemaMovieView);
+                cinemaMovieView.appear();
             case OPEN_MOVIE_TOP_5:
                 MovieTop5View movieTop5View = new MovieTop5View();
                 navigatorStack.add(movieTop5View);

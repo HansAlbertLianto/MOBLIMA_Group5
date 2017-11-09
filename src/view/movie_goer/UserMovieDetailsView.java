@@ -8,8 +8,8 @@ public class UserMovieDetailsView extends View {
 	}
 	@Override
 	protected void manageResponse() {
-		// TODO Auto-generated method stub
-
+		//1. List the details
+		//2. Find corresponding cinema movie to be selected (with 6.)
 	}
 
 }

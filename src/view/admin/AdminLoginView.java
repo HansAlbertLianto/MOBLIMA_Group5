@@ -25,20 +25,11 @@ public class AdminLoginView extends View {
     public void handleError() {
         super.handleError();
         Message.printMessage(LOGIN_FAILED);
-        String result = Message.inputStringWithOption(Message.yesOrNoOption(), "Do you want to go back or try login (Y/n)");
-        switch (result) {
-            case "y":
-                ;
-            case "Y":
-                appear();
-                break;
-            case "n":
-                ;
-            case "N":
-                service.goExit();
-            default:
-                service.goExit();
-        }
+        String option = Message.inputStringWithOption(Message.yesOrNoOption(), "Do you want to go back or try login (Y/n)");
+        if(Message.resultOfYesOrNoOption(option))
+            this.appear();
+        else
+            service.goExit();
     }
 
     @Override
