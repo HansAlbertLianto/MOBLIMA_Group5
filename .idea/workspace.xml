@@ -2,29 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0488971-2313-44f3-8c83-6ab5d8a11d98" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/model/Person.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/file_manager/Test.class" afterPath="$PROJECT_DIR$/bin/file_manager/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/MovieDetails.class" afterPath="$PROJECT_DIR$/bin/model/MovieDetails.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/index/Index$1.class" afterPath="$PROJECT_DIR$/bin/model/index/Index$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/index/Index.class" afterPath="$PROJECT_DIR$/bin/model/index/Index.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/index/UpdateIndexType.class" afterPath="$PROJECT_DIR$/bin/model/index/UpdateIndexType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model_manager/UserManager.class" afterPath="$PROJECT_DIR$/bin/model_manager/UserManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/service/ActionService.class" afterPath="$PROJECT_DIR$/bin/service/ActionService.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_30" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_31" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_32" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_33" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_34" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_35" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_36" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_37" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_38" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_39" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_40" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_41" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_42" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_43" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_44" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_45" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_46" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_47" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_48" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_49" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_50" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_51" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_52" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_53" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_54" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_55" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_56" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_57" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_58" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_59" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/file/movie/movie_60" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/Cinema.class" afterPath="$PROJECT_DIR$/bin/model/Cinema.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/Cineplex.class" afterPath="$PROJECT_DIR$/bin/model/Cineplex.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/service/Service.class" afterPath="$PROJECT_DIR$/bin/service/Service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/CinemaMovieView.class" afterPath="$PROJECT_DIR$/bin/view/CinemaMovieView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/CinemaView.class" afterPath="$PROJECT_DIR$/bin/view/CinemaView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/CineplexView.class" afterPath="$PROJECT_DIR$/bin/view/CineplexView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/LandingView.class" afterPath="$PROJECT_DIR$/bin/view/LandingView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/SearchListMovieView.class" afterPath="$PROJECT_DIR$/bin/view/SearchListMovieView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/admin/AdminCinemaMovieView.class" afterPath="$PROJECT_DIR$/bin/view/admin/AdminCinemaMovieView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/admin/AdminMovieDetailsView.class" afterPath="$PROJECT_DIR$/bin/view/admin/AdminMovieDetailsView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/movie_goer/UserCinemaMovieView.class" afterPath="$PROJECT_DIR$/bin/view/movie_goer/UserCinemaMovieView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/movie_goer/UserHomeView.class" afterPath="$PROJECT_DIR$/bin/view/movie_goer/UserHomeView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/view/movie_goer/UserMovieDetailsView.class" afterPath="$PROJECT_DIR$/bin/view/movie_goer/UserMovieDetailsView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/file/cineplex/cineplex_0" afterPath="$PROJECT_DIR$/etc/file/cineplex/cineplex_0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/file/cineplex/cineplex_1" afterPath="$PROJECT_DIR$/etc/file/cineplex/cineplex_1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/file/cineplex/cineplex_2" afterPath="$PROJECT_DIR$/etc/file/cineplex/cineplex_2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/file/index.dat" afterPath="$PROJECT_DIR$/etc/file/index.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/file_manager/Test.java" afterPath="$PROJECT_DIR$/src/file_manager/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/MovieDetails.java" afterPath="$PROJECT_DIR$/src/model/MovieDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/ActionService.java" afterPath="$PROJECT_DIR$/src/service/ActionService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cinema.java" afterPath="$PROJECT_DIR$/src/model/Cinema.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Cineplex.java" afterPath="$PROJECT_DIR$/src/model/Cineplex.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/Service.java" afterPath="$PROJECT_DIR$/src/service/Service.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/CinemaMovieView.java" afterPath="$PROJECT_DIR$/src/view/CinemaMovieView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/CinemaView.java" afterPath="$PROJECT_DIR$/src/view/CinemaView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/CineplexView.java" afterPath="$PROJECT_DIR$/src/view/CineplexView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/LandingView.java" afterPath="$PROJECT_DIR$/src/view/LandingView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/SearchListMovieView.java" afterPath="$PROJECT_DIR$/src/view/SearchListMovieView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/admin/AdminCinemaMovieView.java" afterPath="$PROJECT_DIR$/src/view/admin/AdminCinemaMovieView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/admin/AdminEditMovie.java" afterPath="$PROJECT_DIR$/src/view/admin/AdminEditMovie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/admin/AdminMovieDetailsView.java" afterPath="$PROJECT_DIR$/src/view/admin/AdminMovieDetailsView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java" afterPath="$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java" afterPath="$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java" afterPath="$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,117 +73,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserCinemaMovieView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/file_manager/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-              <folding>
-                <element signature="e#191#192#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/service/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-              <folding>
-                <element signature="e#2932#2945#0" expanded="true" />
-                <element signature="e#7017#7018#0" expanded="true" />
-                <element signature="e#7082#7083#0" expanded="true" />
-                <element signature="e#7575#7576#0" expanded="true" />
-                <element signature="e#7650#7651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CinemaMovieView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/CinemaMovieView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="33" />
+            <state relative-caret-position="245">
+              <caret line="344" column="25" lean-forward="false" selection-start-line="344" selection-start-column="25" selection-end-line="344" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminEditMovie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/admin/AdminEditMovie.java">
+      <file leaf-file-name="CinemaView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/CinemaView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            <state relative-caret-position="227">
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminCinemaMovieView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/admin/AdminCinemaMovieView.java">
+      <file leaf-file-name="CineplexView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/CineplexView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            <state relative-caret-position="193">
+              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/ActionService.java">
+      <file leaf-file-name="Navigator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/navigator/Navigator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CinemaMovie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/CinemaMovie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="363">
+              <caret line="163" column="27" lean-forward="true" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchListMovieView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/SearchListMovieView.java">
+      <file leaf-file-name="UserHomeView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="77" column="40" lean-forward="true" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
+            <state relative-caret-position="435">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminMovieDetailsView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/admin/AdminMovieDetailsView.java">
+      <file leaf-file-name="LandingView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/LandingView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="300">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMovieDetailsView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,6 +142,7 @@
       <find>cinema</find>
       <find>moviesele</find>
       <find>User user</find>
+      <find>CurrentCinema</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,16 +161,23 @@
         <option value="$PROJECT_DIR$/src/file_manager/FileManager.java" />
         <option value="$PROJECT_DIR$/src/model/Seat.java" />
         <option value="$PROJECT_DIR$/src/model/SeatLayout.java" />
-        <option value="$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java" />
-        <option value="$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java" />
         <option value="$PROJECT_DIR$/src/service/ActionService.java" />
         <option value="$PROJECT_DIR$/src/file_manager/Test.java" />
         <option value="$PROJECT_DIR$/src/model/MovieDetails.java" />
-        <option value="$PROJECT_DIR$/src/view/SearchListMovieView.java" />
         <option value="$PROJECT_DIR$/src/view/admin/AdminEditMovie.java" />
+        <option value="$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java" />
+        <option value="$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java" />
         <option value="$PROJECT_DIR$/src/view/CinemaMovieView.java" />
+        <option value="$PROJECT_DIR$/src/view/admin/AdminMovieDetailsView.java" />
         <option value="$PROJECT_DIR$/src/view/admin/AdminCinemaMovieView.java" />
+        <option value="$PROJECT_DIR$/src/view/SearchListMovieView.java" />
+        <option value="$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java" />
         <option value="$PROJECT_DIR$/src/service/Service.java" />
+        <option value="$PROJECT_DIR$/src/model/Cinema.java" />
+        <option value="$PROJECT_DIR$/src/model/Cineplex.java" />
+        <option value="$PROJECT_DIR$/src/view/CinemaView.java" />
+        <option value="$PROJECT_DIR$/src/view/CineplexView.java" />
+        <option value="$PROJECT_DIR$/src/view/LandingView.java" />
       </list>
     </option>
   </component>
@@ -445,7 +436,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4009000" />
+    <option name="totallyTimeSpent" value="5638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -490,33 +481,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/view/SearchListMovieView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="70" column="35" lean-forward="false" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -538,8 +502,8 @@
         <state relative-caret-position="-2344">
           <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="55" />
           <folding>
-            <element signature="e#8581#8582#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
+            <element signature="e#8707#8708#0" expanded="false" />
+            <element signature="e#8778#8779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,8 +556,8 @@
         <state relative-caret-position="165">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
           <folding>
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,24 +568,7 @@
           <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="11" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/MovieTop5View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,13 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="37" column="50" lean-forward="false" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/CineplexView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -652,23 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/navigator/Navigator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding>
-            <element signature="e#5624#5625#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-            <element signature="e#5724#5725#0" expanded="true" />
-            <element signature="e#5777#5778#0" expanded="true" />
-            <element signature="e#5835#5836#0" expanded="true" />
-            <element signature="e#5890#5891#0" expanded="true" />
-            <element signature="e#5927#5928#0" expanded="true" />
-            <element signature="e#5971#5972#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,78 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminHomeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminAddMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminSettingView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserBookingHistoryView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserBookingView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserLoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/CinemaView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/file_manager/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -832,73 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/CinemaMovie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminMovieDetailsView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/SearchListMovieView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="77" column="40" lean-forward="true" selection-start-line="77" selection-start-column="40" selection-end-line="77" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminEditMovie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/CinemaMovieView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminCinemaMovieView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -913,17 +701,210 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/MovieTop5View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CinemaMovieView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserLoginView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserCinemaMovieView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserBookingView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserBookingHistoryView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminSettingView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminMovieDetailsView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminHomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminEditMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminAddMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/SearchListMovieView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserMovieDetailsView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/admin/AdminCinemaMovieView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cineplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Cinema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="e#239#252#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="396">
+          <caret line="207" column="64" lean-forward="false" selection-start-line="207" selection-start-column="64" selection-end-line="207" selection-end-column="64" />
           <folding>
             <element signature="e#2932#2945#0" expanded="true" />
-            <element signature="e#7017#7018#0" expanded="true" />
-            <element signature="e#7082#7083#0" expanded="true" />
-            <element signature="e#7575#7576#0" expanded="true" />
-            <element signature="e#7650#7651#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/file_manager/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="344" column="25" lean-forward="false" selection-start-line="344" selection-start-column="25" selection-end-line="344" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CinemaView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CineplexView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/navigator/Navigator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="163" column="27" lean-forward="true" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/movie_goer/UserHomeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/LandingView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,9 @@ import java.util.ArrayList;
 
 public class UserMovieDetailsView extends View {
     private static final String message =
-            "1. Check cinema showing this movie\n" +
+            "\nHere is the details of the movies" + "\n" +
+                    currentMovie().getDetails().toString()+"\n"+
+                    "\n1. Check cinema showing this movie\n" +
                     "2. Go back\n";
 
     public UserMovieDetailsView() {
@@ -39,10 +41,13 @@ public class UserMovieDetailsView extends View {
             Message.printMessage("No related cinema movie");
             this.appear();
         }
+        Message.printMessage("Here is the related cinema movie:\n");
         for (CinemaMovie cinemaMovie : cinemaMovies) {
             count++;
-            Message.printMessage(cinemaMovie.toString());
+            Message.printMessage(cinemaMovie.getCinema().getName());
+            Message.printMessage(Integer.toString(count) + cinemaMovie.toString());
         }
+        Message.printMessage("Enter \"0\" to go back");
         int selection = Message.input(0, count);
         service.setCurrentCinemaMovie(cinemaMovies.get(selection - 1));
         service.goUserCinemaMovie();

@@ -10,15 +10,16 @@ public class CinemaView extends View {
     }
 
     public String getHeaderCinema() {
-        return "Here are the available cinema of " + service.doGetCurrentCineplex().getName() + " :";
+        return "\nHere are the available cinema of " + service.doGetCurrentCineplex().getName() + " :";
     }
 
     public int printAllCinemaAndGetNum() {
         int count = 0;
         for (Cinema cinema : service.doGetAllCinema()) {
             count++;
-            Message.printMessage(cinema.getName());
+            Message.printMessage(Integer.toString(count) + ". " + cinema.getName());
         }
+        Message.printMessage("Enter \"0\" to go back");
         return count;
     }
 
@@ -26,7 +27,12 @@ public class CinemaView extends View {
     public void appear() {
         super.appear();
         Message.printMessage(getHeaderCinema());
-        response = Message.input(0, printAllCinemaAndGetNum());
+        int temp = printAllCinemaAndGetNum();
+        if (temp == 0) {
+            Message.printMessage("No available cinema");
+            service.goExit();
+        }
+        response = Message.input(0, temp);
         this.manageResponse();
     }
 
@@ -37,8 +43,8 @@ public class CinemaView extends View {
                 service.goExit();
                 break;
             default:
-                service.setCurrentCinema(service.doGetAllCinema().get(response-1));
-                if(service.doGetCurrentUser())
+                service.setCurrentCinema(service.doGetAllCinema().get(response - 1));
+                if (service.doGetCurrentUser())
                     service.goUserCinemaMovie();
                 else
                     service.goAdminCinemaMovie();

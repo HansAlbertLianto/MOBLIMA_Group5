@@ -2,7 +2,7 @@ package view;
 
 public class LandingView extends View {
     private static final String message =
-            "Welcome to MOBLIMA !!! \n" +
+            "\nWelcome to MOBLIMA !!! \n" +
                     "1. Admin Login \n" +
                     "2. Login as Movie goers\n" +
                     "3. Exit\n";
@@ -20,6 +20,7 @@ public class LandingView extends View {
                 service.goUserLogin();
                 break;
             default:
+                service.goExit();
                 break;
         }
     }

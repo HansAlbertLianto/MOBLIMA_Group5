@@ -10,17 +10,17 @@ public class AdminMovieDetailsView extends View {
             "3. Cast\n" +
             "4. Genre\n" +
             "5. Synopsis\n" +
-            "Enter 0 to go back\n";
+            "6. Go back\n";
 
     private Movie movie = service.doGetCurrentMovie();
 
     public AdminMovieDetailsView() {
-        super(message, 0, 5);
+        super(message, 1, 6);
     }
 
     @Override
     protected void manageResponse() {
-        if (response == 0) service.goExit();
+        if (response == 6) service.goExit();
         String edited = Message.inputString(1, 30, getCaption());
         switch (response) {
             case 1:

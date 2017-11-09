@@ -4,7 +4,7 @@ import model.Cineplex;
 import view.View;
 
 public class CineplexView extends View {
-    private static final String message = "Here are the available cineplexes: \n";
+    private static final String message = "\nHere are the available cineplexes: \n";
 
     public CineplexView() {
         super(message);
@@ -14,15 +14,21 @@ public class CineplexView extends View {
         int count = 0;
         for (Cineplex cineplex : service.doGetAllCineplex()) {
             count++;
-            Message.printMessage(cineplex.getName());
+            Message.printMessage(Integer.toString(count) + ". " +cineplex.getName());
         }
+        Message.printMessage("Enter \"0\" to go back");
         return count;
     }
 
     @Override
     public void appear() {
         super.appear();
-        response = Message.input(0, printAllCineplexAndGetNum());
+        int temp = printAllCineplexAndGetNum();
+        if(temp == 0) {
+            Message.printMessage("No available cineplex");
+            service.goExit();
+        }
+        response = Message.input(0, temp);
         this.manageResponse();
     }
 

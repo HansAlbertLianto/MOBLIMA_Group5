@@ -50,7 +50,7 @@ public class CinemaMovieView extends View {
         int count = 0;
         if (service.doGetAllCinemaMovie(currentCinema()).equals(null))
             return count;
-        Message.printMessage("Here is all the available cinema movie: ");
+        Message.printMessage("\nHere is all the available cinema movie: ");
         for (CinemaMovie cinemaMovie : service.doGetAllCinemaMovie(currentCinema())) {
             if (today) {
                 if (cinemaMovie.getDate().isDateToday()) continue;
@@ -58,6 +58,7 @@ public class CinemaMovieView extends View {
             count++;
             Message.printMessage(Integer.toString(count) + cinemaMovie.toString());
         }
+        Message.printMessage("Enter \"0\" to go back");
         return count;
     }
 

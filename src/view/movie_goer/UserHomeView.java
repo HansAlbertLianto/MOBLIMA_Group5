@@ -6,7 +6,7 @@ import view.View;
 public class UserHomeView extends View {
 
     private static final String message =
-            "Welcome to MOBLIMA, user! What would you like to do? \n" +
+            "\nWelcome to MOBLIMA, user! What would you like to do? \n" +
                     "1. Search or List Movies \n" +
                     "2. List all Cineplex\n"+
                     "3. Logout";

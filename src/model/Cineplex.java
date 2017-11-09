@@ -29,10 +29,15 @@ public class Cineplex implements Serializable {
 
     public void addCinema(Cinema cinema) {
         this.cinemas.add(cinema);
+        cinema.setCineplex(this);
     }
 
     public ArrayList<Cinema> getCinemas() {
         return cinemas;
     }
 
+    @Override
+    public String toString() {
+        return "Cineplex " + getName();
+    }
 }

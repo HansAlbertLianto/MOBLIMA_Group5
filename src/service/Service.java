@@ -204,6 +204,8 @@ public class Service implements ActionService, NavigationService {
     @Override
     public void setCurrentCinemaMovie(CinemaMovie currentCinemaMovie) {
         this.currentCinemaMovie = currentCinemaMovie;
+        this.currentCinema = currentCinemaMovie.getCinema();
+        this.currentCineplex = this.currentCinema.getCineplex();
     }
 
     @Override

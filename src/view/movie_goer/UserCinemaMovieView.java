@@ -7,18 +7,22 @@ import view.View;
 
 public class UserCinemaMovieView extends View{
     public UserCinemaMovieView(){
-        super(getHeaderMessage(), 0,2);
+        super(getHeaderMessage(), 0,3);
     }
 
-    private static CinemaMovie currentCinemaMovie() {
-        return service.doGetCurrentCinemaMovie();
+    private static Cinema currentCinema() {
+        return service.doGetCurrentCinema();
+    }
+
+    private static Movie currentMovie() {
+        return service.doGetCurrentMovie();
     }
 
     private static String getHeaderMessage() {
-        return "Welcome to " + currentCinemaMovie().getCinema().getName() + "\n" +
+        return "\nWelcome to " + currentCinema().getName() + "\n" +
                 "1. List all today's movies in this cinema\n" +
                 "2. Book a cinema showtimes and movie\n" +
-                "Enter 0 to go back\n";
+                "3. Go back\n";
     }
 
     @Override

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class SearchListMovieView extends View {
     private static final String message =
-            "1. List all movies\n" +
+            "\n1. List all movies\n" +
                     "2. Search movie\n" +
                     "3. Go back\n";
 

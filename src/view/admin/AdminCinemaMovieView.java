@@ -9,7 +9,7 @@ import view.View;
 public class AdminCinemaMovieView extends View {
 
     public AdminCinemaMovieView() {
-        super(getHeaderMessage(), 0, 3);
+        super(getHeaderMessage(), 1, 4);
     }
 
     private static Cinema currentCinema() {
@@ -25,7 +25,7 @@ public class AdminCinemaMovieView extends View {
                 "1. List all today's movies in this cinema\n" +
                 "2. Add new showtime and movie\n" +
                 "3. Edit/Remove existing showtime and movie\n" +
-                "Enter 0 to go back\n";
+                "4. Go back\n";
     }
 
     @Override

@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Cinema implements Serializable {
+    private Cineplex cineplex;
     private String name;
-    private Seat seat = new Seat();
     private ArrayList<CinemaMovie> cinemaMovies = new ArrayList<CinemaMovie>();
 
     public Cinema(String cinema_name) {
@@ -14,10 +14,6 @@ public class Cinema implements Serializable {
 
     public String getName() {
         return this.name;
-    }
-
-    public Seat getSeat() {
-        return this.seat;
     }
 
     public ArrayList<CinemaMovie> getCinemaMovies() {
@@ -29,6 +25,23 @@ public class Cinema implements Serializable {
     }
 
     public void deleteCinemaMovie(CinemaMovie cinemaMovie){
-        cinemaMovies.remove(cinemaMovie);
+        for(CinemaMovie cinemaMovietemp : cinemaMovies){
+            if(cinemaMovie.getMovie().getId() == cinemaMovie.getMovie().getId() &&
+                    cinemaMovie.getDate().toString().equals(cinemaMovie.getDate().toString()))
+                cinemaMovies.remove(cinemaMovietemp);
+        }
+    }
+
+    public Cineplex getCineplex() {
+        return cineplex;
+    }
+
+    public void setCineplex(Cineplex cineplex) {
+        this.cineplex = cineplex;
+    }
+
+    @Override
+    public String toString() {
+        return cineplex.toString() + " Cinema " + getName();
     }
 }
