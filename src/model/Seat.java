@@ -3,14 +3,14 @@ package model;
 import java.io.Serializable;
 
 public class Seat implements Serializable {
-    private boolean isEmpty;
+    private boolean isEmpty = true;
 
     public Seat() {
 
     }
 
     public void assignSeat() {
-        isEmpty = true;
+        isEmpty = false;
     }
 
     public boolean isEmpty(){
@@ -26,4 +26,6 @@ public class Seat implements Serializable {
     //              |/|
     //              |_|
     //Maybe ? ? ? ?
+    // _
+    //| |
 }

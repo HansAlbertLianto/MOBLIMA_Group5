@@ -4,26 +4,67 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class SeatLayout implements Serializable {
-    private ArrayList<Seat> seats = new ArrayList<Seat>();
+    private ArrayList<ArrayList<Seat>> seats = new ArrayList<ArrayList<Seat>>();
+    private final int ROW = 4;
+    private final int COLUMN = 10;
 
     public SeatLayout(){
-
+        for(int i=0; i<ROW; i++){
+            ArrayList<Seat> temp = new ArrayList<Seat>();
+            for(int j=0; j<COLUMN; j++){
+                temp.add(new Seat());
+            }
+            seats.add(temp);
+        }
     }
 
-    public ArrayList<Seat> getSeats() {
+    public ArrayList<ArrayList<Seat>> getSeats() {
         return seats;
-    }
-
-    public void setSeats(ArrayList<Seat> seats) {
-        this.seats = seats;
     }
 
     public int getNumAvailSeats() {
         int sum = 0;
-        for(Seat i : seats){
-            if(i.isEmpty()) sum++;
+        for(ArrayList<Seat> arrayList : seats){
+            for(Seat seat: arrayList)
+                if(seat.isEmpty()) sum++;
         }
         return sum;
+    }
+
+    public void assignSeat(int row, int column){
+        if(ROW<row || COLUMN<column) {
+            System.out.printf("Error, select row less than equal %d and column less than equal %d\n", ROW, COLUMN);
+            return;
+        }
+        seats.get(row-1).get(column-1).assignSeat();
+    }
+
+    public void getRowColumn(){
+        System.out.println("");
+    }
+
+    @Override
+    public String toString() {
+        String string = "";
+        for(ArrayList<Seat> arrayList : seats){
+            string += "\n";
+            for(int j=0; j<10; j++){
+                string += " _ ";
+            }
+            string += "\n";
+            for(Seat seat: arrayList){
+                if(seat.isEmpty())
+                    string += "|E|";
+                else
+                    string += "| |";
+            }
+            string += "\n";
+            for(int j=0; j<10; j++){
+                string += "|_|";
+            }
+            string += "\n";
+        }
+        return string;
     }
 
     //Thinking of way to divide the seat layout for each cinema

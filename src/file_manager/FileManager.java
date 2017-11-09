@@ -38,9 +38,9 @@ public class FileManager implements FileService {
             data = (Object) in.readObject();
             in.close();
         } catch (IOException ex) {
-            ex.printStackTrace();
+//            ex.printStackTrace();
         } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
+//            ex.printStackTrace();
         }
         return data;
     }

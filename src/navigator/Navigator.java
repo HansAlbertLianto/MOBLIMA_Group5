@@ -160,6 +160,9 @@ public class Navigator implements NavigatorInterface {
         else if (view.getClass().equals(UserHomeView.class)){
             popUntil(LandingView.class);
         }
+        else if (view.getClass().equals(LandingView.class)){
+            System.exit(0);
+        }
         else {
             navigatorStack.pop();
         }

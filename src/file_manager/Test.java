@@ -4,6 +4,7 @@ import model.*;
 
 import model_manager.CineplexManager;
 import model_manager.MovieManager;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.util.ArrayList;
 
@@ -13,8 +14,8 @@ public class Test {
     private static CineplexManager cineplexManager = CineplexManager.getInstance();
 
     public static void main(String[] args) {
-        populateMovie();
-        populateCineplexCinema();
+//        populateMovie();
+//        populateCineplexCinema();
 //        printAllMovie();
 //        printAllCineplex();
 //        printAllCinema(cineplexManager.getAllCineplex().get(0));
@@ -36,6 +37,9 @@ public class Test {
 //        ArrayList<Cineplex> cineplexes = CineplexManager.getInstance().getAllCineplex();
 //        ArrayList<CinemaMovie> cinemaMovies = cineplexes.get(0).getCinemas().get(0).getCinemaMovies();
 //        System.out.println(cinemaMovies);
+//        SeatLayout seatLayout = new SeatLayout();
+//        seatLayout.assignSeat(3,10);
+//        System.out.println(seatLayout.toString());
     }
 
     public static void populateMovie() {
