@@ -69,4 +69,5 @@ public class CinemaMovieDate implements Serializable {
         return "Start time: " + startDate + "\n" +
                 "End time: " + endDate + "\n";
     }
+
 }

@@ -39,10 +39,6 @@ public class SeatLayout implements Serializable {
         seats.get(row-1).get(column-1).assignSeat();
     }
 
-    public void getRowColumn(){
-        System.out.println("");
-    }
-
     @Override
     public String toString() {
         String string = "";

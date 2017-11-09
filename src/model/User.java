@@ -1,12 +1,14 @@
 package model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class User implements Serializable{
     protected int id;
     private String fullName;
     private int age;
     private String phoneNumber;
+    private ArrayList<Booking> bookings;
     //name, mobile number, ArrayList<Booking>
     //Kita PAKAI mobile number BUAT LOGIN PERTAMA
     //TRS CARI di User Manager buat dapeting OBJECT
@@ -46,5 +48,11 @@ public class User implements Serializable{
         return this.phoneNumber;
     }
 
+    public void addBooking(Booking booking){
+        this.bookings.add(booking);
+    }
 
+    public ArrayList<Booking> getBookings(){
+        return bookings;
+    }
 }
