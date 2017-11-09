@@ -156,7 +156,11 @@ public class Navigator implements NavigatorInterface {
     private void pop(View view) {
         if (view.getClass().equals(AdminHomeView.class)) {
             popUntil(LandingView.class);
-        } else {
+        }
+        else if (view.getClass().equals(UserHomeView.class)){
+            popUntil(LandingView.class);
+        }
+        else {
             navigatorStack.pop();
         }
 
