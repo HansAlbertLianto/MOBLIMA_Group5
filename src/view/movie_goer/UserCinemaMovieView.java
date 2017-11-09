@@ -1,6 +1,7 @@
 package view.movie_goer;
 
 import model.Cinema;
+import model.CinemaMovie;
 import model.Movie;
 import view.View;
 
@@ -9,16 +10,12 @@ public class UserCinemaMovieView extends View{
         super(getHeaderMessage(), 0,2);
     }
 
-    private static Cinema currentCinema() {
-        return service.doGetCurrentCinema();
-    }
-
-    private static Movie currentMovie() {
-        return service.doGetCurrentMovie();
+    private static CinemaMovie currentCinemaMovie() {
+        return service.doGetCurrentCinemaMovie();
     }
 
     private static String getHeaderMessage() {
-        return "Welcome to " + currentCinema().getName() + "\n" +
+        return "Welcome to " + currentCinemaMovie().getCinema().getName() + "\n" +
                 "1. List all today's movies in this cinema\n" +
                 "2. Book a cinema showtimes and movie\n" +
                 "Enter 0 to go back\n";

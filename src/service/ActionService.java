@@ -69,6 +69,8 @@ public interface ActionService {
 
     public CinemaMovie doGetCurrentCinemaMovie();
 
+    public ArrayList<CinemaMovie> searchCinemaMovie(Movie movie);
+
     public void doGetSeatLayout(CinemaMovie cinemaMovie);
 
     public void doBook(CinemaMovie cinemaMovie, Seat seat);

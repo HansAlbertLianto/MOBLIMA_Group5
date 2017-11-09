@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class MovieDetails implements Serializable {
 
-    private MovieStatus showingStatus;
+    private MovieStatus showingStatus = MovieStatus.ComingSoon;
     private String synopsis;
     private String director;
     private String cast;

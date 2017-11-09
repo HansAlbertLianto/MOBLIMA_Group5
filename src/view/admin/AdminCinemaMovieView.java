@@ -49,7 +49,8 @@ public class AdminCinemaMovieView extends View {
                 this.appear();
                 break;
             case 3:
-                service.goCinemaMovieList();
+                if(!keepPreviousCinemaMovie())
+                    service.goCinemaMovieList();
                 this.editing();
                 this.appear();
                 break;
@@ -69,6 +70,13 @@ public class AdminCinemaMovieView extends View {
         CinemaMovieDate cinemaMovieDate = new CinemaMovieDate(starthour, startmin, endhour, endmin);
         cinemaMovie.setDate(cinemaMovieDate);
         service.doAddMovieToCinema();
+    }
+
+    private boolean keepPreviousCinemaMovie(){
+        Message.printMessage("\nUsing this cinema movie with details");
+        Message.printMessage(service.doGetCurrentCinemaMovie().toString());
+        String option = Message.inputStringWithOption(Message.yesOrNoOption(), "Do you want to use this cinema movie (Y/n)?");
+        return Message.resultOfYesOrNoOption(option);
     }
 
     private void editing(){

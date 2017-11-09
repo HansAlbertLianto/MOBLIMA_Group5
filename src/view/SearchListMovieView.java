@@ -7,7 +7,8 @@ import java.util.ArrayList;
 public class SearchListMovieView extends View {
     private static final String message =
             "1. List all movies\n" +
-                    "2. Search movie\n";
+                    "2. Search movie\n" +
+                    "3. Go back\n";
 
     private final String movieSelectionMessage =
             "Select movie from selection (0 to go back)";
@@ -15,7 +16,7 @@ public class SearchListMovieView extends View {
     private ArrayList<Movie> movies;
 
     public SearchListMovieView() {
-        super(message, 1, 2);
+        super(message, 1, 3);
     }
 
     @Override
@@ -28,6 +29,7 @@ public class SearchListMovieView extends View {
                 searchMovie();
                 break;
             default:
+                service.goExit();
                 break;
         }
 

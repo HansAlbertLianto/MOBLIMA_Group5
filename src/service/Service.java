@@ -103,6 +103,21 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
+    public ArrayList<CinemaMovie> searchCinemaMovie(Movie movie) {
+        ArrayList<CinemaMovie> cinemaMovies = new ArrayList<CinemaMovie>();
+        for(Cineplex cineplex : cineplexManager.getAllCineplex()){
+            for(Cinema cinema : cineplex.getCinemas()){
+                for(CinemaMovie cinemaMovie : cinema.getCinemaMovies()){
+                    if(cinemaMovie.getMovie().getId() == movie.getId()){
+                        cinemaMovies.add(cinemaMovie);
+                    }
+                }
+            }
+        }
+        return cinemaMovies;
+    }
+
+    @Override
     public MovieDetails doGetAllDetails() {
         return null;
     }

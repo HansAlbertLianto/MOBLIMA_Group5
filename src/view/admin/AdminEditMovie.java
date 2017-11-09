@@ -7,7 +7,8 @@ public class AdminEditMovie extends View {
 
     private static final String selectionMessage =
             "1. Edit details \n" +
-                    "2. Remove this movie\n";
+                    "2. Remove this movie\n" +
+                    "3. Go back";
 
     public AdminEditMovie() {
         super();
@@ -27,7 +28,7 @@ public class AdminEditMovie extends View {
         Message.printMessage(getHeaderMessage(service.doGetCurrentMovie().getMovieTitle()));
         Message.printMessage(service.doGetCurrentMovie().getDetails().toString());
         Message.printMessage(selectionMessage);
-        response = Message.input(0, 2);
+        response = Message.input(1, 3);
         this.manageResponse();
     }
 
