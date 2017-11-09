@@ -12,31 +12,53 @@ public class CinemaMovieDate implements Serializable {
 
     public CinemaMovieDate(int shour, int smin, int ehour, int emin) {
         Date date = new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
+        Calendar scal = Calendar.getInstance();
+        scal.setTime(date);
+        Calendar ecal = Calendar.getInstance();
+        ecal.setTime(date);
 
-        cal.set(Calendar.HOUR, shour);
-        cal.set(Calendar.MINUTE, smin);
-        this.start_time = cal;
+        scal.set(Calendar.HOUR, shour);
+        scal.set(Calendar.MINUTE, smin);
+        this.start_time = scal;
 
-        cal.set(Calendar.HOUR, ehour);
-        cal.set(Calendar.MINUTE, emin);
-        this.end_time = cal;
+        ecal.set(Calendar.HOUR, ehour);
+        ecal.set(Calendar.MINUTE, emin);
+        this.end_time = ecal;
     }
 
     public CinemaMovieDate(int day, int shour, int smin, int ehour, int emin){
         Date date = new Date();
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(date);
+        Calendar scal = Calendar.getInstance();
+        scal.setTime(date);
+        Calendar ecal = Calendar.getInstance();
+        ecal.setTime(date);
 
-        cal.set(Calendar.DAY_OF_MONTH, day);
-        cal.set(Calendar.HOUR, shour);
-        cal.set(Calendar.MINUTE, smin);
-        this.start_time = cal;
+        scal.set(Calendar.DAY_OF_MONTH, day);
+        scal.set(Calendar.HOUR, shour);
+        scal.set(Calendar.MINUTE, smin);
+        this.start_time = scal;
 
-        cal.set(Calendar.HOUR, ehour);
-        cal.set(Calendar.MINUTE, emin);
-        this.end_time = cal;
+        ecal.set(Calendar.HOUR, ehour);
+        ecal.set(Calendar.MINUTE, emin);
+        this.end_time = ecal;
+    }
+
+    public CinemaMovieDate(int day, int month, int shour, int smin, int ehour, int emin){
+        Date date = new Date();
+        Calendar scal = Calendar.getInstance();
+        scal.setTime(date);
+        Calendar ecal = Calendar.getInstance();
+        ecal.setTime(date);
+
+        scal.set(Calendar.DAY_OF_MONTH, day);
+        scal.set(Calendar.MONTH, month);
+        scal.set(Calendar.HOUR, shour);
+        scal.set(Calendar.MINUTE, smin);
+        this.start_time = scal;
+
+        ecal.set(Calendar.HOUR, ehour);
+        ecal.set(Calendar.MINUTE, emin);
+        this.end_time = ecal;
     }
 
     public boolean isDateToday(){
@@ -68,5 +90,9 @@ public class CinemaMovieDate implements Serializable {
         String endDate = sdf.format(this.end_time.getTime());
         return "Start time: " + startDate + "\n" +
                 "End time: " + endDate + "\n";
+    }
+
+    public Calendar getStartTime() {
+        return start_time;
     }
 }
