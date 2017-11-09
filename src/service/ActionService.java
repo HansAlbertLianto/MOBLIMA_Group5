@@ -11,6 +11,8 @@ public interface ActionService {
 
     public void doLogout();
 
+    public void doUserLogin(String phoneNumber);
+
     // ----------------------------------
     // Movie Action
     // ----------------------------------

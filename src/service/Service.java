@@ -54,6 +54,23 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
+    public void doUserLogin(String phoneNumber){
+        ArrayList<Person> persons = userManager.getAllUser();
+        boolean found = false;
+        for (Person person: persons){
+            if (person.getPhoneNumber().equals(phoneNumber)){
+                isAdmin = false;
+                found = true;
+                navigator.handleSuccess();
+                break;
+            }
+        }
+        if (!found) {
+            navigator.handleError();
+        }
+    }
+
+    @Override
     public boolean doGetCurrentUser() {
         return !isAdmin;
     }
@@ -316,4 +333,8 @@ public class Service implements ActionService, NavigationService {
         navigator.doAction(ActionTypes.OPEN_USER_MOVIE_DETAILS);
     }
 
+    @Override
+    public void goUserLogin(){
+        navigator.doAction(ActionTypes.OPEN_USER_LOGIN);
+    }
 }

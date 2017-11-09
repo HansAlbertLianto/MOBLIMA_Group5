@@ -101,6 +101,11 @@ public class Navigator implements NavigatorInterface {
             //----------------------------------------
             //Movie goer Navigation Service
             //----------------------------------------
+            case OPEN_USER_LOGIN:
+                UserLoginView userLoginView = new UserLoginView();
+                navigatorStack.add(userLoginView);
+                userLoginView.appear();
+                break;
             case OPEN_USER_HOME:
                 UserHomeView userHomeView = new UserHomeView();
                 navigatorStack.add(userHomeView);

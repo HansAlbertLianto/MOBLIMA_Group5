@@ -2,17 +2,28 @@ package model;
 
 import java.io.Serializable;
 
-public abstract class Person implements Serializable{
+public class Person implements Serializable{
     protected int id;
     private String fullName;
     private int age;
+    private String phoneNumber;
     //name, mobile number, ArrayList<Booking>
     //Kita PAKAI mobile number BUAT LOGIN PERTAMA
     //TRS CARI di User Manager buat dapeting OBJECT
-    public Person(int id, String fullName, int age) {
+
+    public Person(String phoneNumber){
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Person(int id, String fullName, int age, String phoneNumber) {
         this.id = id;
         this.fullName = fullName;
         this.age = age;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getId(){
+        return this.id;
     }
 
     public String getFullName() {
@@ -30,5 +41,10 @@ public abstract class Person implements Serializable{
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String getPhoneNumber(){
+        return this.phoneNumber;
+    }
+
 
 }

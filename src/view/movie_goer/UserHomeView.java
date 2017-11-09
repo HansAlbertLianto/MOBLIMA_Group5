@@ -12,7 +12,7 @@ public class UserHomeView extends View {
                     "3. Logout";
 
     public UserHomeView() {
-        super(message, 1, 2);
+        super(message, 1, 3);
     }
 
     @Override

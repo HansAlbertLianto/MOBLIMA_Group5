@@ -17,7 +17,7 @@ public class LandingView extends View {
                 service.goAdminLogin();
                 break;
             case 2:
-                service.goUserHome();
+                service.goUserLogin();
                 break;
             default:
                 break;

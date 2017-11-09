@@ -55,6 +55,25 @@ public class MessageManager {
 		return input;
 	}
 
+	public int inputInt(int minValue, int maxValue, String caption){
+		int input = 0;
+		boolean isValid = false;
+		while (!isValid){
+			System.out.printf(caption + " = ");
+			if(sc.hasNextInt()){
+				input = sc.nextInt();
+				isValid = input >= minValue & input <= maxValue;
+			}
+			if (sc.hasNextLine()){
+				sc.nextLine();
+			}
+			if (!isValid) {
+				System.out.printf("Invalid input! Input length must be between %d and %d\n", minValue, maxValue);
+			}
+		}
+		return input;
+	}
+
 	public String inputStringWithOption(ArrayList options, String caption){
 		String input = "";
 		boolean isValid = false;

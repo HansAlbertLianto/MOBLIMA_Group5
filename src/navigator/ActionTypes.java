@@ -42,6 +42,7 @@ public enum ActionTypes {
     //----------------------------------------
     //Movie goer Navigation Service
     //----------------------------------------
+    OPEN_USER_LOGIN,
 
     OPEN_USER_HOME,
 

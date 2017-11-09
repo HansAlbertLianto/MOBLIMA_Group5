@@ -1,8 +1,13 @@
 package model_manager;
 
 import file_manager.FileManager;
+import file_manager.LoadType;
+import file_manager.SaveType;
 import model.Person;
 import model.index.Index;
+import model.index.UpdateIndexType;
+
+import java.util.ArrayList;
 
 public class UserManager {
 
@@ -19,7 +24,20 @@ public class UserManager {
         return singleton;
     }
 
-    public void doGetAllBookingHistory(Person user){
+    public ArrayList<Person> getAllUser(){
+        ArrayList<Person> persons = new ArrayList<Person>();
+        for (int i=0; i < index.getIndexPerson(); i++){
+            Person person = (Person) fileManager.getData(LoadType.LOAD_USER, i);
+            if (person != null){
+                persons.add(person);
+            }
+        }
+        return persons;
+    }
 
+    public void addUser(String fullname, int age, String phoneNumber){
+        Person person = new Person(index.getIndexPerson(), fullname, age, phoneNumber);
+        index.updateIndex(UpdateIndexType.UPDATE_PERSON);
+        fileManager.saveData(SaveType.SAVE_USER, person, person.getId());
     }
 }

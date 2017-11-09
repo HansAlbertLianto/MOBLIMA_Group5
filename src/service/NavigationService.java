@@ -42,6 +42,7 @@ public interface NavigationService {
     //----------------------------------------
     //Movie goer Navigation Service
     //----------------------------------------
+    public void goUserLogin();
 
     public void goUserHome();
 
