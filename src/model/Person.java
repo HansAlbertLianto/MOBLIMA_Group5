@@ -6,7 +6,9 @@ public abstract class Person implements Serializable{
     protected int id;
     private String fullName;
     private int age;
-
+    //name, mobile number, ArrayList<Booking>
+    //Kita PAKAI mobile number BUAT LOGIN PERTAMA
+    //TRS CARI di User Manager buat dapeting OBJECT
     public Person(int id, String fullName, int age) {
         this.id = id;
         this.fullName = fullName;

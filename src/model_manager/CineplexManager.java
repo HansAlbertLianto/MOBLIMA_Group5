@@ -35,8 +35,7 @@ public class CineplexManager {
         return cineplexes;
     }
 
-    public void addCinemaMovie(Cineplex cineplex, CinemaMovie cinemaMovie){
-        cinemaMovie.getCinema().addCinemaMovies(cinemaMovie);
+    public void addCinemaMovie(Cineplex cineplex){
         fileManager.saveData(SaveType.SAVE_CINEPLEX, cineplex, cineplex.getId());
     }
 

@@ -8,8 +8,8 @@ public class UserBookingView extends View {
 	}
 	@Override
 	protected void manageResponse() {
-		// TODO Auto-generated method stub
-
+		//Select the seat
+		//Payment output
 	}
 
 }

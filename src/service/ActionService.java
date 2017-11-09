@@ -9,6 +9,8 @@ public interface ActionService {
 
     public void doLogin(String username, String password);
 
+    public void doLogout();
+
     // ----------------------------------
     // Movie Action
     // ----------------------------------
@@ -76,9 +78,9 @@ public interface ActionService {
 
     public boolean isTryAddingMovie();
 
-    public void doAddMovieToCinema(CinemaMovie cinemaMovie);
+    public void doAddMovieToCinema();
 
-    public void doEditCinemaMovie(CinemaMovie cinemaMovie);
+    public void doEditCinemaMovie();
 
     //  ----------------------------------
     //  Movie-goers Action

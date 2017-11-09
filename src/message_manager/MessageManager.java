@@ -77,4 +77,19 @@ public class MessageManager {
 		options.add("n");
 		return options;
 	}
+
+	public boolean resultOfYesOrNoOption(String result){
+		switch (result) {
+			case "y":
+				;
+			case "Y":
+				return true;
+			case "n":
+				;
+			case "N":
+				return false;
+			default:
+				return false;
+		}
+	}
 }

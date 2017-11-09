@@ -70,7 +70,6 @@ public class SearchListMovieView extends View {
                 if (service.doGetCurrentUser())
                     service.goUserMovieDetails();
                 else
-                    Message.printMessage("Checking list all" + service.isTryAddingMovie());
                     if(service.isTryAddingMovie())
                         service.goExit();
                     else

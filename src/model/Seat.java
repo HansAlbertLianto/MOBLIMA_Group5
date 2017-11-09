@@ -17,4 +17,13 @@ public class Seat implements Serializable {
         return isEmpty;
     }
 
+    //To-do toString
+    //If empty
+    //               _
+    //              |E|
+    //              |_|
+    //Otherwise      _
+    //              |/|
+    //              |_|
+    //Maybe ? ? ? ?
 }

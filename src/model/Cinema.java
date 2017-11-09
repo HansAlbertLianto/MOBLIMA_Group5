@@ -27,4 +27,8 @@ public class Cinema implements Serializable {
     public void addCinemaMovies(CinemaMovie cinemaMovie){
         cinemaMovies.add(cinemaMovie);
     }
+
+    public void deleteCinemaMovie(CinemaMovie cinemaMovie){
+        cinemaMovies.remove(cinemaMovie);
+    }
 }

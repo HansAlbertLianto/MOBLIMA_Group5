@@ -13,13 +13,29 @@ public class Test {
     private static CineplexManager cineplexManager = CineplexManager.getInstance();
 
     public static void main(String[] args) {
-//        populateMovie();
-//        populateCineplexCinema();
+        populateMovie();
+        populateCineplexCinema();
 //        printAllMovie();
 //        printAllCineplex();
 //        printAllCinema(cineplexManager.getAllCineplex().get(0));
-        CinemaMovieDate date = new CinemaMovieDate(1200,1300);
-
+//        CinemaMovieDate date = new CinemaMovieDate(12,0, 13,0);
+//        System.out.println(date.toString());
+//        CinemaMovieDate date1 = new CinemaMovieDate(12,12,0, 13,0);
+//        System.out.println(date1.toString());
+//        Movie movie = new Movie(1, "Hello Movies");
+//        Cinema cinema = new Cinema("Hahaha");
+//        CinemaMovie cinemaMovie = new CinemaMovie(cinema, movie);®
+//        cinemaMovie.setDate(date);
+//        for(CinemaMovie cinemaMovie1 : cinema.getCinemaMovies()){
+//            System.out.println(cinemaMovie1.toString());
+//            cinemaMovie1.setDate(date1);
+//        }
+//        for(CinemaMovie cinemaMovie1 : cinema.getCinemaMovies()){
+//            System.out.println(cinemaMovie1.toString());
+//        }
+//        ArrayList<Cineplex> cineplexes = CineplexManager.getInstance().getAllCineplex();
+//        ArrayList<CinemaMovie> cinemaMovies = cineplexes.get(0).getCinemas().get(0).getCinemaMovies();
+//        System.out.println(cinemaMovies);
     }
 
     public static void populateMovie() {

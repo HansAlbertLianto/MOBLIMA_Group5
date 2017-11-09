@@ -8,7 +8,6 @@ public class AdminSettingView extends View {
 	}
 	@Override
 	protected void manageResponse() {
-		// TODO Auto-generated method stub
 
 	}
 

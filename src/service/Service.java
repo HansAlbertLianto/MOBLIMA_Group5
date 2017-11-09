@@ -39,6 +39,11 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
+    public void doLogout() {
+        isAdmin = false;
+    }
+
+    @Override
     public void doLogin(String username, String password) {
         if (username.equals("admin") && password.equals("admin")) {
             isAdmin = true;
@@ -190,13 +195,14 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void doAddMovieToCinema(CinemaMovie cinemaMovie) {
-        cineplexManager.addCinemaMovie(currentCineplex, cinemaMovie);
+    public void doAddMovieToCinema() {
+        this.isAddingCinemaMovie = false;
+        cineplexManager.addCinemaMovie(currentCineplex);
     }
 
     @Override
-    public void doEditCinemaMovie(CinemaMovie cinemaMovie) {
-
+    public void doEditCinemaMovie() {
+        cineplexManager.addCinemaMovie(currentCineplex);
     }
 
     @Override
@@ -240,8 +246,8 @@ public class Service implements ActionService, NavigationService {
     }
 
     @Override
-    public void goContinue() {
-        navigator.doAction(ActionTypes.CONTINUE);
+    public void goCinemaMovieList() {
+        navigator.doAction(ActionTypes.OPEN_CINEMA_MOVIE);
     }
 
     @Override
